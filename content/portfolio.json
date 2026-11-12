@@ -1,0 +1,543 @@
+{
+  "maj": "2026-11-12",
+  "profil": {
+    "nom": "Yann Leduc",
+    "titre": "Apprenti ingénieur · Arts et Métiers, Programme Grande École",
+    "accroche": "Je conçois des pièces mécaniques de l'idée jusqu'à l'essai : on part d'un besoin, on dimensionne à la main, on modélise, puis on vérifie sur une vraie pièce. Avant Arts et Métiers, j'ai fait un BUT Génie Mécanique et Productique en alternance. Ce portfolio suit mes projets semestre par semestre, avec ce qui a marché et ce qui reste à prouver.",
+    "parcours": [
+      {
+        "periode": "2026 – 2029",
+        "intitule": "Arts et Métiers Paris (ENSAM), PGE en alternance",
+        "detail": "Admis via AMBition Ingénieur"
+      },
+      {
+        "periode": "2023 – 2026",
+        "intitule": "BUT Génie Mécanique et Productique, en alternance",
+        "detail": "Conception mécanique (SolidWorks), projets industriels"
+      }
+    ],
+    "liens": []
+  },
+  "semestres": [
+    {
+      "id": "s1",
+      "nom": "Semestre 1",
+      "periode": "Sept. 2026 – janv. 2027",
+      "annee": "1re année",
+      "statut": "en-cours",
+      "intro": "Premier semestre à Arts et Métiers. Tout le semestre tourne autour d'un projet fil rouge : concevoir un pied prothétique imprimé en 3D pour un enfant. Chaque cours (conception, matériaux, RDM, modélisation) apporte une étape.",
+      "projets": [
+        {
+          "id": "pied-prothetique",
+          "titre": "Pied prothétique pour enfant en fabrication additive",
+          "sousTitre": "Un pied imprimé en PLA (FDM), qu'on réimprime à la bonne taille quand l'enfant grandit",
+          "equipe": "En binôme avec Victor Bulliard",
+          "encadrant": "Pierre-Yves Rohan",
+          "periode": "Sept. – déc. 2026",
+          "resume": "Les pieds prothétiques qui donnent la meilleure marche sont des lames en carbone. Ils fonctionnent très bien, mais ils coûtent cher, et un enfant change de pointure environ tous les six mois. L'idée du projet est simple : si le pied est imprimé en 3D, changer de taille revient à changer un paramètre. Au Bloc 1, on est passés du besoin à un premier pied dimensionné, modélisé et simulé. Le Bloc 2 doit le transformer en vraie pièce et le tester.",
+          "chiffres": [
+            {
+              "valeur": "27 kg",
+              "label": "masse de l'enfant visé (pointure 35)"
+            },
+            {
+              "valeur": "23,5 mm",
+              "label": "flèche simulée, pour 23,2 mm visés (8°)"
+            },
+            {
+              "valeur": "87,8 MPa",
+              "label": "contrainte max à 4 × le poids"
+            },
+            {
+              "valeur": "≈ 6 mois",
+              "label": "durée de vie visée avant remplacement"
+            }
+          ],
+          "parties": [
+            {
+              "id": "contexte",
+              "titre": "Contexte et problématique",
+              "module": "Projet",
+              "date": "Sept. 2026",
+              "texte": [
+                "Sans cheville, la marche fatigue plus vite et l'équilibre est moins bon. Les pieds qui marchent le mieux sont des lames en carbone qui stockent puis rendent l'énergie. Le problème, c'est le prix, surtout pour un enfant qui grandit.",
+                "On s'est fixé une question qui tient en une phrase : comment concevoir un pied d'enfant imprimé en FDM qui supporte la marche en sécurité, qui plie assez pour une marche naturelle, et qui reste assez bon marché pour être remplacé à chaque changement de pointure ?",
+                "Notre référence de départ est la thèse d'Aude Louessard (ENSAM, 2023) sur les pieds prothétiques imprimés. Elle montre que l'impression 3D donne de bons prototypes fonctionnels, mais que la fatigue reste le point faible. C'est exactement le risque que notre pied devra affronter."
+              ],
+              "chiffres": [
+                {
+                  "valeur": "220 mm",
+                  "label": "longueur du pied"
+                },
+                {
+                  "valeur": "165 mm",
+                  "label": "longueur utile de la lame (¾ du pied)"
+                },
+                {
+                  "valeur": "270 N",
+                  "label": "charge de marche, inclinée de 20°"
+                }
+              ],
+              "competences": [
+                "Analyse du besoin",
+                "Recherche bibliographique"
+              ],
+              "outils": [],
+              "livrables": [],
+              "images": [],
+              "enBref": "Un pied en carbone coûte cher, et l'enfant change de pointure tous les six mois. On veut un pied imprimé en 3D, qu'on réimprime à la bonne taille."
+            },
+            {
+              "id": "veille-cdcf",
+              "titre": "Veille brevets et cahier des charges",
+              "module": "COPI · Propriété industrielle, Analyse de la valeur",
+              "date": "Sept. – oct. 2026",
+              "texte": [
+                "On a commencé par regarder ce qui existe. Sur Espacenet, data.inpi.fr et Google Patents, on a retenu 23 brevets de 1991 à 2025. La plupart sont des pieds en carbone ou en composite, mais 14 ont une forme assez simple pour être imprimée : ce qui les rend chers, c'est le carbone, pas la géométrie. Aucun ne vise un pied d'enfant imprimé en FDM.",
+                "À partir de là, on a écrit le cahier des charges fonctionnel selon la NF X50-151 : bête à cornes, cycle de vie, fonctions de service avec critère, niveau et flexibilité. On arrive à une fonction principale, marcher sur le sol, et sept contraintes. Le tri croisé place la marche (30 %) et la résistance (27 %) en tête, et ces deux-là tirent dans des sens opposés : tout le dimensionnement vient de ce compromis."
+              ],
+              "chiffres": [
+                {
+                  "valeur": "23",
+                  "label": "brevets analysés (1991 – 2025)"
+                },
+                {
+                  "valeur": "14 / 23",
+                  "label": "formes imprimables en 3D"
+                },
+                {
+                  "valeur": "1 + 7",
+                  "label": "fonction principale et contraintes"
+                },
+                {
+                  "valeur": "4 × P",
+                  "label": "résistance exigée (ISO 10328)"
+                }
+              ],
+              "competences": [
+                "Veille technologique",
+                "Analyse fonctionnelle",
+                "Rédaction de CdCF",
+                "Tri croisé"
+              ],
+              "outils": [
+                "Espacenet",
+                "data.inpi.fr",
+                "Google Patents",
+                "NF X50-151"
+              ],
+              "livrables": [
+                {
+                  "titre": "Rapport de veille brevets (PDF)",
+                  "statut": "rendu",
+                  "date": "28/09/2026"
+                },
+                {
+                  "titre": "Cahier des charges fonctionnel, 10 pages",
+                  "statut": "rendu",
+                  "date": "07/10/2026"
+                }
+              ],
+              "images": [],
+              "enBref": "23 brevets analysés, et aucun pied d'enfant imprimé en FDM. Le cahier des charges oppose deux exigences : bien marcher (30 %) et résister (27 %)."
+            },
+            {
+              "id": "rdm",
+              "titre": "Pré-dimensionnement par la théorie des poutres",
+              "module": "REPI · Résistance des matériaux",
+              "date": "Sept. – oct. 2026",
+              "texte": [
+                "On a modélisé le pied comme une poutre encastrée à la cheville et chargée à la pointe. Une lame d'épaisseur constante ne marche pas. À 11,5 mm, elle plie assez mais monte à 170 MPa à quatre fois le poids : elle casse. À 14,8 mm, elle tient, mais ne plie plus que de 10,7 mm.",
+                "On a donc comparé plusieurs formes : lame trapézoïdale, profil d'égale résistance, boucle en U, équerre en L. La solution retenue combine les deux dernières idées. Une colonne et un début de pied épais (19 mm) pour la résistance, une pointe fine (5,5 mm) pour la souplesse. On arrive à 78 MPa à quatre fois le poids, avec la flèche de 23,2 mm respectée."
+              ],
+              "chiffres": [
+                {
+                  "valeur": "f = l·tan 8°",
+                  "label": "flèche visée = 23,2 mm"
+                },
+                {
+                  "valeur": "19,0 mm",
+                  "label": "épaisseur colonne et racine"
+                },
+                {
+                  "valeur": "5,5 mm",
+                  "label": "épaisseur en pointe"
+                },
+                {
+                  "valeur": "78 MPa",
+                  "label": "σ max à 4 × P (marge 1,3)"
+                }
+              ],
+              "competences": [
+                "Théorie des poutres",
+                "Dimensionnement en flexion",
+                "Comparaison de solutions"
+              ],
+              "outils": [
+                "Calcul analytique"
+              ],
+              "livrables": [
+                {
+                  "titre": "Note de pré-dimensionnement RDM",
+                  "statut": "rendu",
+                  "date": "Oct. 2026"
+                }
+              ],
+              "images": [
+                {
+                  "src": "img/s1-rdm-profils.png",
+                  "legende": "Profils de lame comparés : épaisseur, contrainte sous 4 × P et déformée sous le poids. Aucun profil simple n'atteint les 23 mm de flèche sans dépasser Re."
+                }
+              ],
+              "enBref": "Une lame droite ne peut pas être à la fois souple et solide. La forme en L, épaisse à la cheville et fine à la pointe, tient les deux : 23,2 mm de flèche et 78 MPa.",
+              "calculateur": "poutre-pied"
+            },
+            {
+              "id": "materiau",
+              "titre": "Choix du matériau et du procédé",
+              "module": "MATI · Granta EduPack",
+              "date": "Oct. 2026",
+              "texte": [
+                "Dans Granta EduPack, on a resserré toute la base comme un entonnoir. D'abord des limites : Re d'au moins 60 MPa, module entre 2 et 8 GPa pour que la lame puisse plier. Ensuite l'indice Re/(E·ρ) face au coût, qui laisse 11 matériaux. Enfin la tenue aux UV, à l'eau douce et à l'eau salée, qui en laisse 3.",
+                "Entre le PLA et le PMMA, on a pris le PLA en FDM. Il est peu cher (20 à 30 € le kilo), léger, facile à imprimer, et il n'y a pas de moule à payer, ce qui compte pour une pièce changée tous les six mois. Son point faible, c'est le vieillissement : il ramollit vers 55 à 60 °C. La fatigue reste à creuser au Bloc 2, et l'entonnoir est prêt à être relancé avec ce filtre en plus."
+              ],
+              "chiffres": [
+                {
+                  "valeur": "Re ≥ 60 MPa",
+                  "label": "premier filtre"
+                },
+                {
+                  "valeur": "11 → 3",
+                  "label": "matériaux après indice puis environnement"
+                },
+                {
+                  "valeur": "PLA",
+                  "label": "matériau retenu, imprimé en FDM"
+                }
+              ],
+              "competences": [
+                "Sélection des matériaux (méthode Ashby)",
+                "Indices de performance",
+                "Choix de procédé"
+              ],
+              "outils": [
+                "Granta EduPack"
+              ],
+              "livrables": [
+                {
+                  "titre": "Rapport de TP Granta",
+                  "statut": "rendu",
+                  "date": "27/10/2026"
+                }
+              ],
+              "images": [],
+              "enBref": "Granta a réduit toute la base à 3 matériaux. On a pris le PLA en FDM : pas cher, facile à imprimer, et pas de moule."
+            },
+            {
+              "id": "flexion",
+              "titre": "Essai de flexion 3 points sur PLA imprimé",
+              "module": "MDSI · Essais mécaniques",
+              "date": "05/10/2026",
+              "texte": [
+                "Les valeurs du TD supposaient un PLA idéal. Or une pièce imprimée est anisotrope : tout dépend du sens des filaments et de l'adhésion entre couches. On a donc testé des éprouvettes imprimées en flexion 3 points, selon une version simplifiée de l'ISO 178, puis converti les courbes effort-déplacement en contrainte-déformation.",
+                "Résultat : l'orientation YZ, avec les filaments dans la longueur, est la plus résistante. On mesure E ≈ 2 985 MPa et Re ≈ 94 MPa, un peu sous les 101,3 MPa supposés au calcul. Conséquence directe pour le pied : on l'imprimera en YZ, avec plus de parois et un remplissage faible près de la fibre neutre, là où la matière travaille peu."
+              ],
+              "chiffres": [
+                {
+                  "valeur": "E ≈ 2 985 MPa",
+                  "label": "module mesuré (YZ)"
+                },
+                {
+                  "valeur": "Re ≈ 94 MPa",
+                  "label": "limite mesurée (YZ)"
+                },
+                {
+                  "valeur": "7",
+                  "label": "essais exploités"
+                }
+              ],
+              "competences": [
+                "Essai normalisé (ISO 178)",
+                "Traitement de données d'essai",
+                "Anisotropie du FDM"
+              ],
+              "outils": [
+                "Machine de traction-flexion",
+                "Excel"
+              ],
+              "livrables": [
+                {
+                  "titre": "Rapport de TP flexion 3 points",
+                  "statut": "rendu",
+                  "date": "Oct. 2026"
+                }
+              ],
+              "images": [],
+              "enBref": "Les essais montrent qu'il faut imprimer avec les filaments dans la longueur (YZ) : E ≈ 2 985 MPa, Re ≈ 94 MPa."
+            },
+            {
+              "id": "cao",
+              "titre": "Modélisation CAO et simulation",
+              "module": "MDSI · 3DExperience",
+              "date": "Oct. 2026",
+              "texte": [
+                "Dans 3DExperience, on a dessiné une esquisse paramétrée pilotée par trois cotes : petite section, grande section et longueur du pied. Changer de pointure, c'est changer ces valeurs. On a ajouté des congés sur les arêtes contre les concentrations de contraintes, et un bloc à quatre trous pour l'adaptateur standard.",
+                "La simulation donne 23,5 mm de flèche sous la charge de marche, 21,9 MPa en marche normale et 87,8 MPa à quatre fois le poids. Le calcul poutre prévoyait 78 MPa : même ordre de grandeur, la simulation voit simplement le vrai coin entre la colonne et le pied. Avec le Re mesuré en YZ, la marge tombe à environ 1,07. C'est juste, donc il faudra le prouver sur une vraie pièce."
+              ],
+              "chiffres": [
+                {
+                  "valeur": "3",
+                  "label": "paramètres pilotent la forme"
+                },
+                {
+                  "valeur": "23,5 mm",
+                  "label": "flèche sous charge de marche"
+                },
+                {
+                  "valeur": "21,9 MPa",
+                  "label": "σ max en marche normale"
+                },
+                {
+                  "valeur": "87,8 MPa",
+                  "label": "σ max à 4 × le poids"
+                }
+              ],
+              "competences": [
+                "CAO paramétrée",
+                "Simulation par éléments finis",
+                "Analyse critique des résultats"
+              ],
+              "outils": [
+                "3DExperience (CATIA)",
+                "SIMULIA"
+              ],
+              "livrables": [
+                {
+                  "titre": "Modèle 3D paramétré (STL, GLB)",
+                  "statut": "rendu",
+                  "date": "Oct. 2026"
+                }
+              ],
+              "modele3d": {
+                "src": "models/pied-a.glb",
+                "fallback": "img/s1-cao-contraintes.png",
+                "legende": "Pied prothétique, version A. Faites tourner le modèle à la souris ou au doigt."
+              },
+              "images": [
+                {
+                  "src": "img/s1-cao-esquisse.png",
+                  "legende": "Esquisse paramétrée (cotes en mm) : colonne de 110 mm, pied de 220 mm, sections de 19 et 6,5 mm."
+                },
+                {
+                  "src": "img/s1-cao-contraintes-4x.png",
+                  "legende": "Contrainte de Von Mises à 4 × le poids : 87,8 MPa au maximum, dans le coin colonne-pied et sur le dessus de la lame."
+                },
+                {
+                  "src": "img/s1-cao-fleche-marche.png",
+                  "legende": "Déplacement sous la charge de marche : 23,5 mm en bout de pied, pour 23,2 mm visés."
+                }
+              ],
+              "enBref": "Le modèle est piloté par 3 cotes, donc adaptable à chaque pointure. La simulation confirme le calcul : 23,5 mm de flèche, 87,8 MPa au pire."
+            },
+            {
+              "id": "elements-finis",
+              "titre": "Méthode des éléments finis",
+              "module": "MDSI · MATLAB et Abaqus",
+              "date": "Nov. 2026",
+              "texte": [
+                "Pour comprendre ce que fait un logiciel de simulation, on a programmé la méthode nous-mêmes sous MATLAB sur un treillis plan de quinze barres : matrices de rigidité élémentaires, assemblage, conditions aux limites, résolution de K·U = F. Puis on a refait le même calcul dans Abaqus.",
+                "Les deux donnent la même solution, à quelques millionièmes de millimètre près. Ce qu'on retient surtout, c'est qu'il faut savoir lire les résultats. Abaqus donne les contraintes moyennées aux nœuds, et au nœud 2 la moyenne valait zéro alors que les barres étaient chargées à ± 0,384 MPa. On a dû repartir des extrémités du treillis pour retrouver l'effort de chaque barre. Ce sera encore plus vrai sur la lame du pied, avec un vrai maillage."
+              ],
+              "chiffres": [
+                {
+                  "valeur": "15",
+                  "label": "barres, 9 nœuds"
+                },
+                {
+                  "valeur": "< 5·10⁻⁶ mm",
+                  "label": "écart MATLAB / Abaqus"
+                },
+                {
+                  "valeur": "0,233 mm",
+                  "label": "plus grande flèche (nœud 4)"
+                }
+              ],
+              "competences": [
+                "Programmation de la MEF",
+                "Validation croisée de modèles",
+                "Lecture critique d'un post-traitement"
+              ],
+              "outils": [
+                "MATLAB",
+                "Abaqus"
+              ],
+              "livrables": [
+                {
+                  "titre": "Rapport de TP éléments finis n°1",
+                  "statut": "rendu",
+                  "date": "Nov. 2026"
+                }
+              ],
+              "images": [
+                {
+                  "src": "img/s1-ef-abaqus.png",
+                  "legende": "Treillis de quinze barres sous Abaqus, déformée amplifiée."
+                }
+              ],
+              "enBref": "On a codé la méthode des éléments finis sous MATLAB et retrouvé exactement les résultats d'Abaqus."
+            },
+            {
+              "id": "bilan",
+              "titre": "Bilan du Bloc 1 et suite du projet",
+              "module": "Soutenance · Bloc 2",
+              "date": "Oct. – déc. 2026",
+              "texte": [
+                "On a présenté le Bloc 1 en soutenance le 17 octobre, à deux voix. Le pied tient ses deux objectifs principaux sur le papier, mais plusieurs choses manquent : la marge est mince, notre modèle ne charge que la pointe alors qu'à la marche l'effort roule du talon vers les orteils, le talon n'est pas encore dessiné et la fatigue n'a pas été testée. Enfin, la forme est très carrée, peu engageante pour un enfant et sans doute pas idéale pour dérouler le pas.",
+                "Le Bloc 2, jusqu'au 8 décembre, transforme le dessin en pièce. D'abord la métrologie, pour mesurer l'écart entre la CAO et le pied imprimé et régler les paramètres d'impression. Puis l'essai du premier pied. En parallèle, on redessine le talon, on arrondit les formes et on allège le pied en éloignant la matière de la fibre neutre."
+              ],
+              "chiffres": [
+                {
+                  "valeur": "Atteint",
+                  "label": "flèche de 8° en plantiflexion"
+                },
+                {
+                  "valeur": "Atteint",
+                  "label": "résistance à 4 × P (marge ≈ 1,07)"
+                },
+                {
+                  "valeur": "À faire",
+                  "label": "talon, 15° de dorsiflexion"
+                },
+                {
+                  "valeur": "À faire",
+                  "label": "fatigue sur ≈ 6 mois d'usage"
+                }
+              ],
+              "competences": [
+                "Présentation orale",
+                "Esprit critique",
+                "Planification"
+              ],
+              "outils": [
+                "PowerPoint"
+              ],
+              "livrables": [
+                {
+                  "titre": "Soutenance Bloc 1 (10 min + 8 min de questions)",
+                  "statut": "rendu",
+                  "date": "17/10/2026"
+                },
+                {
+                  "titre": "Executive summary en anglais",
+                  "statut": "rendu",
+                  "date": "10/11/2026"
+                },
+                {
+                  "titre": "Présentation finale Bloc 2",
+                  "statut": "a-venir",
+                  "date": "08/12/2026"
+                }
+              ],
+              "images": [],
+              "enBref": "Les objectifs sont tenus sur le papier, avec une marge mince. Au Bloc 2 : imprimer, mesurer, tester et dessiner le talon."
+            }
+          ],
+          "plan": {
+            "image": "img/s1-plan-pied.svg",
+            "titre": "Le pied, repère par repère",
+            "consigne": "Cliquez sur un repère pour aller à l'étape du projet qui a fixé ce détail.",
+            "reperes": [
+              {
+                "id": "A",
+                "x": 26.9,
+                "y": 21.5,
+                "label": "Bloc à 4 trous pour l'adaptateur standard, exigé par le cahier des charges",
+                "partie": "veille-cdcf"
+              },
+              {
+                "id": "B",
+                "x": 19.0,
+                "y": 44.8,
+                "label": "PLA imprimé en FDM, retenu dans Granta EduPack",
+                "partie": "materiau"
+              },
+              {
+                "id": "C",
+                "x": 50.0,
+                "y": 75.0,
+                "label": "Lame conique, de 19 mm à la cheville à 6,5 mm en pointe, calculée par la théorie des poutres",
+                "partie": "rdm"
+              },
+              {
+                "id": "D",
+                "x": 67.2,
+                "y": 76.2,
+                "label": "Filaments dans la longueur (impression YZ), choisis après l'essai de flexion",
+                "partie": "flexion"
+              },
+              {
+                "id": "E",
+                "x": 85.9,
+                "y": 61.0,
+                "label": "Flèche de 23,5 mm en pointe en simulation, pour 23,2 mm visés",
+                "partie": "cao"
+              },
+              {
+                "id": "F",
+                "x": 12.8,
+                "y": 77.3,
+                "label": "Talon pas encore dessiné : prévu au Bloc 2",
+                "partie": "bilan"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "nom": "Semestre 2",
+      "periode": "Févr. – juil. 2027",
+      "annee": "1re année",
+      "statut": "a-venir",
+      "intro": "",
+      "projets": []
+    },
+    {
+      "id": "s3",
+      "nom": "Semestre 3",
+      "periode": "Sept. 2027 – janv. 2028",
+      "annee": "2e année",
+      "statut": "a-venir",
+      "intro": "",
+      "projets": []
+    },
+    {
+      "id": "s4",
+      "nom": "Semestre 4",
+      "periode": "Févr. – juil. 2028",
+      "annee": "2e année",
+      "statut": "a-venir",
+      "intro": "",
+      "projets": []
+    },
+    {
+      "id": "s5",
+      "nom": "Semestre 5",
+      "periode": "Sept. 2028 – janv. 2029",
+      "annee": "3e année",
+      "statut": "a-venir",
+      "intro": "",
+      "projets": []
+    },
+    {
+      "id": "s6",
+      "nom": "Semestre 6",
+      "periode": "Févr. – juil. 2029",
+      "annee": "3e année",
+      "statut": "a-venir",
+      "intro": "",
+      "projets": []
+    }
+  ]
+}
