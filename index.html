@@ -422,7 +422,7 @@ footer .wrap { display: flex; justify-content: space-between; gap: 12px; flex-wr
     initPlan();
     if (partId) {
       var el = document.getElementById(base + "-" + partId);
-      if (el) requestAnimationFrame(function () { el.scrollIntoView(); });
+      if (el) { el.scrollIntoView(); setTimeout(function () { el.scrollIntoView(); }, 400); }
     } else {
       window.scrollTo(0, 0);
     }
@@ -546,6 +546,9 @@ footer .wrap { display: flex; justify-content: space-between; gap: 12px; flex-wr
     document.querySelectorAll("model-viewer[data-b64]").forEach(function (mv) {
       var src = mv.getAttribute("data-b64");
       mv.addEventListener("error", function () { modelFallback(mv); });
+      mv.addEventListener("load", function () {
+        try { mv.model.materials.forEach(function (m) { m.pbrMetallicRoughness.setBaseColorFactor([0.62, 0.36, 0.56, 1]); m.pbrMetallicRoughness.setRoughnessFactor(0.55); }); } catch (e) {}
+      });
       if (/\.glb$/i.test(src)) { mv.setAttribute("src", src); setTimeout(function () { if (!customElements.get("model-viewer")) modelFallback(mv); }, 8000); return; }
       var p = modelCache[src] || (modelCache[src] = fetch(src).then(function (r) { if (!r.ok) throw 0; return r.text(); }).then(function (t) {
         var bin = atob(t.trim()), u = new Uint8Array(bin.length);
