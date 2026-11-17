@@ -781,7 +781,7 @@ footer { padding-bottom: 36px; }
     var h = pr.hero || {};
     app.innerHTML =
       '<section class="hero4">' +
-        '<div class="h4-media">' + (h.video ? '<video class="h4-vid" autoplay muted loop playsinline preload="auto" poster="' + esc(h.image) + '" aria-label="' + esc(h.alt) + '"><source src="' + esc(h.video) + '" type="video/mp4"></video>' : '<img class="h4-vid" src="' + esc(h.image) + '" alt="' + esc(h.alt) + '">') + "</div>" +
+        '<div class="h4-media">' + (h.video ? '<video class="h4-vid" autoplay muted playsinline preload="auto" poster="' + esc(h.image) + '" aria-label="' + esc(h.alt) + '"><source src="' + esc(h.video) + '" type="video/mp4"></video>' : '<img class="h4-vid" src="' + esc(h.image) + '" alt="' + esc(h.alt) + '">') + "</div>" +
         '<div class="h4-text"><h1 class="mega">' + esc(pr.nom) + '<span class="dot">.</span></h1>' +
           '<p class="hero-role">' + esc(pr.titre) + '</p><p class="lead">' + esc(pr.accroche) + "</p>" +
           '<div class="cta">' + (cur ? '<a class="btn primary" href="#' + key + '">Voir le projet en cours</a>' : "") + '<a class="btn" href="#accueil" data-scroll="parcours">Mon parcours</a>' + links + "</div></div>" +
