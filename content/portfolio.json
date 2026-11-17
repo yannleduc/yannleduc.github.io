@@ -794,12 +794,12 @@
           "recitSurPage": true,
           "resume": "Une batterie de voiture électrique qui prend feu brûle à l'intérieur d'un carter fermé : l'eau projetée de l'extérieur ne l'atteint pas. Le SEB est l'équipement que SCORPE développe pour les sapeurs-pompiers afin d'amener l'eau là où elle sert. J'y ai réalisé environ 80 % du travail, de la conception aux essais, avec des échecs formateurs et un produit qui a fini par tenir ses promesses.",
           "hero": {
-            "image": "media/scorpe/seb-rendu.webp",
-            "alt": "Rendu 3D du SEB, châssis noir et vert sur roues"
+            "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_203532_51fede33-723b-4ab6-b51b-9e3b8bf13659_min.webp",
+            "alt": "Rendu studio du SEB, châssis noir et vert sur roues"
           },
           "couverture": {
-            "image": "media/scorpe/seb-rendu.webp",
-            "alt": "Rendu 3D du SEB, châssis noir et vert sur roues"
+            "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_203532_51fede33-723b-4ab6-b51b-9e3b8bf13659_min.webp",
+            "alt": "Rendu studio du SEB, châssis noir et vert sur roues"
           },
           "chiffres": [
             {
@@ -961,8 +961,8 @@
                 "J'ai ensuite adapté la maquette 3D, réalisé les plans de tôlerie et d'usinage, demandé les devis et passé les commandes. Le montage du premier prototype complet a été compliqué, et j'ai noté chaque difficulté pour la version suivante. De mars à mai, de nouvelles versions ont été commandées pour être prêtes avant le salon. Le boîtier de commande et la télécommande, qui permettent de piloter le SEB à distance, ont suivi le même chemin : maquette 3D, puis pièce réelle."
               ],
               "banniere": {
-                "image": "media/scorpe/seb-boitier.webp",
-                "alt": "Boîtier de commande du SEB, coque noire et cadre vert"
+                "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_203532_51fede33-723b-4ab6-b51b-9e3b8bf13659_min.webp",
+                "alt": "Rendu studio du SEB complet"
               },
               "chiffres": [],
               "competences": [
