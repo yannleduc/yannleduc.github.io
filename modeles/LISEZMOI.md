@@ -9,7 +9,10 @@ Le site ne se modifie qu'à un endroit : `content/portfolio.json`. La page `inde
 |---|---|
 | `modeles/partie.json` | Une étape de projet avec **tous** les champs possibles (texte, chiffres, galerie, modèle 3D, calculateur, livrables). |
 | `modeles/projet.json` | Un projet complet (couverture, chiffres, blocs, récit court, plan cliquable, parties). |
-| `modeles/images.json` | Les 29 visuels déjà générés (Higgsfield), avec description et endroit où ils servent. Réutilisables tels quels. |
+| `modeles/images.json` | Les 47 visuels générés (Higgsfield), stockés dans `media/ia/` : 13 couvertures de projet (16:9), 14 bannières d'étape (21:9), plus ceux du pied et de SCORPE. Description, usage et endroit où ils servent déjà. |
+| `modeles/entreprise.json` | Une nouvelle entreprise (onglet à côté de SCORPE) avec ses propres couleurs. |
+| `img/modele/attente-am.svg`, `attente-entreprise.svg` | Images d'attente sobres (sans IA) quand on n'a encore aucune photo. |
+| `outils/rapatrier.py` | Rapatrie dans `media/ia/` tout visuel encore hébergé chez Higgsfield (déjà fait le 17/11/2026 ; à relancer seulement si un nouveau lien Higgsfield est ajouté). |
 | `outils/photo.py` | Prépare une photo : rognage, format (16:9, 21:9…), largeur 1600 px, WebP. |
 | `outils/verifier.py` | Vérifie le contenu avant de publier (champs, images, liens, textes « À compléter »). |
 
@@ -51,15 +54,25 @@ Un bandeau jaune « Aperçu non publié » s'affiche en haut de ces pages.
 ### Ajouter une photo réelle des rapports PDF
 Les images extraites des rapports ont des coins noirs décoratifs : `python3 outils/photo.py image.png media/scorpe/nom.webp --marge 0.115`. Pour un plan avec un cadre fin : `--marge 0.025`.
 
+## Choisir un visuel générique
+
+Couvertures (16:9) : engrenages, pièce usinée, treillis, échangeur, vérin, pièce imprimée lattice, tôle pliée, carte électronique, ossature de bâtiment, béton armé, module à vis à billes, pompe en coupe, échantillons de matériaux.
+Bannières d'étape (21:9) : croquis (contexte), post-it (analyse du besoin), écran CAO (conception), simulation MEF, programmation, fraiseuse CN (fabrication), assemblage sur établi (prototype), machine de traction (essais), métrologie, planning (gestion de projet), table de plans (bilan), mains autour d'une pièce (travail en équipe), rapport et carnet (rédaction), salle de soutenance (oral).
+Règle : une même image n'est utilisée qu'une fois par projet ; dès qu'une vraie photo existe, elle remplace le visuel générique.
+
+## Photos personnelles : pour rester cohérent
+
+Fond clair et uni (mur, table blanche), lumière du jour, pièce bien nette au centre ou sur la droite, pas de visages reconnaissables sans accord. Puis `outils/photo.py` (16:9 pour une couverture, 21:9 pour une bannière). Ranger dans `img/sN/` (Arts et Métiers) ou `media/<entreprise>/`.
+
 ## Charte
 
 - Arts et Métiers : violet `#80276C`, jaune `#FFA300`, fond blanc.
-- SCORPE : vert citron `#9ED05F` et noir, fond blanc, texte vert foncé `#3F7413`.
+- SCORPE : RAL 6018 vert jaune `#57A639` et noir, fond blanc, texte vert foncé `#3D7A26` (lisible sur blanc). Ces couleurs sont dans le champ `couleurs` de l'entreprise ; une autre entreprise peut avoir les siennes.
 - Polices : Zilla Slab (titres), Source Sans 3 (texte).
 - Titre du site « Yann Leduc. » à garder.
-- Visuels IA : pas de mention en bas de page. Un petit point de couleur (violet Arts et Métiers, vert SCORPE) s'affiche automatiquement dans le coin bas droit de toute image ou vidéo servie par le CDN Higgsfield (`d8j0ntlcm91z4.cloudfront.net`). Les vraies photos sont dans le dépôt (`img/`, `media/`) et n'ont pas de point.
+- Visuels IA : pas de mention en bas de page. Un petit point de 7 px (violet Arts et Métiers, couleur de l'entreprise sinon) s'affiche automatiquement dans le coin bas droit de toute image ou vidéo rangée dans `media/ia/`. **Ne jamais mettre une vraie photo dans `media/ia/`**, ni un visuel IA ailleurs.
 
-## Style des visuels générés (si on en refait)
+## Style des visuels générés (si on en refait un jour, avec n'importe quel générateur)
 
 Couvertures : « Clean studio photo of [objet] with purple parts and small yellow details, white background, soft light, object on the right side, empty white space on the left, photorealistic, no text », en 16:9.
 Bannières : même palette, 21:9, vue de dessus ou plan rapproché d'un poste de travail.
