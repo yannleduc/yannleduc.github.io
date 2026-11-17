@@ -882,7 +882,7 @@ footer { padding-bottom: 36px; }
       var src = mv.getAttribute("data-b64");
       mv.addEventListener("error", function () { modelFallback(mv); });
       mv.addEventListener("load", function () {
-        try { mv.model.materials.forEach(function (m) { m.pbrMetallicRoughness.setBaseColorFactor([0.62, 0.36, 0.56, 1]); m.pbrMetallicRoughness.setRoughnessFactor(0.55); }); } catch (e) {}
+        try { mv.model.materials.forEach(function (m) { m.pbrMetallicRoughness.setBaseColorFactor([0.30, 0.06, 0.24, 1]); m.pbrMetallicRoughness.setRoughnessFactor(0.55); }); } catch (e) {}
       });
       if (/\.glb$/i.test(src)) { mv.setAttribute("src", src); setTimeout(function () { if (!customElements.get("model-viewer")) modelFallback(mv); }, 8000); return; }
       var p = modelCache[src] || (modelCache[src] = fetch(src).then(function (r) { if (!r.ok) throw 0; return r.text(); }).then(function (t) {
