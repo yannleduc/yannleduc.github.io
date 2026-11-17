@@ -436,6 +436,67 @@ footer .small { color: #f0e2ec; text-align: right; display: grid; gap: 4px; }
 @media (max-width: 920px) { .lab { grid-template-columns: 1fr; gap: 28px; padding-top: 80px; } .lab .hero-drawing { order: -1; } }
 @media (max-width: 640px) { .lab-read dd { font-size: 23px; } .lab .hero-drawing { margin: 0 -18px; } .lab .drawing { border-radius: 0; border-left: 0; border-right: 0; } }
 
+
+/* ==== Version 5 : pages Accueil / Projets / SCORPE ==== */
+.t-scorpe { --accent: #138a3e; --accent-deep: #0b5e29; --accent-soft: #e5f3ea; --gold: #111111; --gold-ink: #111111; --gold-soft: #ececec; --tint: #f5f7f5; }
+body.t-scorpe .brand span { color: #111; }
+/* Navigation */
+.mainnav { display: flex; gap: 4px; margin-left: auto; }
+.mainnav a { font-weight: 600; font-size: 15.5px; color: var(--muted); text-decoration: none; padding: 8px 12px; border-radius: 999px; min-height: 36px; display: inline-flex; align-items: center; transition: color .2s var(--ease), background .2s var(--ease); }
+.mainnav a:hover { color: var(--ink); background: var(--tint); }
+.mainnav a[aria-current="page"] { color: var(--accent); }
+.tabs { margin-left: 0; align-items: center; }
+.tab-ent { color: #138a3e; }
+.tab-ent[aria-current="page"] { background: #138a3e !important; color: #fff !important; }
+.tab-sep { width: 1px; height: 18px; background: var(--rule); margin: 0 4px; }
+@media (max-width: 760px) {
+  .top .wrap { row-gap: 6px; }
+  .mainnav { margin-left: auto; }
+  .tabs { order: 3; width: 100%; justify-content: space-between; overflow-x: auto; }
+}
+
+/* Accueil : en bref */
+.bref-grid { margin: 8px 0 0; display: grid; grid-template-columns: repeat(3, 1fr); border-top: 2px solid var(--ink); }
+.bref-item { padding: 18px 22px 18px 0; }
+.bref-item + .bref-item { padding-left: 22px; border-left: 1px solid var(--rule); }
+.bref-item dt { font-size: 14px; color: var(--muted); }
+.bref-item dd { margin: 4px 0 0; font-family: var(--font-display); font-weight: 700; font-size: 21px; line-height: 1.25; }
+@media (max-width: 760px) { .bref-grid { grid-template-columns: 1fr; } .bref-item + .bref-item { padding-left: 0; border-left: 0; border-top: 1px solid var(--rule); } }
+
+/* Cartes projet */
+.pcards { display: grid; grid-template-columns: repeat(2, 1fr); gap: 28px; }
+.pcard { display: grid; grid-template-rows: auto 1fr; text-decoration: none; color: var(--ink); border-radius: 14px; overflow: hidden; background: #fff; border: 1px solid var(--rule); transition: border-color .25s var(--ease), transform .35s var(--ease); }
+.pcard:hover { border-color: var(--accent); transform: translateY(-3px); }
+.pc-pic { display: block; background: var(--tint); overflow: hidden; }
+.pc-pic img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; transition: transform .8s var(--ease); }
+.pcard:hover .pc-pic img { transform: scale(1.03); }
+.pc-body { display: grid; gap: 8px; align-content: start; padding: 22px 24px 26px; border-top: 4px solid var(--accent); }
+.pc-where { font-size: 14.5px; font-weight: 600; color: var(--accent); }
+.pc-title { font-family: var(--font-display); font-weight: 700; font-size: clamp(24px, 2.4vw, 31px); line-height: 1.12; }
+.pc-sub { color: var(--muted); font-size: 16.5px; }
+.pc-go { font-weight: 700; color: var(--accent); margin-top: 6px; }
+.more { margin-top: 28px; }
+.sem-cards { margin-top: 40px; }
+@media (max-width: 760px) { .pcards { grid-template-columns: 1fr; } }
+@media (prefers-reduced-motion: reduce) { .pcard, .pcard:hover { transform: none; } }
+
+/* Page Projets */
+.page-hero { display: grid; gap: 16px; padding: 64px 0 0; max-width: 820px; }
+.page-hero h1 { font-size: clamp(64px, 10vw, 140px); line-height: .9; color: var(--accent); letter-spacing: -0.02em; }
+.page-hero + .story { padding-top: 72px; }
+
+/* Page entreprise (SCORPE) */
+.ent-head { display: grid; gap: 18px; padding: 40px 0 56px; min-width: 0; }
+.ent-head > div { min-width: 0; }
+.ent-word { font-family: var(--font-display); font-weight: 700; font-size: clamp(58px, 17vw, 240px); line-height: .8; letter-spacing: -0.03em; color: var(--ink); margin: 0; }
+.ent-word::after { content: "."; color: var(--accent); }
+.ent-head h1 { font-size: clamp(32px, 4vw, 50px); color: var(--accent); margin: 6px 0 12px; }
+.ent-facts { margin-top: 26px; max-width: 760px; grid-template-columns: repeat(3, 1fr); }
+@media (max-width: 640px) { .ent-facts { grid-template-columns: 1fr 1fr; } }
+
+/* Parcours : point vert pour SCORPE */
+.path li.t-scorpe::before { border-color: #138a3e; }
+
 /* ---- Ajouts checklist 10K ---- */
 .skip { position: absolute; left: 12px; top: -60px; z-index: 60; background: var(--accent); color: #fff; padding: 10px 16px; border-radius: 999px; font-weight: 600; text-decoration: none; transition: top .2s var(--ease); }
 .skip:focus { top: 12px; }
@@ -510,12 +571,12 @@ footer { padding-bottom: 36px; }
 <header class="top">
   <div class="wrap">
     <a class="brand" href="#accueil">Yann Leduc<span>.</span></a>
-    <span class="nav-label">Semestres</span><nav class="tabs" id="tabs" aria-label="Semestres"></nav>
+    <nav class="mainnav" id="mainnav" aria-label="Pages"></nav><nav class="tabs" id="tabs" aria-label="Parcours"></nav>
   </div>
 </header>
 <main id="main"><div class="wrap" id="app" tabindex="-1"><p class="loading">Chargement du portfolio…</p><noscript><p>Ce portfolio a besoin de JavaScript pour s'afficher. Activez-le dans votre navigateur puis rechargez la page.</p></noscript></div></main>
 <footer><div class="wrap"><a class="big" href="#accueil">Yann Leduc<span>.</span></a><div class="small"><span>Apprenti ingénieur à Arts et Métiers</span><span id="foot-right"></span></div></div>
-<div class="wrap ai-note"><p>Images générées par IA à partir de la CAO du projet : la vidéo d'en-tête, les cinq vues du récit « De la feuille à la pièce » (mise en plan, maillage, contraintes, impression, pièce), le rendu du pied et les illustrations en tête de chaque étape. La pièce n'est pas encore imprimée. Les captures 3DExperience et Abaqus, le plan coté, les calculs et le modèle 3D viennent directement des projets.</p></div></footer>
+<div class="wrap ai-note"><p>Images générées par IA. Pied prothétique : la vidéo d'en-tête, les cinq vues du récit (mise en plan, maillage, contraintes, impression, pièce), le rendu du pied et les illustrations en tête de chaque étape, créés à partir de la CAO ; la pièce n'est pas encore imprimée. SCORPE : toutes les images sont des illustrations d'ambiance (batterie, foret, véhicule, composants, salon, pièces imprimées) et ne montrent pas le SEB, qui reste confidentiel. Les captures 3DExperience et Abaqus, le plan coté, les calculs et le modèle 3D viennent directement des projets.</p></div></footer>
 
 <div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Image agrandie">
   <button class="x" id="lb-close" type="button">Fermer ✕</button>
@@ -561,10 +622,11 @@ footer { padding-bottom: 36px; }
     return p.image || "";
   }
 
+  function groups() { return (data.entreprises || []).concat(data.semestres); }
   function buildRoutes() {
-    routes = { accueil: { view: "home" } };
-    data.semestres.forEach(function (s) {
-      routes[s.id] = { view: "sem", s: s };
+    routes = { accueil: { view: "home" }, projets: { view: "projets" } };
+    groups().forEach(function (s) {
+      routes[s.id] = { view: s.type === "entreprise" ? "ent" : "sem", s: s };
       (s.projets || []).forEach(function (p) {
         var pk = s.id + "-" + p.id;
         routes[pk] = { view: "proj", s: s, p: p };
@@ -575,8 +637,15 @@ footer { padding-bottom: 36px; }
     });
   }
 
-  function renderTabs(active) {
-    document.getElementById("tabs").innerHTML = data.semestres.map(function (s, i) {
+  function renderTabs(active, page) {
+    document.getElementById("mainnav").innerHTML =
+      '<a href="#accueil"' + (page === "home" ? ' aria-current="page"' : "") + ">Accueil</a>" +
+      '<a href="#projets"' + (page === "projets" ? ' aria-current="page"' : "") + ">Projets</a>";
+    var ents = (data.entreprises || []).map(function (e) {
+      var cur = active === e.id ? ' aria-current="page"' : "";
+      return '<a class="tab tab-ent" href="#' + e.id + '"' + cur + ' title="' + esc(e.nom + ", " + e.periode) + '">' + esc(e.onglet || e.nom) + "</a>";
+    }).join("");
+    document.getElementById("tabs").innerHTML = ents + (ents ? '<span class="tab-sep" aria-hidden="true"></span>' : "") + data.semestres.map(function (s, i) {
       var cur = active === s.id ? ' aria-current="page"' : "";
       var empty = (s.projets || []).length ? "" : " empty";
       return '<a class="tab' + empty + '" href="#' + s.id + '"' + cur + ' title="' + esc(s.nom + ", " + s.periode) + '">S' + (i + 1) + "</a>";
@@ -585,7 +654,7 @@ footer { padding-bottom: 36px; }
 
   function allTags() {
     var comp = [], tools = [];
-    data.semestres.forEach(function (s) {
+    groups().forEach(function (s) {
       (s.projets || []).forEach(function (p) {
         (p.parties || []).forEach(function (pa) {
           (pa.competences || []).forEach(function (c) { if (comp.indexOf(c) < 0) comp.push(c); });
@@ -771,36 +840,72 @@ footer { padding-bottom: 36px; }
     document.getElementById("replay").addEventListener("click", function () { m.value = 27; upd(true); playDrawing(box); });
   }
 
+  function rulerObserve() {
+    var ru = document.querySelector(".ruler");
+    if (!ru) return;
+    if ("IntersectionObserver" in window) {
+      var io = new IntersectionObserver(function (es) { es.forEach(function (e) { if (e.isIntersecting) { ru.classList.add("in"); io.disconnect(); } }); }, { threshold: .35 });
+      io.observe(ru);
+    } else { ru.classList.add("in"); }
+  }
+  function projCardHTML(g, p, big) {
+    var c = p.couverture || p.hero || {};
+    return '<a class="pcard' + (g.theme === "scorpe" ? " t-scorpe" : "") + (big ? " big" : "") + '" href="#' + g.id + "-" + p.id + '">' +
+      '<span class="pc-pic">' + (c.image ? '<img decoding="async" loading="lazy" src="' + esc(c.image) + '" alt="' + esc(c.alt) + '">' : "") + "</span>" +
+      '<span class="pc-body"><span class="pc-where">' + esc(g.carte || g.nom) + ", " + esc(lc(p.periode)) + "</span>" +
+      '<span class="pc-title">' + esc(p.titre) + '</span><span class="pc-sub">' + esc(p.sousTitre) + '</span><span class="pc-go">Ouvrir le projet</span></span></a>';
+  }
+
   function viewHome() {
-    var pr = data.profil, t = allTags(), cur = currentProject();
-    var key = cur ? cur.s.id + "-" + cur.p.id : "";
+    var pr = data.profil, t = allTags();
+    var h = pr.hero || {};
     var cells = (pr.parcours || []).map(function (c) {
-      return '<li><span class="k">' + esc(c.periode) + '</span><span class="v">' + esc(c.intitule) + "</span>" + (c.detail ? '<span class="d">' + esc(c.detail) + "</span>" : "") + "</li>";
+      return '<li' + (c.theme ? ' class="t-' + esc(c.theme) + '"' : "") + '><span class="k">' + esc(c.periode) + '</span><span class="v">' + esc(c.intitule) + "</span>" + (c.detail ? '<span class="d">' + esc(c.detail) + "</span>" : "") + "</li>";
     }).join("");
     var links = (pr.liens || []).map(function (l) { return '<a class="btn" href="' + esc(l.url) + '" rel="noopener">' + esc(l.label) + "</a>"; }).join("");
-    var h = pr.hero || {};
+    var feats = [];
+    groups().forEach(function (g) { (g.projets || []).forEach(function (p) { if (p.phare) feats.push(projCardHTML(g, p, true)); }); });
+    var bref = (pr.enBref || []).map(function (b) { return '<div class="bref-item"><dt>' + esc(b.k) + "</dt><dd>" + esc(b.v) + "</dd></div>"; }).join("");
     app.innerHTML =
       '<section class="hero4">' +
         '<div class="h4-media">' + (h.video ? '<video class="h4-vid" autoplay muted playsinline preload="auto" poster="' + esc(h.image) + '" aria-label="' + esc(h.alt) + '"><source src="' + esc(h.video) + '" type="video/mp4"></video>' : '<img class="h4-vid" src="' + esc(h.image) + '" alt="' + esc(h.alt) + '">') + "</div>" +
         '<div class="h4-text"><h1 class="mega">' + esc(pr.nom) + '<span class="dot">.</span></h1>' +
           '<p class="hero-role">' + esc(pr.titre) + '</p><p class="lead">' + esc(pr.accroche) + "</p>" +
-          '<div class="cta">' + (cur ? '<a class="btn primary" href="#' + key + '">Voir le projet en cours</a>' : "") + '<a class="btn" href="#accueil" data-scroll="parcours">Mon parcours</a>' + links + "</div></div>" +
+          '<div class="cta"><a class="btn primary" href="#projets">Voir mes projets</a><a class="btn" href="#accueil" data-scroll="parcours">Mon parcours</a>' + links + "</div></div>" +
       "</section>" +
+      (bref ? '<dl class="bref-grid">' + bref + "</dl>" : "") +
+      '<section class="sec" aria-labelledby="h-feat"><div class="sec-head"><h2 id="h-feat">Projets phares</h2><p>Deux projets, deux contextes : l\'entreprise et l\'école.</p></div><div class="pcards">' + feats.join("") + '</div><p class="more"><a class="btn" href="#projets">Tous les projets et le récit du pied prothétique</a></p></section>' +
+      '<section class="sec two" id="parcours"><div><div class="sec-head"><h2>Parcours</h2></div><ol class="path">' + cells + "</ol></div>" +
+        '<div><div class="sec-head"><h2>Compétences</h2><p>Reprises des projets, mises à jour automatiquement.</p></div>' + skillGroups(t) + "</div></section>";
+  }
+
+  function viewProjets() {
+    var cur = currentProject();
+    var key = cur ? cur.s.id + "-" + cur.p.id : "";
+    var ents = (data.entreprises || []).map(function (e) {
+      return '<section class="sec t-scorpe" aria-labelledby="h-' + e.id + '"><div class="sec-head"><h2 id="h-' + e.id + '">' + esc(e.titreProjets || e.nom) + "</h2><p>" + esc(e.intro) + '</p></div><div class="pcards">' + (e.projets || []).map(function (p) { return projCardHTML(e, p); }).join("") + "</div></section>";
+    }).join("");
+    var semCards = data.semestres.filter(function (s) { return (s.projets || []).length; }).map(function (s) {
+      return (s.projets || []).map(function (p) { return projCardHTML(s, p); }).join("");
+    }).join("");
+    app.innerHTML =
+      '<header class="page-hero"><h1>Projets</h1><p class="lead">Ce que j\'ai conçu, calculé et testé, en entreprise puis à Arts et Métiers. On commence par le projet en cours, raconté en cinq images.</p></header>' +
       (cur ? storyHTML(cur.p.recit, key) : "") +
       (cur ? '<div class="story-cta"><a class="btn primary" href="#' + key + '">Ouvrir le dossier complet du projet</a><span class="small">' + esc(cur.p.equipe) + (cur.p.encadrant ? ", encadré par " + esc(cur.p.encadrant) : "") + "</span></div>" : "") +
       labHTML() +
-      '<section class="sec" aria-labelledby="h-sem"><div class="sec-head"><h2 id="h-sem">Trois ans, six semestres</h2><p>Une page par semestre, complétée au fil des projets.</p></div>' + rulerHTML() + "</section>" +
-      '<section class="sec two" id="parcours"><div><div class="sec-head"><h2>Parcours</h2></div><ol class="path">' + cells + "</ol></div>" +
-        '<div><div class="sec-head"><h2>Compétences</h2><p>Reprises des projets, mises à jour automatiquement.</p></div>' + skillGroups(t) + "</div></section>";
-    var ru = document.querySelector(".ruler");
-    if (ru) {
-      if ("IntersectionObserver" in window) {
-        var io = new IntersectionObserver(function (es) { es.forEach(function (e) { if (e.isIntersecting) { ru.classList.add("in"); io.disconnect(); } }); }, { threshold: .35 });
-        io.observe(ru);
-      } else { ru.classList.add("in"); }
-    }
+      '<section class="sec" aria-labelledby="h-sem"><div class="sec-head"><h2 id="h-sem">À Arts et Métiers</h2><p>Trois ans, six semestres. Chaque semestre a sa page, complétée au fil des projets.</p></div>' + rulerHTML() + (semCards ? '<div class="pcards sem-cards">' + semCards + "</div>" : "") + "</section>" +
+      ents;
+    rulerObserve();
     initStory();
     initLab();
+  }
+
+  function viewEnt(e) {
+    var html = '<nav class="crumbs" aria-label="Fil d\'Ariane"><a href="#accueil">Accueil</a><span aria-hidden="true">/</span><a href="#projets">Projets</a><span aria-hidden="true">/</span><span>' + esc(e.nom) + "</span></nav>" +
+      '<header class="ent-head"><p class="ent-word" aria-hidden="true">' + esc(e.nom) + '</p><div><p class="eyebrow">' + esc(e.periode) + ", " + esc(e.role) + "</p><h1>" + esc(e.titre) + '</h1><p class="lead">' + esc(e.intro) + "</p>" +
+      (e.faits ? '<dl class="facts ent-facts">' + e.faits.map(function (f) { return "<div><dt>" + esc(f.k) + "</dt><dd>" + esc(f.v) + "</dd></div>"; }).join("") + "</dl>" : "") + "</div></header>" +
+      '<div class="pcards">' + (e.projets || []).map(function (p, i) { return projCardHTML(e, p, i === 0); }).join("") + "</div>";
+    app.innerHTML = html;
   }
 
   function skillGroups(t) {
@@ -871,12 +976,14 @@ footer { padding-bottom: 36px; }
         "<div><dt>Période</dt><dd>" + esc(p.periode) + "</dd></div>" +
         "<div><dt>Étapes</dt><dd>" + (p.parties || []).length + "</dd></div></dl></section>" +
       figs(p.chiffres) +
+      (p.recit && p.recitSurPage ? storyHTML(p.recit, base) : "") +
       planHTML(p, base) +
       '<div class="modebar"><span class="lbl">Niveau de lecture</span><div class="seg" role="group" aria-label="Niveau de lecture"><button type="button" data-mode="court">Version 2 minutes</button><button type="button" data-mode="detail">Version détaillée</button></div></div>' +
       '<div class="proj-layout" id="proj-layout"><nav class="steps" aria-label="Étapes du projet"><span class="lbl">Étapes du projet</span>' + steps + "</nav>" +
       '<div class="parts">' + (p.parties || []).map(function (pa, i) { return viewPart(pa, i, base + "-" + pa.id); }).join("") + "</div></div>";
     watchSteps();
     loadModels();
+    if (p.recit && p.recitSurPage) initStory();
     applyMode(getMode());
     initCalc();
     initPlan();
@@ -1053,10 +1160,13 @@ footer { padding-bottom: 36px; }
   function renderRoute() {
     var h = (location.hash || "").replace(/^#/, "") || "accueil";
     var r = routes[h] || routes.accueil;
-    if (r.view === "home") { renderTabs(null); viewHome(); window.scrollTo(0, 0); }
+    document.body.classList.toggle("t-scorpe", !!(r.s && r.s.theme === "scorpe"));
+    if (r.view === "home") { renderTabs(null, "home"); viewHome(); window.scrollTo(0, 0); }
+    else if (r.view === "projets") { renderTabs(null, "projets"); viewProjets(); window.scrollTo(0, 0); }
     else if (r.view === "sem") { renderTabs(r.s.id); viewSem(r.s); window.scrollTo(0, 0); }
+    else if (r.view === "ent") { renderTabs(r.s.id); viewEnt(r.s); window.scrollTo(0, 0); }
     else { renderTabs(r.s.id); viewProj(r.s, r.p, r.part); }
-    document.title = r.view === "home" ? "Yann Leduc, apprenti ingénieur Arts et Métiers" : (r.p ? r.p.titre : r.s.nom) + ", Yann Leduc";
+    document.title = r.view === "home" ? "Yann Leduc, apprenti ingénieur Arts et Métiers" : r.view === "projets" ? "Projets, Yann Leduc" : (r.p ? r.p.titre : r.s.nom) + ", Yann Leduc";
   }
 
   // Barre de lecture

@@ -12,8 +12,9 @@
       },
       {
         "periode": "2023 – 2026",
-        "intitule": "BUT Génie Mécanique et Productique, en alternance",
-        "detail": "Conception mécanique (SolidWorks), projets industriels"
+        "intitule": "BUT Génie Mécanique et Productique, en alternance chez SCORPE",
+        "detail": "Bureau d'études : matériel de secours pour les sapeurs-pompiers",
+        "theme": "scorpe"
       }
     ],
     "liens": [],
@@ -33,7 +34,10 @@
           "Tri croisé",
           "Veille technologique",
           "Recherche bibliographique",
-          "CAO paramétrée"
+          "CAO paramétrée",
+          "Travail avec les utilisateurs finaux",
+          "Conception de mécanisme",
+          "Rédaction d'écrits de brevet"
         ]
       },
       {
@@ -56,7 +60,12 @@
           "Choix de procédé",
           "Essai normalisé (ISO 178)",
           "Traitement de données d'essai",
-          "Anisotropie du FDM"
+          "Anisotropie du FDM",
+          "Sourcing de composants",
+          "Plans de tôlerie et d'usinage",
+          "Prototypage et mise au point",
+          "Essais et analyse des défaillances",
+          "Fabrication additive en production"
         ]
       },
       {
@@ -65,8 +74,24 @@
           "Analyse critique des résultats",
           "Esprit critique",
           "Planification",
-          "Présentation orale"
+          "Présentation orale",
+          "Relation fournisseurs",
+          "Présentation à des clients"
         ]
+      }
+    ],
+    "enBref": [
+      {
+        "k": "Aujourd'hui",
+        "v": "Apprenti ingénieur à Arts et Métiers, à Paris"
+      },
+      {
+        "k": "Avant",
+        "v": "BUT GMP en alternance au bureau d'études de SCORPE"
+      },
+      {
+        "k": "Objectif",
+        "v": "Ingénieur en bureau d'études technique"
       }
     ]
   },
@@ -648,7 +673,8 @@
                 "partie": "bilan"
               }
             ]
-          }
+          },
+          "phare": true
         }
       ],
       "debut": "2026-09-01",
@@ -708,6 +734,371 @@
       "projets": [],
       "debut": "2029-02-01",
       "fin": "2029-07-31"
+    }
+  ],
+  "entreprises": [
+    {
+      "id": "scorpe",
+      "type": "entreprise",
+      "theme": "scorpe",
+      "nom": "SCORPE",
+      "onglet": "SCORPE",
+      "carte": "SCORPE",
+      "titre": "Bureau d'études, matériel de secours",
+      "role": "BUT GMP en alternance",
+      "periode": "2024 – 2026",
+      "titreProjets": "Chez SCORPE, en alternance",
+      "intro": "Avant Arts et Métiers, j'ai fait mon alternance de BUT au bureau d'études de SCORPE, qui conçoit et fabrique du matériel de secours pour les sapeurs-pompiers. J'y ai mené le projet SEB de la conception aux essais.",
+      "faits": [
+        {
+          "k": "Secteur",
+          "v": "Matériel de secours pour les sapeurs-pompiers"
+        },
+        {
+          "k": "Mon poste",
+          "v": "Apprenti au bureau d'études"
+        },
+        {
+          "k": "Lieu",
+          "v": "Witry-lès-Reims (Marne)"
+        }
+      ],
+      "projets": [
+        {
+          "id": "seb",
+          "titre": "SEB, système d'extinction de batterie",
+          "titreCourt": "SEB",
+          "sousTitre": "Un équipement pour aider les sapeurs-pompiers à éteindre un feu de batterie de véhicule électrique",
+          "equipe": "Bureau d'études SCORPE, avec mon tuteur",
+          "encadrant": "",
+          "periode": "2024 – 2026",
+          "phare": true,
+          "recitSurPage": true,
+          "resume": "Une batterie de voiture électrique qui prend feu brûle à l'intérieur d'un carter fermé : l'eau projetée de l'extérieur ne l'atteint pas. Le SEB est l'équipement que SCORPE développe pour les sapeurs-pompiers afin d'amener l'eau là où elle sert. J'y ai réalisé environ 80 % du travail, de la conception aux essais, avec des échecs formateurs et un produit qui a fini par tenir ses promesses.",
+          "hero": {
+            "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_200119_87efbcca-18e1-4e39-b7dc-c10f1ef5efe2_min.webp",
+            "alt": "Pack batterie de véhicule électrique ouvert"
+          },
+          "couverture": {
+            "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_200119_87efbcca-18e1-4e39-b7dc-c10f1ef5efe2_min.webp",
+            "alt": "Pack batterie de véhicule électrique ouvert"
+          },
+          "chiffres": [
+            {
+              "valeur": "≈ 80 %",
+              "label": "du travail, de la conception aux essais"
+            },
+            {
+              "valeur": "Ø 25 → 20 mm",
+              "label": "diamètre du foret, revu après les essais"
+            },
+            {
+              "valeur": "Juin 2026",
+              "label": "présenté au salon Interschutz"
+            },
+            {
+              "valeur": "Sept. 2026",
+              "label": "essai final devant les SDIS"
+            }
+          ],
+          "recit": {
+            "titre": "Du feu au prototype",
+            "intro": "Le SEB en cinq images, du problème posé par les pompiers jusqu'au plus grand salon du secours en Europe.",
+            "etapes": [
+              {
+                "titre": "Un feu qu'on n'atteint pas",
+                "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_200119_87efbcca-18e1-4e39-b7dc-c10f1ef5efe2_min.webp",
+                "alt": "Pack batterie ouvert",
+                "texte": "Dans une voiture électrique, la batterie brûle à l'intérieur d'un carter étanche. Arroser de l'extérieur ne suffit pas, il faut amener l'eau au cœur du pack. C'est tout l'enjeu du SEB, développé avec les SDIS qui l'utiliseront.",
+                "chiffre": {
+                  "valeur": "SDIS",
+                  "label": "les sapeurs-pompiers, utilisateurs finaux du produit"
+                },
+                "partie": "besoin"
+              },
+              {
+                "titre": "Un foret fait pour ça",
+                "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_200250_6eaa40e4-8b2d-48f2-b54d-c64508a255c6_min.webp",
+                "alt": "Foret en acier rapide",
+                "texte": "Il fallait un foret capable de traverser le carter sans faiblir. J'ai trouvé un fabricant pour un foret monobloc en acier rapide sur mesure, discuté avec lui de la forme des arêtes de coupe, puis on a revu sa géométrie après les essais.",
+                "chiffre": {
+                  "valeur": "Ø 25 → 20 mm",
+                  "label": "le diamètre du foret, revu après les essais"
+                },
+                "partie": "foret"
+              },
+              {
+                "titre": "Percer droit sur un véhicule penché",
+                "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_200521_01bbf883-bc21-429d-9b12-bc35ac318e72_min.webp",
+                "alt": "Schéma d'une voiture inclinée",
+                "texte": "Après un accident, la voiture est rarement à plat. J'ai conçu seul le système qui compense l'inclinaison pour que le perçage reste fiable. C'est la partie du projet dont je suis le plus fier.",
+                "chiffre": {
+                  "valeur": "Conçu seul",
+                  "label": "de l'idée aux plans de fabrication"
+                },
+                "partie": "inclinaison"
+              },
+              {
+                "titre": "Du plan au prototype",
+                "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_200625_1842a771-7bef-453b-ac12-61ed246e197c_min.webp",
+                "alt": "Composants mécaniques alignés",
+                "texte": "Moteurs de perçage et de levage, vis à billes, renvoi d'angle, paliers : chaque composant a été choisi pour supporter l'eau, la chaleur et une manipulation brusque. Plans, devis, commandes, puis un premier prototype complet et des versions améliorées.",
+                "chiffre": {
+                  "valeur": "Eau, chaleur, chocs",
+                  "label": "les trois contraintes imposées à chaque composant"
+                },
+                "partie": "prototype"
+              },
+              {
+                "titre": "Interschutz, puis les SDIS",
+                "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_200728_5dac7357-7cc3-4270-ad11-bb9d300ebc40_min.webp",
+                "alt": "Hall d'exposition",
+                "texte": "En juin 2026, le SEB a été présenté au salon Interschutz, le plus grand salon du secours en Europe, qui n'a lieu que tous les quatre ans. Il y a été très bien accueilli. Restait l'essai final devant les SDIS, en septembre.",
+                "chiffre": {
+                  "valeur": "Tous les 4 ans",
+                  "label": "Interschutz, le plus grand salon du secours en Europe"
+                },
+                "partie": "essais"
+              }
+            ]
+          },
+          "parties": [
+            {
+              "id": "besoin",
+              "titre": "Le besoin des pompiers",
+              "module": "Analyse du besoin",
+              "date": "2024 – 2025",
+              "enBref": "Un feu de batterie de véhicule électrique se joue à l'intérieur du pack : il faut y amener l'eau, de façon sûre pour les pompiers.",
+              "texte": [
+                "Le feu d'une batterie de voiture électrique ne ressemble à aucun autre. Les cellules s'emballent à l'intérieur d'un carter fermé, et l'eau projetée de l'extérieur n'atteint pas le foyer. Les SDIS cherchaient un moyen d'intervenir au plus près de la batterie, sans exposer les sapeurs-pompiers.",
+                "Le SEB répond à ce besoin. On l'a développé en lien direct avec les SDIS, qui ont suivi les prototypes, donné leur avis à chaque étape et qui l'utiliseront sur le terrain."
+              ],
+              "banniere": {
+                "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_200119_87efbcca-18e1-4e39-b7dc-c10f1ef5efe2_min.webp",
+                "alt": "Pack batterie de véhicule électrique ouvert"
+              },
+              "chiffres": [],
+              "competences": [
+                "Analyse du besoin",
+                "Travail avec les utilisateurs finaux"
+              ],
+              "outils": [],
+              "livrables": [],
+              "images": []
+            },
+            {
+              "id": "foret",
+              "titre": "Un foret sur mesure",
+              "module": "Outillage et fournisseurs",
+              "date": "Sept. 2025 – juin 2026",
+              "enBref": "Un foret monobloc en acier rapide, conçu avec un fabricant puis revu après les essais (Ø 25 → 20 mm).",
+              "texte": [
+                "Un foret du commerce ne suffisait pas. J'ai cherché et trouvé un fabricant capable de réaliser un foret monobloc en acier rapide sur mesure, et j'ai discuté avec lui de la forme des arêtes de coupe avant de commander les deux premières pièces.",
+                "Les premiers essais étaient encourageants, mais pas fiables à 100 %. Après le salon, on a fait le point en visio avec le fabricant sur tous les problèmes relevés pendant les essais. La géométrie a été revue, avec un diamètre ramené de 25 à 20 mm, et la dernière version a été commandée."
+              ],
+              "banniere": {
+                "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_200250_6eaa40e4-8b2d-48f2-b54d-c64508a255c6_min.webp",
+                "alt": "Foret monobloc en acier rapide"
+              },
+              "chiffres": [
+                {
+                  "valeur": "2",
+                  "label": "premiers forets commandés pour les essais"
+                },
+                {
+                  "valeur": "Ø 20 mm",
+                  "label": "diamètre de la version finale"
+                }
+              ],
+              "competences": [
+                "Relation fournisseurs",
+                "Essais et analyse des défaillances"
+              ],
+              "outils": [],
+              "livrables": [],
+              "images": []
+            },
+            {
+              "id": "prototype",
+              "titre": "Du plan au prototype",
+              "module": "Conception et fabrication",
+              "date": "Sept. 2025 – mai 2026",
+              "enBref": "Choix des composants pour l'eau, la chaleur et les chocs, plans, devis, puis un premier prototype complet et des versions améliorées.",
+              "texte": [
+                "J'ai choisi les composants standards : deux moteurs pour le perçage et le levage, une vis à billes, un renvoi d'angle, des paliers, des accouplements, des roues de transport et une poignée. Chaque choix devait tenir à l'eau, à la chaleur et à une manipulation brusque, parce que c'est la réalité d'une intervention.",
+                "J'ai ensuite adapté la maquette 3D, réalisé les plans de tôlerie et d'usinage, demandé les devis et passé les commandes. Le montage du premier prototype complet a été compliqué, et j'ai noté chaque difficulté pour la version suivante. De mars à mai, de nouvelles versions ont été commandées pour être prêtes avant le salon."
+              ],
+              "banniere": {
+                "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_200625_1842a771-7bef-453b-ac12-61ed246e197c_min.webp",
+                "alt": "Composants mécaniques alignés"
+              },
+              "chiffres": [],
+              "competences": [
+                "Sourcing de composants",
+                "Plans de tôlerie et d'usinage",
+                "Prototypage et mise au point"
+              ],
+              "outils": [
+                "SolidWorks"
+              ],
+              "livrables": [],
+              "images": []
+            },
+            {
+              "id": "inclinaison",
+              "titre": "Percer droit sur un véhicule penché",
+              "module": "Conception de mécanisme",
+              "date": "2025 – 2026",
+              "enBref": "J'ai conçu seul le système qui compense l'inclinaison du véhicule pour fiabiliser le perçage.",
+              "texte": [
+                "Sur le terrain, un véhicule accidenté est souvent penché. Si l'outil ne s'adapte pas, le foret attaque le carter de travers et le perçage devient incertain.",
+                "J'ai conçu seul le sous-ensemble qui compense cette inclinaison, de l'idée jusqu'aux plans de fabrication. C'est le développement dont je suis le plus fier. Le détail du mécanisme reste confidentiel, il fait partie des éléments couverts par la démarche de brevet."
+              ],
+              "banniere": {
+                "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_200521_01bbf883-bc21-429d-9b12-bc35ac318e72_min.webp",
+                "alt": "Schéma d'une voiture inclinée"
+              },
+              "chiffres": [],
+              "competences": [
+                "Conception de mécanisme"
+              ],
+              "outils": [
+                "SolidWorks"
+              ],
+              "livrables": [],
+              "images": []
+            },
+            {
+              "id": "essais",
+              "titre": "Interschutz et essais SDIS",
+              "module": "Essais et présentation",
+              "date": "Juin – sept. 2026",
+              "enBref": "Présenté au salon Interschutz en juin 2026 et très bien accueilli, puis essai final devant les SDIS en septembre.",
+              "texte": [
+                "En juin 2026, nous avons présenté le SEB au salon Interschutz, le plus grand salon du secours en Europe, qui n'a lieu que tous les quatre ans. Les SDIS étaient d'abord réticents à montrer un produit pas encore finalisé ; une présentation statique, sans démonstration de fonctionnement, les a rassurés. Le SEB y a été très bien accueilli.",
+                "Le dernier jalon était l'essai final devant les SDIS en septembre, avec une exigence simple : tout devait fonctionner parfaitement."
+              ],
+              "banniere": {
+                "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_200728_5dac7357-7cc3-4270-ad11-bb9d300ebc40_min.webp",
+                "alt": "Hall d'exposition"
+              },
+              "chiffres": [],
+              "competences": [
+                "Présentation à des clients",
+                "Essais et analyse des défaillances"
+              ],
+              "outils": [],
+              "livrables": [
+                {
+                  "titre": "Présentation du SEB au salon Interschutz",
+                  "statut": "rendu",
+                  "date": "Juin 2026"
+                }
+              ],
+              "images": []
+            },
+            {
+              "id": "brevet",
+              "titre": "Les écrits de brevet",
+              "module": "Propriété industrielle",
+              "date": "2025 – 2026",
+              "enBref": "J'ai rédigé les écrits de brevet détaillés, schémas compris, transmis à un cabinet de propriété industrielle.",
+              "texte": [
+                "J'ai rédigé des écrits de brevet détaillés, avec leurs schémas, pour le SEB et pour un outil d'effraction à froid. Ils ont été transmis à un cabinet de propriété industrielle, qui a jugé le travail très bien fait et n'a eu que peu de questions."
+              ],
+              "chiffres": [],
+              "competences": [
+                "Rédaction d'écrits de brevet"
+              ],
+              "outils": [],
+              "livrables": [
+                {
+                  "titre": "Rapport d'alternance 2026, axé sur le SEB",
+                  "statut": "rendu",
+                  "date": "2026"
+                }
+              ],
+              "images": []
+            }
+          ]
+        },
+        {
+          "id": "missions",
+          "titre": "Autres missions au bureau d'études",
+          "titreCourt": "Autres missions",
+          "sousTitre": "Étaiement de sauvetage, ventilateurs, pièces imprimées en 3D et production",
+          "equipe": "Bureau d'études SCORPE",
+          "encadrant": "",
+          "periode": "2024 – 2026",
+          "resume": "À côté du SEB, j'ai participé à la plupart des produits du bureau d'études : des étais de sauvetage présentés à un grand fabricant européen, des ventilateurs pour lesquels j'ai réalisé des pièces imprimées en 3D, et le suivi de productions en série.",
+          "hero": {
+            "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_200847_d67df90f-e458-40ff-b811-2459f2334232_min.webp",
+            "alt": "Pièces techniques imprimées en 3D"
+          },
+          "couverture": {
+            "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_200847_d67df90f-e458-40ff-b811-2459f2334232_min.webp",
+            "alt": "Pièces techniques imprimées en 3D"
+          },
+          "chiffres": [],
+          "parties": [
+            {
+              "id": "etaiement",
+              "titre": "Étaiement de sauvetage",
+              "module": "Conception et essais clients",
+              "date": "2025 – 2026",
+              "enBref": "Des étais testés en conditions réelles par un grand fabricant européen et retenus pour être revendus.",
+              "texte": [
+                "Les étais servent à stabiliser un véhicule ou une structure pendant une opération de secours. Avant le départ, on a passé une semaine à préparer les étais, puis je suis parti deux jours en Autriche avec mon tuteur pour les présenter à un grand fabricant européen d'outils de désincarcération.",
+                "Leur équipe les a manipulés puis testés en tenue de pompier, sous un véhicule et dans une tranchée. Ils ont relevé des points à améliorer qu'on n'avait pas anticipés, mais les étais ont été retenus pour être revendus, un contrat important pour SCORPE. Dès le retour, l'équipe a retravaillé ces points et produit des prototypes améliorés."
+              ],
+              "chiffres": [],
+              "competences": [
+                "Présentation à des clients",
+                "Essais et analyse des défaillances"
+              ],
+              "outils": [],
+              "livrables": [],
+              "images": []
+            },
+            {
+              "id": "ventilateurs",
+              "titre": "Ventilateurs et impression 3D",
+              "module": "Fabrication additive",
+              "date": "2024 – 2026",
+              "enBref": "Des pièces imprimées en 3D pour les ventilateurs, en ASA, ABS et PLA, et des plateaux d'impression optimisés jour et nuit.",
+              "texte": [
+                "Pour les ventilateurs, j'ai réalisé des pièces en impression 3D au bureau d'études : de l'ASA et de l'ABS pour les pièces qui doivent résister, du PLA pour les prototypes. C'est là que j'ai pris goût à la fabrication additive.",
+                "Je gère aussi les commandes de pièces plastiques en optimisant les plateaux d'impression : des plateaux courts dans la journée, qu'on peut relancer, et des plateaux longs la nuit."
+              ],
+              "chiffres": [],
+              "competences": [
+                "Fabrication additive en production"
+              ],
+              "outils": [],
+              "livrables": [],
+              "images": []
+            },
+            {
+              "id": "production",
+              "titre": "Production et atelier",
+              "module": "Industrialisation",
+              "date": "2024 – 2026",
+              "enBref": "Restructuration de l'atelier pour absorber les nouveaux produits, changement de fournisseur de châssis, production en série.",
+              "texte": [
+                "L'arrivée de nouveaux produits a demandé une grosse réorganisation de l'atelier, tout en continuant les productions existantes. Les premiers châssis livrés n'étaient pas assez fiables : on a changé de fabricant, et le problème est réglé.",
+                "J'ai aussi suivi des projets plus courts, comme des bâches de protection réalisées avec une entreprise extérieure pour des motopompes stockées sur le toit des véhicules de pompiers."
+              ],
+              "chiffres": [],
+              "competences": [
+                "Relation fournisseurs"
+              ],
+              "outils": [],
+              "livrables": [],
+              "images": []
+            }
+          ]
+        }
+      ]
     }
   ]
 }
