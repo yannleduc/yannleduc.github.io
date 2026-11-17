@@ -585,6 +585,69 @@
             "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_164509_45638d62-7251-4dc5-b2b5-d2fdff5ed350_min.webp",
             "alt": "Rendu du pied prothétique, version A, en PLA violet",
             "note": "Rendu IA à partir de la CAO"
+          },
+          "recit": {
+            "titre": "De la feuille à la pièce",
+            "intro": "Le projet du semestre en cinq images : un pied prothétique pour un enfant de 27 kg, imprimé en 3D pour pouvoir être refait à chaque pointure.",
+            "etapes": [
+              {
+                "titre": "Le dessin d'abord",
+                "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_194254_1dc8971e-a4de-4170-b498-8b5c15a7d1ef_min.webp",
+                "alt": "Mise en plan du pied en traits violets",
+                "texte": "Une lame droite ne peut pas être à la fois souple et solide. On a donc dessiné une équerre en L : épaisse à la cheville pour résister, fine en pointe pour plier. Trois cotes pilotent toute la forme, et changer de pointure revient à changer ces valeurs.",
+                "chiffre": {
+                  "valeur": "3 cotes",
+                  "label": "pilotent toute la forme du pied"
+                },
+                "partie": "rdm"
+              },
+              {
+                "titre": "Découper pour calculer",
+                "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_194352_8db6ab30-9199-4be7-836f-9fd40b58df69_min.webp",
+                "alt": "Le pied découpé en maillage d'éléments finis",
+                "texte": "Pour savoir où la pièce souffre, on la découpe en milliers de petits éléments. On a d'abord programmé la méthode nous-mêmes sous MATLAB, sur un treillis, pour comprendre ce que fait le logiciel avant de lui faire confiance.",
+                "chiffre": {
+                  "valeur": "< 5·10⁻⁶ mm",
+                  "label": "d'écart entre notre code MATLAB et Abaqus"
+                },
+                "partie": "elements-finis"
+              },
+              {
+                "titre": "Là où ça force",
+                "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_194556_c767664f-e9d1-4a67-b682-18c4fc87cffa_min.webp",
+                "alt": "Carte des contraintes sur le pied, maximum dans le coin",
+                "texte": "À quatre fois le poids de l'enfant, la simulation trouve 87,8 MPa dans le coin entre la colonne et la lame. Le calcul à la main prévoyait 78 MPa : même ordre de grandeur, le logiciel voit simplement le vrai coin.",
+                "chiffre": {
+                  "valeur": "87,8 MPa",
+                  "label": "au pire, pour une limite du PLA imprimé d'environ 94 MPa"
+                },
+                "partie": "cao"
+              },
+              {
+                "titre": "Filament par filament",
+                "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_194724_840bc470-b90e-4f2a-be8d-a3cd341a0a6d_min.webp",
+                "alt": "Le pied en cours d'impression, couche par couche",
+                "texte": "Les essais de flexion sur éprouvettes imprimées ont montré qu'il faut déposer les filaments dans la longueur de la lame. C'est l'orientation retenue pour imprimer le premier pied en PLA.",
+                "chiffre": {
+                  "valeur": "YZ",
+                  "label": "l'orientation d'impression la plus résistante aux essais"
+                },
+                "statut": "Prévu au Bloc 2, d'ici le 8 décembre",
+                "partie": "flexion"
+              },
+              {
+                "titre": "Une pièce qu'on réimprime",
+                "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_164509_45638d62-7251-4dc5-b2b5-d2fdff5ed350_min.webp",
+                "alt": "Rendu du pied en PLA violet",
+                "texte": "Le pied mesure 220 mm, plie de 23 mm sous le poids pour une marche naturelle et coûte quelques euros de PLA. Quand l'enfant grandit, on change trois cotes et on relance l'impression.",
+                "chiffre": {
+                  "valeur": "≈ 6 mois",
+                  "label": "avant de réimprimer à la pointure suivante"
+                },
+                "statut": "Rendu de la version A, la pièce n'est pas encore imprimée",
+                "partie": "bilan"
+              }
+            ]
           }
         }
       ],
