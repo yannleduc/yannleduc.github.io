@@ -1007,7 +1007,7 @@ footer { padding-bottom: 36px; }
         '<div class="ph-text"><p class="eyebrow">' + esc(s.carte || s.nom) + ", " + esc(lc(p.periode)) + "</p><h1>" + esc(p.titre) + "</h1><p>" + esc(p.sousTitre) + "</p></div></section>" +
       '<section class="proj-intro"><p class="lede">' + esc(p.resume) + '</p><dl class="facts">' +
         "<div><dt>Équipe</dt><dd>" + esc(p.equipe) + "</dd></div>" +
-        (p.encadrant ? "<div><dt>Encadrant</dt><dd>" + esc(p.encadrant) + "</dd></div>" : "") +
+        (p.encadrant ? "<div><dt>" + (s.type === "entreprise" ? "Tuteur" : "Encadrant") + "</dt><dd>" + esc(p.encadrant) + "</dd></div>" : "") +
         "<div><dt>Période</dt><dd>" + esc(p.periode) + "</dd></div>" +
         "<div><dt>Étapes</dt><dd>" + (p.parties || []).length + "</dd></div></dl></section>" +
       figs(p.chiffres) +

@@ -788,11 +788,11 @@
           "titreCourt": "SEB",
           "sousTitre": "Un équipement pour aider les sapeurs-pompiers à éteindre un feu de batterie de véhicule électrique",
           "equipe": "Bureau d'études Innov-SaintGer (SCORPE)",
-          "encadrant": "",
+          "encadrant": "Claude Gilmer, directeur industriel de SCORPE",
           "periode": "2024 – 2026",
           "phare": true,
           "recitSurPage": true,
-          "resume": "Une batterie de voiture électrique qui prend feu brûle à l'intérieur d'un carter fermé : l'eau projetée de l'extérieur ne l'atteint pas. Le SEB est l'équipement que SCORPE développe pour les sapeurs-pompiers afin d'amener l'eau là où elle sert. J'y ai réalisé environ 80 % du travail, de la conception aux essais, avec des échecs formateurs et un produit qui a fini par tenir ses promesses.",
+          "resume": "Une batterie de voiture électrique qui prend feu brûle à l'intérieur d'un carter fermé : l'eau projetée de l'extérieur ne l'atteint pas. Le SEB est l'équipement que SCORPE développe pour les sapeurs-pompiers afin d'amener l'eau au cœur du pack. Son inventeur est Claude Gilmer, directeur industriel de SCORPE et mon tuteur : j'ai mené le projet sous sa supervision, avec une autonomie de plus en plus large, et porté environ 80 % du travail, de la conception aux essais.",
           "hero": {
             "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_203532_51fede33-723b-4ab6-b51b-9e3b8bf13659_min.webp",
             "alt": "Rendu studio du SEB, châssis noir et vert sur roues"
@@ -835,10 +835,10 @@
                 "partie": "besoin"
               },
               {
-                "titre": "Un foret fait pour ça",
-                "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_200250_6eaa40e4-8b2d-48f2-b54d-c64508a255c6_min.webp",
-                "alt": "Foret en acier rapide",
-                "texte": "Il fallait un foret capable de traverser le carter sans faiblir. J'ai trouvé un fabricant pour un foret monobloc en acier rapide sur mesure, discuté avec lui de la forme des arêtes de coupe, puis on a revu sa géométrie après les essais.",
+                "titre": "Un foret qui se visse tout seul",
+                "image": "media/scorpe/forets-v1.webp",
+                "alt": "Les deux premiers forets d'injection reçus",
+                "texte": "Le cœur du SEB, c'est un foret creux et autotaraudeur : il perce le carter, se visse dedans et devient un bouchon étanche par lequel on injecte l'eau dans la batterie. J'ai dessiné ses plans et suivi sa fabrication avec un fabricant, jusqu'à une géométrie revue après les essais.",
                 "chiffre": {
                   "valeur": "Ø 25 → 20 mm",
                   "label": "le diamètre du foret, revu après les essais"
@@ -889,7 +889,7 @@
               "enBref": "Un feu de batterie de véhicule électrique se joue à l'intérieur du pack : il faut y amener l'eau, de façon sûre pour les pompiers.",
               "texte": [
                 "Le feu d'une batterie de voiture électrique ne ressemble à aucun autre. Les cellules s'emballent à l'intérieur d'un carter fermé, dégagent des gaz toxiques, et le feu peut reprendre jusqu'à 24 heures après. L'eau projetée de l'extérieur n'atteint pas le foyer. Les SDIS cherchaient un moyen d'intervenir au plus près de la batterie, sans exposer les sapeurs-pompiers.",
-                "Le SEB répond à ce besoin. Il est commandé par deux SDIS et suivi par la Sécurité civile, sur dix-huit mois de développement. Le cahier des charges est clair : un équipement mobile, porté par deux pompiers, qui se range dans un véhicule d'intervention et qui travaille à distance du véhicule en feu.",
+                "Le SEB répond à ce besoin. Il est commandé par deux SDIS et suivi par la Sécurité civile, sur dix-huit mois de développement. L'idée et l'invention sont de Claude Gilmer, directeur industriel de SCORPE et mon tuteur ; j'ai développé le produit sous sa supervision. Le cahier des charges est clair : un équipement mobile, porté par deux pompiers, qui se range dans un véhicule d'intervention et qui travaille à distance du véhicule en feu.",
                 "Pour les essais, on a disposé d'une Fiat 500e électrique et de son pack batterie, sur lequel on a enchaîné les tests de perçage. Chaque essai raté a donné une piste d'amélioration. Le principe a été présenté aux SDIS en juin 2025, et validé."
               ],
               "banniere": {
@@ -916,39 +916,73 @@
               ],
               "outils": [],
               "livrables": [],
-              "images": []
+              "images": [
+                {
+                  "src": "media/scorpe/seb-planning.webp",
+                  "legende": "Planning du projet : 6 mois jusqu'au TRL 5, puis 12 mois jusqu'au TRL 8"
+                }
+              ]
             },
             {
               "id": "foret",
-              "titre": "Un foret sur mesure",
-              "module": "Outillage et fournisseurs",
-              "date": "Sept. 2025 – juin 2026",
-              "enBref": "Un foret monobloc en acier rapide, conçu avec un fabricant puis revu après les essais (Ø 25 → 20 mm).",
+              "titre": "Le foret autotaraudeur",
+              "module": "Conception et fournisseurs",
+              "date": "Sept. 2025 – juil. 2026",
+              "enBref": "Un foret creux qui perce le carter, s'y visse et devient un bouchon étanche pour injecter l'eau. Plan indice 1.2 : Ø 20 mm, pointe à 120°, acier rapide monobloc.",
               "texte": [
-                "Un foret du commerce ne suffisait pas. J'ai cherché et trouvé un fabricant capable de réaliser un foret monobloc en acier rapide sur mesure, et j'ai discuté avec lui de la forme des arêtes de coupe avant de commander les deux premières pièces.",
-                "Les premiers essais étaient encourageants, mais pas fiables à 100 %. Après le salon, on a fait le point en visio avec le fabricant sur tous les problèmes relevés pendant les essais. La géométrie a été revue, avec un diamètre ramené de 25 à 20 mm, et la dernière version a été commandée."
+                "Le principe fondamental du SEB tient dans une pièce. Le foret est creux et porte un filet autotaraudeur : il perce le carter de la batterie, puis se visse lui-même dans le trou qu'il vient de faire. Un joint assure l'étanchéité. Le foret devient alors un bouchon étanche, et l'eau est injectée par son canal intérieur, directement dans le pack, qu'on garde noyé. Ce principe a été validé par les SDIS en juin 2025.",
+                "Un foret du commerce ne pouvait pas faire ça. J'ai trouvé un fabricant capable de réaliser ce foret monobloc en acier rapide, et on a longuement discuté de la forme d'attaque des arêtes de coupe avant de commander les deux premières pièces. J'ai dessiné le plan du foret (réf. PR-SEB-02) et l'ai fait évoluer à chaque version.",
+                "Les essais sur un vrai pack étaient encourageants, sans être fiables à 100 %. J'ai organisé une visio avec le fabricant pour reprendre un à un les problèmes relevés. L'indice 1.1 (avril 2026) ramène le diamètre de 25 à 20 mm avec une pointe à 120°. L'indice 1.2 (juillet 2026) modifie la forme et la longueur de l'hélice et ajoute une gorge pour le joint."
               ],
               "banniere": {
-                "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_200250_6eaa40e4-8b2d-48f2-b54d-c64508a255c6_min.webp",
-                "alt": "Foret monobloc en acier rapide"
+                "image": "media/scorpe/forets-v1.webp",
+                "alt": "Les deux premiers forets d'injection en acier rapide"
               },
               "chiffres": [
                 {
-                  "valeur": "2",
-                  "label": "premiers forets commandés pour les essais"
+                  "valeur": "Ø 20 mm",
+                  "label": "diamètre de perçage (25 mm à l'origine)"
                 },
                 {
-                  "valeur": "Ø 20 mm",
-                  "label": "diamètre de la version finale"
+                  "valeur": "120°",
+                  "label": "angle de la pointe"
+                },
+                {
+                  "valeur": "Indice 1.2",
+                  "label": "dernière version du plan, juillet 2026"
                 }
               ],
               "competences": [
+                "Mise en plan et cotation",
                 "Relation fournisseurs",
                 "Essais et analyse des défaillances"
               ],
-              "outils": [],
+              "outils": [
+                "SolidWorks"
+              ],
               "livrables": [],
-              "images": []
+              "images": [
+                {
+                  "src": "media/scorpe/foret-plan.webp",
+                  "legende": "Plan du foret d'injection PR-SEB-02, indice 1.2 (juillet 2026), que j'ai dessiné"
+                },
+                {
+                  "src": "media/scorpe/forets-v1.webp",
+                  "legende": "Les deux premiers forets reçus"
+                },
+                {
+                  "src": "media/scorpe/foret-essai.webp",
+                  "legende": "Essai sur un pack réel : le foret vissé dans le carter"
+                },
+                {
+                  "src": "media/scorpe/foret-plug.webp",
+                  "legende": "Foret monté sur son support, raccordé à l'arrivée d'eau"
+                },
+                {
+                  "src": "media/scorpe/foret-v2-3d.webp",
+                  "legende": "Nouvelle géométrie de l'hélice, en 3D"
+                }
+              ]
             },
             {
               "id": "prototype",
@@ -1057,12 +1091,12 @@
             },
             {
               "id": "brevet",
-              "titre": "Les écrits de brevet",
+              "titre": "Le brevet",
               "module": "Propriété industrielle",
               "date": "2025 – 2026",
-              "enBref": "J'ai rédigé les écrits de brevet détaillés, schémas compris, transmis à un cabinet de propriété industrielle.",
+              "enBref": "Le SEB fait l'objet d'un brevet au nom de SCORPE, avec Claude Gilmer pour inventeur. J'en ai rédigé les écrits techniques, schémas compris.",
               "texte": [
-                "J'ai rédigé des écrits de brevet détaillés, avec leurs schémas, pour le SEB et pour un outil d'effraction à froid. Ils ont été transmis à un cabinet de propriété industrielle, qui a jugé le travail très bien fait et n'a eu que peu de questions."
+                "Le SEB fait l'objet d'un brevet déposé par SCORPE, dont l'inventeur est Claude Gilmer. Ma part a été de rédiger les écrits techniques détaillés, avec leurs schémas, pour le SEB comme pour un outil d'effraction à froid. Ils ont été transmis à un cabinet de propriété industrielle, qui a jugé le travail très bien fait et n'a eu que peu de questions."
               ],
               "chiffres": [],
               "competences": [
@@ -1086,7 +1120,7 @@
           "titreCourt": "Autres missions",
           "sousTitre": "Étaiement de sauvetage, ventilateurs, pièces imprimées en 3D et production",
           "equipe": "Bureau d'études SCORPE",
-          "encadrant": "",
+          "encadrant": "Claude Gilmer, directeur industriel de SCORPE",
           "periode": "2024 – 2026",
           "resume": "À côté du SEB, j'ai participé à la plupart des produits du bureau d'études : des étais de sauvetage présentés à un grand fabricant européen, des ventilateurs pour lesquels j'ai réalisé des pièces imprimées en 3D, et le suivi de productions en série.",
           "hero": {
@@ -1106,7 +1140,7 @@
               "date": "2025 – 2026",
               "enBref": "Des étais testés en conditions réelles par un grand fabricant européen et retenus pour être revendus.",
               "texte": [
-                "Les étais AIRACLÈS servent à stabiliser un véhicule ou une structure pendant une opération de secours. Avant le départ, on a passé une semaine à préparer les étais, puis je suis parti deux jours en Autriche avec mon tuteur pour les présenter à un grand fabricant européen d'outils de désincarcération.",
+                "Les étais AIRACLÈS servent à stabiliser un véhicule ou une structure pendant une opération de secours. Avant le départ, on a passé une semaine à préparer les étais, puis je suis parti deux jours en Autriche avec Claude Gilmer, mon tuteur, pour les présenter à un grand fabricant européen d'outils de désincarcération.",
                 "Leur équipe les a manipulés puis testés en tenue de pompier, sous un véhicule et dans une tranchée. Ils ont relevé des points à améliorer qu'on n'avait pas anticipés, mais les étais ont été retenus pour être revendus, un contrat important pour SCORPE. Dès le retour, l'équipe a retravaillé ces points et produit des prototypes améliorés."
               ],
               "chiffres": [],
