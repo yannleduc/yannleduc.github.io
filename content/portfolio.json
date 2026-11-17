@@ -1,5 +1,5 @@
 {
-  "maj": "2026-11-12",
+  "maj": "2026-11-17",
   "profil": {
     "nom": "Yann Leduc",
     "titre": "Apprenti ingénieur · Arts et Métiers, Programme Grande École",
@@ -16,7 +16,13 @@
         "detail": "Conception mécanique (SolidWorks), projets industriels"
       }
     ],
-    "liens": []
+    "liens": [],
+    "hero": {
+      "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_164509_45638d62-7251-4dc5-b2b5-d2fdff5ed350.png",
+      "video": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_164716_da5df8d9-d4cf-423c-ac83-c7908651aaa6.mp4",
+      "alt": "Le pied prothétique de mon projet, imprimé en PLA violet, en rotation lente",
+      "note": "Rendu IA à partir de ma CAO"
+    }
   },
   "semestres": [
     {
@@ -85,7 +91,11 @@
               "outils": [],
               "livrables": [],
               "images": [],
-              "enBref": "Un pied en carbone coûte cher, et l'enfant change de pointure tous les six mois. On veut un pied imprimé en 3D, qu'on réimprime à la bonne taille."
+              "enBref": "Un pied en carbone coûte cher, et l'enfant change de pointure tous les six mois. On veut un pied imprimé en 3D, qu'on réimprime à la bonne taille.",
+              "banniere": {
+                "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_165459_53b98134-43e6-4102-8488-9885c39dfd93.png",
+                "alt": "Baskets alignées de la plus petite à la plus grande, une paire violette"
+              }
             },
             {
               "id": "veille-cdcf",
@@ -139,7 +149,11 @@
                 }
               ],
               "images": [],
-              "enBref": "23 brevets analysés, et aucun pied d'enfant imprimé en FDM. Le cahier des charges oppose deux exigences : bien marcher (30 %) et résister (27 %)."
+              "enBref": "23 brevets analysés, et aucun pied d'enfant imprimé en FDM. Le cahier des charges oppose deux exigences : bien marcher (30 %) et résister (27 %).",
+              "banniere": {
+                "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_164756_e78662e5-c804-4157-a5a0-44a07abd5e3c.png",
+                "alt": "Planches de brevets et stylo violet sur un bureau"
+              }
             },
             {
               "id": "rdm",
@@ -190,7 +204,11 @@
                 }
               ],
               "enBref": "Une lame droite ne peut pas être à la fois souple et solide. La forme en L, épaisse à la cheville et fine à la pointe, tient les deux : 23,2 mm de flèche et 78 MPa.",
-              "calculateur": "poutre-pied"
+              "calculateur": "poutre-pied",
+              "banniere": {
+                "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_164636_75cee634-b2a9-4fd7-aa05-9d33bb7ad579.png",
+                "alt": "Schéma d'une poutre encastrée dessiné sur papier millimétré"
+              }
             },
             {
               "id": "materiau",
@@ -231,7 +249,11 @@
                 }
               ],
               "images": [],
-              "enBref": "Granta a réduit toute la base à 3 matériaux. On a pris le PLA en FDM : pas cher, facile à imprimer, et pas de moule."
+              "enBref": "Granta a réduit toute la base à 3 matériaux. On a pris le PLA en FDM : pas cher, facile à imprimer, et pas de moule.",
+              "banniere": {
+                "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_164926_d869f55b-2d30-4fb9-ab0a-4a7b0fa4330c.png",
+                "alt": "Bobine de PLA violet, granulés et échantillon transparent"
+              }
             },
             {
               "id": "flexion",
@@ -273,7 +295,11 @@
                 }
               ],
               "images": [],
-              "enBref": "Les essais montrent qu'il faut imprimer avec les filaments dans la longueur (YZ) : E ≈ 2 985 MPa, Re ≈ 94 MPa."
+              "enBref": "Les essais montrent qu'il faut imprimer avec les filaments dans la longueur (YZ) : E ≈ 2 985 MPa, Re ≈ 94 MPa.",
+              "banniere": {
+                "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_165110_7281ecd6-4967-459c-8b2a-bd338ebe94e4.png",
+                "alt": "Montage de flexion 3 points sur une éprouvette en PLA violet"
+              }
             },
             {
               "id": "cao",
@@ -337,7 +363,11 @@
                   "legende": "Déplacement sous la charge de marche : 23,5 mm en bout de pied, pour 23,2 mm visés."
                 }
               ],
-              "enBref": "Le modèle est piloté par 3 cotes, donc adaptable à chaque pointure. La simulation confirme le calcul : 23,5 mm de flèche, 87,8 MPa au pire."
+              "enBref": "Le modèle est piloté par 3 cotes, donc adaptable à chaque pointure. La simulation confirme le calcul : 23,5 mm de flèche, 87,8 MPa au pire.",
+              "banniere": {
+                "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_165400_fd58acf4-78dd-49c3-8c4c-cd79ac93c048.png",
+                "alt": "Le pied en maillage filaire et en carte de contraintes"
+              }
             },
             {
               "id": "elements-finis",
@@ -384,7 +414,11 @@
                   "legende": "Treillis de quinze barres sous Abaqus, déformée amplifiée."
                 }
               ],
-              "enBref": "On a codé la méthode des éléments finis sous MATLAB et retrouvé exactement les résultats d'Abaqus."
+              "enBref": "On a codé la méthode des éléments finis sous MATLAB et retrouvé exactement les résultats d'Abaqus.",
+              "banniere": {
+                "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_165217_ea29124c-521b-4a37-ae83-ffa215e0b94f.png",
+                "alt": "Treillis plan de quinze barres violettes et nœuds jaunes"
+              }
             },
             {
               "id": "bilan",
@@ -439,7 +473,11 @@
                 }
               ],
               "images": [],
-              "enBref": "Les objectifs sont tenus sur le papier, avec une marge mince. Au Bloc 2 : imprimer, mesurer, tester et dessiner le talon."
+              "enBref": "Les objectifs sont tenus sur le papier, avec une marge mince. Au Bloc 2 : imprimer, mesurer, tester et dessiner le talon.",
+              "banniere": {
+                "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_164441_85913f29-373d-472b-b54f-8e27dbcde699.png",
+                "alt": "Buse d'imprimante 3D déposant du PLA violet"
+              }
             }
           ],
           "plan": {
@@ -490,9 +528,22 @@
                 "partie": "bilan"
               }
             ]
+          },
+          "titreCourt": "Pied prothétique imprimé en 3D",
+          "hero": {
+            "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_164509_45638d62-7251-4dc5-b2b5-d2fdff5ed350.png",
+            "alt": "Rendu du pied prothétique, version A, en PLA violet",
+            "note": "Rendu IA à partir de la CAO"
+          },
+          "couverture": {
+            "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_164509_45638d62-7251-4dc5-b2b5-d2fdff5ed350.png",
+            "alt": "Rendu du pied prothétique, version A, en PLA violet",
+            "note": "Rendu IA à partir de la CAO"
           }
         }
-      ]
+      ],
+      "debut": "2026-09-01",
+      "fin": "2027-01-31"
     },
     {
       "id": "s2",
@@ -501,7 +552,9 @@
       "annee": "1re année",
       "statut": "a-venir",
       "intro": "",
-      "projets": []
+      "projets": [],
+      "debut": "2027-02-01",
+      "fin": "2027-07-31"
     },
     {
       "id": "s3",
@@ -510,7 +563,9 @@
       "annee": "2e année",
       "statut": "a-venir",
       "intro": "",
-      "projets": []
+      "projets": [],
+      "debut": "2027-09-01",
+      "fin": "2028-01-31"
     },
     {
       "id": "s4",
@@ -519,7 +574,9 @@
       "annee": "2e année",
       "statut": "a-venir",
       "intro": "",
-      "projets": []
+      "projets": [],
+      "debut": "2028-02-01",
+      "fin": "2028-07-31"
     },
     {
       "id": "s5",
@@ -528,7 +585,9 @@
       "annee": "3e année",
       "statut": "a-venir",
       "intro": "",
-      "projets": []
+      "projets": [],
+      "debut": "2028-09-01",
+      "fin": "2029-01-31"
     },
     {
       "id": "s6",
@@ -537,7 +596,9 @@
       "annee": "3e année",
       "statut": "a-venir",
       "intro": "",
-      "projets": []
+      "projets": [],
+      "debut": "2029-02-01",
+      "fin": "2029-07-31"
     }
   ]
 }
