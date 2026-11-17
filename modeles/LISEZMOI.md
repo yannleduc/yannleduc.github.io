@@ -57,7 +57,7 @@ Les images extraites des rapports ont des coins noirs décoratifs : `python3 out
 - SCORPE : vert citron `#9ED05F` et noir, fond blanc, texte vert foncé `#3F7413`.
 - Polices : Zilla Slab (titres), Source Sans 3 (texte).
 - Titre du site « Yann Leduc. » à garder.
-- Mention IA : une seule phrase générique en bas de page.
+- Visuels IA : pas de mention en bas de page. Un petit point de couleur (violet Arts et Métiers, vert SCORPE) s'affiche automatiquement dans le coin bas droit de toute image ou vidéo servie par le CDN Higgsfield (`d8j0ntlcm91z4.cloudfront.net`). Les vraies photos sont dans le dépôt (`img/`, `media/`) et n'ont pas de point.
 
 ## Style des visuels générés (si on en refait)
 

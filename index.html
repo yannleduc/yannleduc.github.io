@@ -548,8 +548,6 @@ body.t-scorpe .brand span { color: #111; }
 @media (max-width: 520px) { .sk-grid { grid-template-columns: 1fr; } }
 
 /* Mention IA */
-.ai-note { margin-top: 36px; padding-top: 18px; border-top: 1px solid rgba(255, 255, 255, .25); }
-.ai-note p { font-size: 13.5px; line-height: 1.55; color: #ecdfe9; max-width: 90ch; }
 footer { padding-bottom: 36px; }
 
 /* ---- Mobile pensé pour le téléphone ---- */
@@ -627,6 +625,18 @@ a.tg-l[aria-current="page"] { color: #fff; background: #80276c; border-radius: 9
 @media (max-width: 640px) { .cr-track { grid-auto-columns: 86%; gap: 16px; } .cr-prev { left: -6px; } .cr-next { right: -6px; } .cr-btn { width: 44px; height: 44px; } }
 
 .apercu-ban { margin: 18px 0 0; padding: 12px 16px; border: 2px dashed #ffa300; border-radius: 10px; background: #fff8ea; color: #5c3b00; font-size: 15px; }
+
+/* Point « visuel IA » */
+:root { --ai-dot: #80276c; }
+.t-scorpe { --ai-dot: #9ed05f; }
+.ai-dot { position: absolute; right: 12px; bottom: 12px; z-index: 3; width: 10px; height: 10px; border-radius: 50%; background: var(--ai-dot); box-shadow: 0 0 0 2px #fff, 0 1px 3px rgba(0, 0, 0, .25); }
+.st-frame .ai-dot { display: none; }
+.st-frame.ai-on .ai-dot { display: block; }
+.ch-wrap { display: none; }
+@media (max-width: 920px) {
+  .ch-wrap { display: block; position: relative; margin: 0 -18px 10px; }
+  .ch-wrap .ch-img { margin: 0; width: 100%; }
+}
 </style>
 </head>
 <body>
@@ -640,7 +650,7 @@ a.tg-l[aria-current="page"] { color: #fff; background: #80276c; border-radius: 9
 </header>
 <main id="main"><div class="wrap" id="app" tabindex="-1"><p class="loading">Chargement du portfolio…</p><noscript><p>Ce portfolio a besoin de JavaScript pour s'afficher. Activez-le dans votre navigateur puis rechargez la page.</p></noscript></div></main>
 <footer><div class="wrap"><a class="big" href="#accueil">Yann Leduc<span>.</span></a><div class="small"><span>Apprenti ingénieur à Arts et Métiers</span><span id="foot-right"></span></div></div>
-<div class="wrap ai-note"><p>Certains visuels de ce site ont été générés par IA.</p></div></footer>
+</footer>
 
 <div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Image agrandie">
   <button class="x" id="lb-close" type="button">Fermer ✕</button>
@@ -875,6 +885,7 @@ a.tg-l[aria-current="page"] { color: #fff; background: #80276c; border-radius: 9
         chs.forEach(function (c) { c.classList.toggle("on", c.getAttribute("data-i") === i); });
         imgs.forEach(function (m) { m.classList.toggle("on", m.getAttribute("data-i") === i); });
         ticks.forEach(function (t) { t.classList.toggle("on", +t.getAttribute("data-i") <= +i); });
+        document.querySelectorAll(".st-frame").forEach(syncFrame);
       });
     }, { rootMargin: "-45% 0px -45% 0px" });
     chs.forEach(function (c) { io.observe(c); });
@@ -1284,7 +1295,38 @@ a.tg-l[aria-current="page"] { color: #fff; background: #80276c; border-radius: 9
     else if (r.view === "sem") { renderTabs(r.s.id); viewSem(r.s); window.scrollTo(0, 0); }
     else if (r.view === "ent") { renderTabs(r.s.id); viewEnt(r.s); window.scrollTo(0, 0); }
     else { renderTabs(r.s.id); viewProj(r.s, r.p, r.part); }
+    markAI();
     document.title = r.view === "home" ? "Yann Leduc, apprenti ingénieur Arts et Métiers" : r.view === "am" ? "Arts et Métiers, Yann Leduc" : (r.p ? r.p.titre : r.s.nom) + ", Yann Leduc";
+  }
+
+  // Repère discret des visuels générés par IA : petit point dans le coin bas droit
+  // (violet côté Arts et Métiers, vert côté SCORPE). Tout fichier servi par le CDN Higgsfield est un visuel IA.
+  var AI_HOST = "d8j0ntlcm91z4.cloudfront.net";
+  function isAI(m) {
+    var src = m.getAttribute("src") || "";
+    if (!src && m.querySelector) { var so = m.querySelector("source"); src = so ? so.getAttribute("src") || "" : ""; }
+    return src.indexOf(AI_HOST) >= 0;
+  }
+  function aiDot() {
+    var d = document.createElement("span");
+    d.className = "ai-dot"; d.title = "Visuel généré par IA";
+    d.setAttribute("role", "img"); d.setAttribute("aria-label", "Visuel généré par IA");
+    return d;
+  }
+  function syncFrame(f) { var on = f.querySelector(".st-img.on"); f.classList.toggle("ai-on", !!(on && isAI(on))); }
+  function markAI() {
+    app.querySelectorAll("img, video").forEach(function (m) {
+      if (m.closest(".st-frame") || !isAI(m)) return;
+      var host = m.parentElement;
+      if (m.classList.contains("ch-img")) {
+        if (!host.classList.contains("ch-wrap")) { var w = document.createElement("span"); w.className = "ch-wrap"; host.insertBefore(w, m); w.appendChild(m); }
+        host = m.parentElement;
+      }
+      if (host.querySelector(":scope > .ai-dot")) return;
+      if (getComputedStyle(host).position === "static") host.style.position = "relative";
+      host.appendChild(aiDot());
+    });
+    app.querySelectorAll(".st-frame").forEach(function (f) { if (!f.querySelector(".ai-dot")) f.appendChild(aiDot()); syncFrame(f); });
   }
 
   // Barre de lecture
