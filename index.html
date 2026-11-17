@@ -600,6 +600,31 @@ a.tg-l[aria-current="page"] { color: #fff; background: #80276c; border-radius: 9
 .am-word::after { color: #ffa300; }
 .am-head h1 { color: var(--ink); }
 .more { display: flex; flex-wrap: wrap; gap: 10px; }
+
+/* Carrousel des projets par semestre */
+.carou { position: relative; margin-top: 40px; }
+.cr-track { display: grid; grid-auto-flow: column; grid-auto-columns: calc((100% - 2 * 24px) / 3); gap: 24px; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; padding: 4px 2px 8px; }
+.cr-track::-webkit-scrollbar { display: none; }
+.cr-track > * { scroll-snap-align: start; }
+.cr-track .pc-title { font-size: clamp(21px, 1.9vw, 26px); }
+.cr-btn { position: absolute; top: 28%; z-index: 2; width: 48px; height: 48px; border-radius: 50%; border: 1px solid var(--rule); background: #fff; color: #80276c; display: grid; place-items: center; cursor: pointer; box-shadow: 0 2px 10px rgba(40, 10, 35, .12); transition: opacity .2s var(--ease), background .2s var(--ease), color .2s var(--ease); }
+.cr-btn svg { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; }
+.cr-btn:hover:not(:disabled) { background: #80276c; color: #fff; }
+.cr-btn:focus-visible { outline: 3px solid #ffa300; outline-offset: 2px; }
+.cr-btn:disabled { opacity: 0; pointer-events: none; }
+.cr-prev { left: -24px; }
+.cr-next { right: -24px; }
+.carou.static .cr-btn { display: none; }
+.pcard.soon { cursor: default; }
+.pcard.soon:hover { transform: none; border-color: var(--rule); }
+.pcard.soon:hover .pc-pic img { transform: none; }
+.pcard.soon .pc-pic { position: relative; }
+.pcard.soon .pc-pic img { filter: grayscale(.55) contrast(.95); opacity: .78; }
+.pcard.soon .pc-body { border-top-color: #e2c9dc; }
+.pcard.soon .pc-title { color: #6b6170; }
+.pc-badge { position: absolute; left: 14px; top: 14px; font-size: 13px; font-weight: 700; color: #5c1a4d; background: #fff; border: 1px solid #e2c9dc; border-radius: 999px; padding: 4px 11px; }
+@media (max-width: 1000px) { .cr-track { grid-auto-columns: calc((100% - 24px) / 2); } }
+@media (max-width: 640px) { .cr-track { grid-auto-columns: 86%; gap: 16px; } .cr-prev { left: -6px; } .cr-next { right: -6px; } .cr-btn { width: 44px; height: 44px; } }
 </style>
 </head>
 <body>
@@ -922,19 +947,53 @@ a.tg-l[aria-current="page"] { color: #fff; background: #80276c; border-radius: 9
   function viewAM() {
     var s0 = data.semestres[0], first = s0 && (s0.projets || [])[0];
     var key = first ? s0.id + "-" + first.id : "";
-    var semCards = data.semestres.filter(function (s) { return (s.projets || []).length; }).map(function (s) {
-      return (s.projets || []).map(function (p) { return projCardHTML(s, p); }).join("");
+    var semCards = data.semestres.map(function (s) {
+      return (s.projets || []).map(function (p) { return projCardHTML(s, p); }).join("") +
+        (s.aVenir || []).map(function (p) { return soonCardHTML(s, p); }).join("");
     }).join("");
     var am = data.ecole || {};
     app.innerHTML =
       '<nav class="crumbs" aria-label="Fil d\'Ariane"><a href="#accueil">Accueil</a><span aria-hidden="true">/</span><span>Arts et Métiers</span></nav>' +
       '<header class="ent-head am-head"><p class="ent-word am-word" aria-hidden="true">Arts et Métiers</p><div><p class="eyebrow">' + esc(am.periode || "") + ", " + esc(am.role || "") + "</p><h1>" + esc(am.titre || "Arts et Métiers") + '</h1><p class="lead">' + esc(am.intro || "") + "</p>" +
         (am.faits ? '<dl class="facts ent-facts">' + am.faits.map(function (f) { return "<div><dt>" + esc(f.k) + "</dt><dd>" + esc(f.v) + "</dd></div>"; }).join("") + "</dl>" : "") + "</div></header>" +
-      '<section class="sec" aria-labelledby="h-sem"><div class="sec-head"><h2 id="h-sem">Six semestres, de S1 à S6</h2><p>Chaque semestre a sa page, complétée au fil des projets.</p></div>' + rulerHTML() + (semCards ? '<div class="pcards sem-cards">' + semCards + "</div>" : "") + "</section>" +
+      '<section class="sec" aria-labelledby="h-sem"><div class="sec-head"><h2 id="h-sem">Six semestres, de S1 à S6</h2><p>Chaque semestre a sa page, complétée au fil des projets.</p></div>' + rulerHTML() + (semCards ? carouHTML(semCards) : "") + "</section>" +
       (first ? storyHTML(first.recitCourt || first.recit, key) : "") +
       (first ? '<div class="story-cta"><a class="btn primary" href="#' + key + '">Ouvrir le dossier complet du projet</a><span class="small">' + esc(first.equipe) + (first.encadrant ? ", encadré par " + esc(first.encadrant) : "") + "</span></div>" : "");
     rulerObserve();
     initStory();
+    initCarou();
+  }
+
+  // Projets à venir : emplacements prêts (data.semestres[i].aVenir), visibles mais pas cliquables
+  function soonCardHTML(s, p) {
+    var c = p.couverture || p.hero || {};
+    return '<div class="pcard soon" aria-disabled="true">' +
+      '<span class="pc-pic">' + (c.image ? '<img decoding="async" loading="lazy" src="' + esc(c.image) + '" alt="">' : "") + '<span class="pc-badge">À venir</span></span>' +
+      '<span class="pc-body"><span class="pc-where">' + esc(s.carte || s.nom) + ", " + esc(lc(s.periode)) + "</span>" +
+      '<span class="pc-title">' + esc(p.titreCarte || "Projet à venir") + '</span><span class="pc-sub">' + esc(p.sousTitreCarte || "Ce projet sera ajouté pendant le semestre.") + "</span></span></div>";
+  }
+  function carouHTML(cards) {
+    return '<div class="carou"><button type="button" class="cr-btn cr-prev" aria-label="Projet précédent"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>' +
+      '<div class="cr-track" tabindex="0" role="group" aria-label="Projets par semestre">' + cards + "</div>" +
+      '<button type="button" class="cr-btn cr-next" aria-label="Projet suivant"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button></div>';
+  }
+  function initCarou() {
+    document.querySelectorAll(".carou").forEach(function (c) {
+      var tr = c.querySelector(".cr-track"), pv = c.querySelector(".cr-prev"), nx = c.querySelector(".cr-next");
+      var calm = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      function step() { var k = tr.children[0], g = parseFloat(getComputedStyle(tr).columnGap) || 0; return k ? k.getBoundingClientRect().width + g : tr.clientWidth; }
+      function upd() {
+        pv.disabled = tr.scrollLeft <= 2;
+        nx.disabled = tr.scrollLeft + tr.clientWidth >= tr.scrollWidth - 2;
+        c.classList.toggle("static", pv.disabled && nx.disabled);
+      }
+      pv.addEventListener("click", function () { tr.scrollBy({ left: -step(), behavior: calm ? "auto" : "smooth" }); });
+      nx.addEventListener("click", function () { tr.scrollBy({ left: step(), behavior: calm ? "auto" : "smooth" }); });
+      tr.addEventListener("keydown", function (e) { if (e.key === "ArrowRight") { e.preventDefault(); nx.click(); } if (e.key === "ArrowLeft") { e.preventDefault(); pv.click(); } });
+      tr.addEventListener("scroll", upd, { passive: true });
+      window.addEventListener("resize", upd);
+      upd();
+    });
   }
 
   function viewEnt(e) {

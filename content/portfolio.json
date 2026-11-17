@@ -764,7 +764,138 @@
       "projets": [],
       "debut": "2027-02-01",
       "fin": "2027-07-31",
-      "carte": "Arts et Métiers, semestre 2"
+      "carte": "Arts et Métiers, semestre 2",
+      "aVenir": [
+        {
+          "_aide": "EMPLACEMENT PRÊT, PAS ENCORE PUBLIÉ. Pour publier : compléter les champs, remplacer les images (dossier img/s2/), puis déplacer cet objet de 'aVenir' vers 'projets' et supprimer '_aide', 'titreCarte' et 'sousTitreCarte'. Les parties sont des modèles : en garder, en ajouter ou en retirer librement.",
+          "id": "projet-s2",
+          "titreCarte": "Projet du semestre 2",
+          "sousTitreCarte": "Ajouté au fil du semestre, de févr. – juil. 2027.",
+          "titre": "Titre du projet du semestre 2",
+          "titreCourt": "Projet S2",
+          "sousTitre": "Une phrase qui dit ce que fait le produit et pour qui.",
+          "equipe": "",
+          "encadrant": "",
+          "periode": "Févr. – juil. 2027",
+          "resume": "Trois ou quatre phrases : le problème de départ, ce qu'on a conçu, ce que ça a donné, ce qu'il reste à faire.",
+          "hero": {
+            "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_210924_7671b41f-aefd-4515-a897-01d4a6880160_min.webp",
+            "alt": "Image du projet du semestre 2"
+          },
+          "couverture": {
+            "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_210924_7671b41f-aefd-4515-a897-01d4a6880160_min.webp",
+            "alt": "Image du projet du semestre 2"
+          },
+          "chiffres": [],
+          "blocs": {},
+          "parties": [
+            {
+              "id": "contexte",
+              "bloc": 1,
+              "titre": "Contexte et besoin",
+              "module": "Projet",
+              "date": "",
+              "enBref": "Le besoin en une phrase.",
+              "texte": [
+                "D'où vient le projet, pour qui, et ce qu'on attend du produit."
+              ],
+              "banniere": {
+                "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_211659_ef360c62-1d2f-4e75-b43c-4ce301c94674_min.webp",
+                "alt": "Croquis de recherche sur papier"
+              },
+              "chiffres": [],
+              "competences": [],
+              "outils": [],
+              "livrables": [
+                {
+                  "titre": "Cahier des charges",
+                  "statut": "a-venir",
+                  "date": ""
+                }
+              ],
+              "images": []
+            },
+            {
+              "id": "conception",
+              "bloc": 1,
+              "titre": "Conception",
+              "module": "Conception, CAO",
+              "date": "",
+              "enBref": "Les choix de conception en une phrase.",
+              "texte": [
+                "Les solutions envisagées, celle qu'on a retenue et pourquoi."
+              ],
+              "banniere": {
+                "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_211807_eff0ae5a-a5f2-4eb3-a8c8-85db135fa10a_min.webp",
+                "alt": "Modèle 3D en cours de conception"
+              },
+              "chiffres": [],
+              "competences": [],
+              "outils": [],
+              "livrables": [
+                {
+                  "titre": "Maquette CAO et mise en plan",
+                  "statut": "a-venir",
+                  "date": ""
+                }
+              ],
+              "images": []
+            },
+            {
+              "id": "calcul-essais",
+              "bloc": 1,
+              "titre": "Calculs et essais",
+              "module": "Dimensionnement, essais",
+              "date": "",
+              "enBref": "Ce que montrent les calculs et les essais.",
+              "texte": [
+                "Le dimensionnement, la simulation et les essais, avec les chiffres qui comptent."
+              ],
+              "banniere": {
+                "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_211917_0915c237-b4ba-4628-b05b-416f4d65e5b1_min.webp",
+                "alt": "Machine d'essai mécanique"
+              },
+              "chiffres": [],
+              "competences": [],
+              "outils": [],
+              "livrables": [
+                {
+                  "titre": "Rapport de calcul ou d'essai",
+                  "statut": "a-venir",
+                  "date": ""
+                }
+              ],
+              "images": []
+            },
+            {
+              "id": "bilan",
+              "bloc": 1,
+              "titre": "Bilan et soutenance",
+              "module": "Soutenance",
+              "date": "",
+              "enBref": "Ce qui est atteint, ce qui reste à faire.",
+              "texte": [
+                "Les objectifs atteints, les limites, et ce que j'en retiens."
+              ],
+              "banniere": {
+                "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_212028_0d3b196f-6589-4f84-b4ba-86987be4b131_min.webp",
+                "alt": "Plans et pièces posés sur une table"
+              },
+              "chiffres": [],
+              "competences": [],
+              "outils": [],
+              "livrables": [
+                {
+                  "titre": "Soutenance",
+                  "statut": "a-venir",
+                  "date": ""
+                }
+              ],
+              "images": []
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "s3",
@@ -776,7 +907,138 @@
       "projets": [],
       "debut": "2027-09-01",
       "fin": "2028-01-31",
-      "carte": "Arts et Métiers, semestre 3"
+      "carte": "Arts et Métiers, semestre 3",
+      "aVenir": [
+        {
+          "_aide": "EMPLACEMENT PRÊT, PAS ENCORE PUBLIÉ. Pour publier : compléter les champs, remplacer les images (dossier img/s3/), puis déplacer cet objet de 'aVenir' vers 'projets' et supprimer '_aide', 'titreCarte' et 'sousTitreCarte'. Les parties sont des modèles : en garder, en ajouter ou en retirer librement.",
+          "id": "projet-s3",
+          "titreCarte": "Projet du semestre 3",
+          "sousTitreCarte": "Ajouté au fil du semestre, de sept. 2027 – janv. 2028.",
+          "titre": "Titre du projet du semestre 3",
+          "titreCourt": "Projet S3",
+          "sousTitre": "Une phrase qui dit ce que fait le produit et pour qui.",
+          "equipe": "",
+          "encadrant": "",
+          "periode": "Sept. 2027 – janv. 2028",
+          "resume": "Trois ou quatre phrases : le problème de départ, ce qu'on a conçu, ce que ça a donné, ce qu'il reste à faire.",
+          "hero": {
+            "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_211028_fd04a75a-95d9-4ddb-a5b5-dfdcf22f88fc_min.webp",
+            "alt": "Image du projet du semestre 3"
+          },
+          "couverture": {
+            "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_211028_fd04a75a-95d9-4ddb-a5b5-dfdcf22f88fc_min.webp",
+            "alt": "Image du projet du semestre 3"
+          },
+          "chiffres": [],
+          "blocs": {},
+          "parties": [
+            {
+              "id": "contexte",
+              "bloc": 1,
+              "titre": "Contexte et besoin",
+              "module": "Projet",
+              "date": "",
+              "enBref": "Le besoin en une phrase.",
+              "texte": [
+                "D'où vient le projet, pour qui, et ce qu'on attend du produit."
+              ],
+              "banniere": {
+                "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_211659_ef360c62-1d2f-4e75-b43c-4ce301c94674_min.webp",
+                "alt": "Croquis de recherche sur papier"
+              },
+              "chiffres": [],
+              "competences": [],
+              "outils": [],
+              "livrables": [
+                {
+                  "titre": "Cahier des charges",
+                  "statut": "a-venir",
+                  "date": ""
+                }
+              ],
+              "images": []
+            },
+            {
+              "id": "conception",
+              "bloc": 1,
+              "titre": "Conception",
+              "module": "Conception, CAO",
+              "date": "",
+              "enBref": "Les choix de conception en une phrase.",
+              "texte": [
+                "Les solutions envisagées, celle qu'on a retenue et pourquoi."
+              ],
+              "banniere": {
+                "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_211807_eff0ae5a-a5f2-4eb3-a8c8-85db135fa10a_min.webp",
+                "alt": "Modèle 3D en cours de conception"
+              },
+              "chiffres": [],
+              "competences": [],
+              "outils": [],
+              "livrables": [
+                {
+                  "titre": "Maquette CAO et mise en plan",
+                  "statut": "a-venir",
+                  "date": ""
+                }
+              ],
+              "images": []
+            },
+            {
+              "id": "calcul-essais",
+              "bloc": 1,
+              "titre": "Calculs et essais",
+              "module": "Dimensionnement, essais",
+              "date": "",
+              "enBref": "Ce que montrent les calculs et les essais.",
+              "texte": [
+                "Le dimensionnement, la simulation et les essais, avec les chiffres qui comptent."
+              ],
+              "banniere": {
+                "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_211917_0915c237-b4ba-4628-b05b-416f4d65e5b1_min.webp",
+                "alt": "Machine d'essai mécanique"
+              },
+              "chiffres": [],
+              "competences": [],
+              "outils": [],
+              "livrables": [
+                {
+                  "titre": "Rapport de calcul ou d'essai",
+                  "statut": "a-venir",
+                  "date": ""
+                }
+              ],
+              "images": []
+            },
+            {
+              "id": "bilan",
+              "bloc": 1,
+              "titre": "Bilan et soutenance",
+              "module": "Soutenance",
+              "date": "",
+              "enBref": "Ce qui est atteint, ce qui reste à faire.",
+              "texte": [
+                "Les objectifs atteints, les limites, et ce que j'en retiens."
+              ],
+              "banniere": {
+                "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_212028_0d3b196f-6589-4f84-b4ba-86987be4b131_min.webp",
+                "alt": "Plans et pièces posés sur une table"
+              },
+              "chiffres": [],
+              "competences": [],
+              "outils": [],
+              "livrables": [
+                {
+                  "titre": "Soutenance",
+                  "statut": "a-venir",
+                  "date": ""
+                }
+              ],
+              "images": []
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "s4",
@@ -788,7 +1050,138 @@
       "projets": [],
       "debut": "2028-02-01",
       "fin": "2028-07-31",
-      "carte": "Arts et Métiers, semestre 4"
+      "carte": "Arts et Métiers, semestre 4",
+      "aVenir": [
+        {
+          "_aide": "EMPLACEMENT PRÊT, PAS ENCORE PUBLIÉ. Pour publier : compléter les champs, remplacer les images (dossier img/s4/), puis déplacer cet objet de 'aVenir' vers 'projets' et supprimer '_aide', 'titreCarte' et 'sousTitreCarte'. Les parties sont des modèles : en garder, en ajouter ou en retirer librement.",
+          "id": "projet-s4",
+          "titreCarte": "Projet du semestre 4",
+          "sousTitreCarte": "Ajouté au fil du semestre, de févr. – juil. 2028.",
+          "titre": "Titre du projet du semestre 4",
+          "titreCourt": "Projet S4",
+          "sousTitre": "Une phrase qui dit ce que fait le produit et pour qui.",
+          "equipe": "",
+          "encadrant": "",
+          "periode": "Févr. – juil. 2028",
+          "resume": "Trois ou quatre phrases : le problème de départ, ce qu'on a conçu, ce que ça a donné, ce qu'il reste à faire.",
+          "hero": {
+            "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_211128_3f071c44-610e-4a3c-8b29-5d40a2a0e483_min.webp",
+            "alt": "Image du projet du semestre 4"
+          },
+          "couverture": {
+            "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_211128_3f071c44-610e-4a3c-8b29-5d40a2a0e483_min.webp",
+            "alt": "Image du projet du semestre 4"
+          },
+          "chiffres": [],
+          "blocs": {},
+          "parties": [
+            {
+              "id": "contexte",
+              "bloc": 1,
+              "titre": "Contexte et besoin",
+              "module": "Projet",
+              "date": "",
+              "enBref": "Le besoin en une phrase.",
+              "texte": [
+                "D'où vient le projet, pour qui, et ce qu'on attend du produit."
+              ],
+              "banniere": {
+                "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_211659_ef360c62-1d2f-4e75-b43c-4ce301c94674_min.webp",
+                "alt": "Croquis de recherche sur papier"
+              },
+              "chiffres": [],
+              "competences": [],
+              "outils": [],
+              "livrables": [
+                {
+                  "titre": "Cahier des charges",
+                  "statut": "a-venir",
+                  "date": ""
+                }
+              ],
+              "images": []
+            },
+            {
+              "id": "conception",
+              "bloc": 1,
+              "titre": "Conception",
+              "module": "Conception, CAO",
+              "date": "",
+              "enBref": "Les choix de conception en une phrase.",
+              "texte": [
+                "Les solutions envisagées, celle qu'on a retenue et pourquoi."
+              ],
+              "banniere": {
+                "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_211807_eff0ae5a-a5f2-4eb3-a8c8-85db135fa10a_min.webp",
+                "alt": "Modèle 3D en cours de conception"
+              },
+              "chiffres": [],
+              "competences": [],
+              "outils": [],
+              "livrables": [
+                {
+                  "titre": "Maquette CAO et mise en plan",
+                  "statut": "a-venir",
+                  "date": ""
+                }
+              ],
+              "images": []
+            },
+            {
+              "id": "calcul-essais",
+              "bloc": 1,
+              "titre": "Calculs et essais",
+              "module": "Dimensionnement, essais",
+              "date": "",
+              "enBref": "Ce que montrent les calculs et les essais.",
+              "texte": [
+                "Le dimensionnement, la simulation et les essais, avec les chiffres qui comptent."
+              ],
+              "banniere": {
+                "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_211917_0915c237-b4ba-4628-b05b-416f4d65e5b1_min.webp",
+                "alt": "Machine d'essai mécanique"
+              },
+              "chiffres": [],
+              "competences": [],
+              "outils": [],
+              "livrables": [
+                {
+                  "titre": "Rapport de calcul ou d'essai",
+                  "statut": "a-venir",
+                  "date": ""
+                }
+              ],
+              "images": []
+            },
+            {
+              "id": "bilan",
+              "bloc": 1,
+              "titre": "Bilan et soutenance",
+              "module": "Soutenance",
+              "date": "",
+              "enBref": "Ce qui est atteint, ce qui reste à faire.",
+              "texte": [
+                "Les objectifs atteints, les limites, et ce que j'en retiens."
+              ],
+              "banniere": {
+                "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_212028_0d3b196f-6589-4f84-b4ba-86987be4b131_min.webp",
+                "alt": "Plans et pièces posés sur une table"
+              },
+              "chiffres": [],
+              "competences": [],
+              "outils": [],
+              "livrables": [
+                {
+                  "titre": "Soutenance",
+                  "statut": "a-venir",
+                  "date": ""
+                }
+              ],
+              "images": []
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "s5",
@@ -800,7 +1193,138 @@
       "projets": [],
       "debut": "2028-09-01",
       "fin": "2029-01-31",
-      "carte": "Arts et Métiers, semestre 5"
+      "carte": "Arts et Métiers, semestre 5",
+      "aVenir": [
+        {
+          "_aide": "EMPLACEMENT PRÊT, PAS ENCORE PUBLIÉ. Pour publier : compléter les champs, remplacer les images (dossier img/s5/), puis déplacer cet objet de 'aVenir' vers 'projets' et supprimer '_aide', 'titreCarte' et 'sousTitreCarte'. Les parties sont des modèles : en garder, en ajouter ou en retirer librement.",
+          "id": "projet-s5",
+          "titreCarte": "Projet du semestre 5",
+          "sousTitreCarte": "Ajouté au fil du semestre, de sept. 2028 – janv. 2029.",
+          "titre": "Titre du projet du semestre 5",
+          "titreCourt": "Projet S5",
+          "sousTitre": "Une phrase qui dit ce que fait le produit et pour qui.",
+          "equipe": "",
+          "encadrant": "",
+          "periode": "Sept. 2028 – janv. 2029",
+          "resume": "Trois ou quatre phrases : le problème de départ, ce qu'on a conçu, ce que ça a donné, ce qu'il reste à faire.",
+          "hero": {
+            "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_211236_63c1d129-240d-4f6b-960e-011ecf7f4371_min.webp",
+            "alt": "Image du projet du semestre 5"
+          },
+          "couverture": {
+            "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_211236_63c1d129-240d-4f6b-960e-011ecf7f4371_min.webp",
+            "alt": "Image du projet du semestre 5"
+          },
+          "chiffres": [],
+          "blocs": {},
+          "parties": [
+            {
+              "id": "contexte",
+              "bloc": 1,
+              "titre": "Contexte et besoin",
+              "module": "Projet",
+              "date": "",
+              "enBref": "Le besoin en une phrase.",
+              "texte": [
+                "D'où vient le projet, pour qui, et ce qu'on attend du produit."
+              ],
+              "banniere": {
+                "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_211659_ef360c62-1d2f-4e75-b43c-4ce301c94674_min.webp",
+                "alt": "Croquis de recherche sur papier"
+              },
+              "chiffres": [],
+              "competences": [],
+              "outils": [],
+              "livrables": [
+                {
+                  "titre": "Cahier des charges",
+                  "statut": "a-venir",
+                  "date": ""
+                }
+              ],
+              "images": []
+            },
+            {
+              "id": "conception",
+              "bloc": 1,
+              "titre": "Conception",
+              "module": "Conception, CAO",
+              "date": "",
+              "enBref": "Les choix de conception en une phrase.",
+              "texte": [
+                "Les solutions envisagées, celle qu'on a retenue et pourquoi."
+              ],
+              "banniere": {
+                "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_211807_eff0ae5a-a5f2-4eb3-a8c8-85db135fa10a_min.webp",
+                "alt": "Modèle 3D en cours de conception"
+              },
+              "chiffres": [],
+              "competences": [],
+              "outils": [],
+              "livrables": [
+                {
+                  "titre": "Maquette CAO et mise en plan",
+                  "statut": "a-venir",
+                  "date": ""
+                }
+              ],
+              "images": []
+            },
+            {
+              "id": "calcul-essais",
+              "bloc": 1,
+              "titre": "Calculs et essais",
+              "module": "Dimensionnement, essais",
+              "date": "",
+              "enBref": "Ce que montrent les calculs et les essais.",
+              "texte": [
+                "Le dimensionnement, la simulation et les essais, avec les chiffres qui comptent."
+              ],
+              "banniere": {
+                "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_211917_0915c237-b4ba-4628-b05b-416f4d65e5b1_min.webp",
+                "alt": "Machine d'essai mécanique"
+              },
+              "chiffres": [],
+              "competences": [],
+              "outils": [],
+              "livrables": [
+                {
+                  "titre": "Rapport de calcul ou d'essai",
+                  "statut": "a-venir",
+                  "date": ""
+                }
+              ],
+              "images": []
+            },
+            {
+              "id": "bilan",
+              "bloc": 1,
+              "titre": "Bilan et soutenance",
+              "module": "Soutenance",
+              "date": "",
+              "enBref": "Ce qui est atteint, ce qui reste à faire.",
+              "texte": [
+                "Les objectifs atteints, les limites, et ce que j'en retiens."
+              ],
+              "banniere": {
+                "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_212028_0d3b196f-6589-4f84-b4ba-86987be4b131_min.webp",
+                "alt": "Plans et pièces posés sur une table"
+              },
+              "chiffres": [],
+              "competences": [],
+              "outils": [],
+              "livrables": [
+                {
+                  "titre": "Soutenance",
+                  "statut": "a-venir",
+                  "date": ""
+                }
+              ],
+              "images": []
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "s6",
@@ -812,7 +1336,138 @@
       "projets": [],
       "debut": "2029-02-01",
       "fin": "2029-07-31",
-      "carte": "Arts et Métiers, semestre 6"
+      "carte": "Arts et Métiers, semestre 6",
+      "aVenir": [
+        {
+          "_aide": "EMPLACEMENT PRÊT, PAS ENCORE PUBLIÉ. Pour publier : compléter les champs, remplacer les images (dossier img/s6/), puis déplacer cet objet de 'aVenir' vers 'projets' et supprimer '_aide', 'titreCarte' et 'sousTitreCarte'. Les parties sont des modèles : en garder, en ajouter ou en retirer librement.",
+          "id": "projet-s6",
+          "titreCarte": "Projet du semestre 6",
+          "sousTitreCarte": "Ajouté au fil du semestre, de févr. – juil. 2029.",
+          "titre": "Titre du projet du semestre 6",
+          "titreCourt": "Projet S6",
+          "sousTitre": "Une phrase qui dit ce que fait le produit et pour qui.",
+          "equipe": "",
+          "encadrant": "",
+          "periode": "Févr. – juil. 2029",
+          "resume": "Trois ou quatre phrases : le problème de départ, ce qu'on a conçu, ce que ça a donné, ce qu'il reste à faire.",
+          "hero": {
+            "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_211551_79111e15-d4fb-42a7-bdef-81a3d11f74a3_min.webp",
+            "alt": "Image du projet du semestre 6"
+          },
+          "couverture": {
+            "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_211551_79111e15-d4fb-42a7-bdef-81a3d11f74a3_min.webp",
+            "alt": "Image du projet du semestre 6"
+          },
+          "chiffres": [],
+          "blocs": {},
+          "parties": [
+            {
+              "id": "contexte",
+              "bloc": 1,
+              "titre": "Contexte et besoin",
+              "module": "Projet",
+              "date": "",
+              "enBref": "Le besoin en une phrase.",
+              "texte": [
+                "D'où vient le projet, pour qui, et ce qu'on attend du produit."
+              ],
+              "banniere": {
+                "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_211659_ef360c62-1d2f-4e75-b43c-4ce301c94674_min.webp",
+                "alt": "Croquis de recherche sur papier"
+              },
+              "chiffres": [],
+              "competences": [],
+              "outils": [],
+              "livrables": [
+                {
+                  "titre": "Cahier des charges",
+                  "statut": "a-venir",
+                  "date": ""
+                }
+              ],
+              "images": []
+            },
+            {
+              "id": "conception",
+              "bloc": 1,
+              "titre": "Conception",
+              "module": "Conception, CAO",
+              "date": "",
+              "enBref": "Les choix de conception en une phrase.",
+              "texte": [
+                "Les solutions envisagées, celle qu'on a retenue et pourquoi."
+              ],
+              "banniere": {
+                "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_211807_eff0ae5a-a5f2-4eb3-a8c8-85db135fa10a_min.webp",
+                "alt": "Modèle 3D en cours de conception"
+              },
+              "chiffres": [],
+              "competences": [],
+              "outils": [],
+              "livrables": [
+                {
+                  "titre": "Maquette CAO et mise en plan",
+                  "statut": "a-venir",
+                  "date": ""
+                }
+              ],
+              "images": []
+            },
+            {
+              "id": "calcul-essais",
+              "bloc": 1,
+              "titre": "Calculs et essais",
+              "module": "Dimensionnement, essais",
+              "date": "",
+              "enBref": "Ce que montrent les calculs et les essais.",
+              "texte": [
+                "Le dimensionnement, la simulation et les essais, avec les chiffres qui comptent."
+              ],
+              "banniere": {
+                "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_211917_0915c237-b4ba-4628-b05b-416f4d65e5b1_min.webp",
+                "alt": "Machine d'essai mécanique"
+              },
+              "chiffres": [],
+              "competences": [],
+              "outils": [],
+              "livrables": [
+                {
+                  "titre": "Rapport de calcul ou d'essai",
+                  "statut": "a-venir",
+                  "date": ""
+                }
+              ],
+              "images": []
+            },
+            {
+              "id": "bilan",
+              "bloc": 1,
+              "titre": "Bilan et soutenance",
+              "module": "Soutenance",
+              "date": "",
+              "enBref": "Ce qui est atteint, ce qui reste à faire.",
+              "texte": [
+                "Les objectifs atteints, les limites, et ce que j'en retiens."
+              ],
+              "banniere": {
+                "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_212028_0d3b196f-6589-4f84-b4ba-86987be4b131_min.webp",
+                "alt": "Plans et pièces posés sur une table"
+              },
+              "chiffres": [],
+              "competences": [],
+              "outils": [],
+              "livrables": [
+                {
+                  "titre": "Soutenance",
+                  "statut": "a-venir",
+                  "date": ""
+                }
+              ],
+              "images": []
+            }
+          ]
+        }
+      ]
     }
   ],
   "entreprises": [
