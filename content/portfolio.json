@@ -95,6 +95,26 @@
       }
     ]
   },
+  "ecole": {
+    "titre": "Ingénieur généraliste, en apprentissage",
+    "role": "Programme Grande École",
+    "periode": "2026 – 2029",
+    "intro": "Depuis septembre 2026, je suis apprenti ingénieur à Arts et Métiers, dans le Programme Grande École. Trois ans, six semestres, en alternance entre l'école et l'entreprise. Chaque semestre est construit autour de projets où les cours de conception, de matériaux et de calcul servent directement.",
+    "faits": [
+      {
+        "k": "École",
+        "v": "Arts et Métiers (ENSAM), Paris"
+      },
+      {
+        "k": "Formation",
+        "v": "Programme Grande École, en apprentissage"
+      },
+      {
+        "k": "Durée",
+        "v": "3 ans, de S1 à S6"
+      }
+    ]
+  },
   "semestres": [
     {
       "id": "s1",
@@ -686,6 +706,47 @@
           "blocs": {
             "1": "Du besoin au premier pied dimensionné, jusqu'à la soutenance du 17 octobre",
             "2": "Du dessin à la vraie pièce, jusqu'au 8 décembre"
+          },
+          "recitCourt": {
+            "titre": "Concevoir un produit, du besoin à la pièce",
+            "intro": "Premier projet au sein de l'ENSAM : un pied prothétique imprimé en 3D pour un enfant. Il suit la démarche de conception d'un produit, en cinq temps.",
+            "etapes": [
+              {
+                "titre": "Partir du besoin",
+                "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_194254_1dc8971e-a4de-4170-b498-8b5c15a7d1ef_min.webp",
+                "alt": "Mise en plan du pied en traits violets",
+                "texte": "Un enfant amputé sous le genou, un pied qui doit plier sans casser et suivre sa croissance. La veille et le cahier des charges traduisent ce besoin en chiffres.",
+                "partie": "veille-cdcf"
+              },
+              {
+                "titre": "Dimensionner",
+                "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_194352_8db6ab30-9199-4be7-836f-9fd40b58df69_min.webp",
+                "alt": "Le pied découpé en maillage d'éléments finis",
+                "texte": "Un premier calcul à la main, par la théorie des poutres, donne la forme et les épaisseurs avant tout logiciel.",
+                "partie": "rdm"
+              },
+              {
+                "titre": "Simuler",
+                "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_194556_c767664f-e9d1-4a67-b682-18c4fc87cffa_min.webp",
+                "alt": "Carte des contraintes sur le pied, maximum dans le coin",
+                "texte": "La CAO et la simulation vérifient que la pièce tient à quatre fois le poids de l'enfant.",
+                "partie": "cao"
+              },
+              {
+                "titre": "Choisir et tester la matière",
+                "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_194724_840bc470-b90e-4f2a-be8d-a3cd341a0a6d_min.webp",
+                "alt": "Le pied en cours d'impression, couche par couche",
+                "texte": "Le matériau et le procédé sont choisis, puis validés par des essais sur éprouvettes imprimées.",
+                "partie": "flexion"
+              },
+              {
+                "titre": "Fabriquer et recommencer",
+                "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_164509_45638d62-7251-4dc5-b2b5-d2fdff5ed350_min.webp",
+                "alt": "Rendu du pied en PLA violet",
+                "texte": "On imprime, on mesure, on teste, puis on corrige. Un pied qu'on réimprime à chaque pointure.",
+                "partie": "bilan"
+              }
+            ]
           }
         }
       ],

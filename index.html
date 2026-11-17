@@ -591,6 +591,15 @@ footer { padding-bottom: 36px; }
 }
 
 @media (prefers-reduced-motion: no-preference) { html { scroll-behavior: smooth; } }
+
+/* Page Arts et Métiers */
+a.tg-l { text-decoration: none; border-radius: 999px 0 0 999px; padding-top: 6px; padding-bottom: 6px; transition: color .2s var(--ease); }
+a.tg-l:hover { color: #5c1a4d; text-decoration: underline; text-underline-offset: 3px; }
+a.tg-l[aria-current="page"] { color: #fff; background: #80276c; border-radius: 999px; padding-left: 10px; padding-right: 10px; margin-left: -7px; border-right-color: transparent; }
+.am-word { font-size: clamp(44px, 10.5vw, 150px); color: #80276c; }
+.am-word::after { color: #ffa300; }
+.am-head h1 { color: var(--ink); }
+.more { display: flex; flex-wrap: wrap; gap: 10px; }
 </style>
 </head>
 <body>
@@ -652,7 +661,7 @@ footer { padding-bottom: 36px; }
 
   function groups() { return (data.entreprises || []).concat(data.semestres); }
   function buildRoutes() {
-    routes = { accueil: { view: "home" }, projets: { view: "projets" } };
+    routes = { accueil: { view: "home" }, ensam: { view: "am" }, projets: { view: "am" } };
     groups().forEach(function (s) {
       routes[s.id] = { view: s.type === "entreprise" ? "ent" : "sem", s: s };
       (s.projets || []).forEach(function (p) {
@@ -668,7 +677,7 @@ footer { padding-bottom: 36px; }
   function renderTabs(active, page) {
     document.getElementById("mainnav").innerHTML =
       '<a href="#accueil"' + (page === "home" ? ' aria-current="page"' : "") + ">Accueil</a>" +
-      '<a href="#projets"' + (page === "projets" ? ' aria-current="page"' : "") + ">Projets</a>";
+      "";
     var ents = (data.entreprises || []).map(function (e) {
       var cur = active === e.id ? ' aria-current="page"' : "";
       return '<a class="tab tab-ent" href="#' + e.id + '"' + cur + ' title="' + esc(e.nom + ", " + e.periode) + '">' + esc(e.onglet || e.nom) + "</a>";
@@ -680,7 +689,7 @@ footer { padding-bottom: 36px; }
     }).join("");
     document.getElementById("tabs").innerHTML =
       (ents ? '<div class="tg tg-ent" role="group" aria-label="Alternance de BUT"><span class="tg-l">BUT</span>' + ents + "</div>" : "") +
-      '<div class="tg tg-am" role="group" aria-label="Arts et Métiers"><span class="tg-l"><span class="full">Arts et Métiers</span><span class="short">A&amp;M</span></span>' + sems + "</div>";
+      '<div class="tg tg-am" role="group" aria-label="Arts et Métiers"><a class="tg-l" href="#ensam"' + (page === "am" ? ' aria-current="page"' : "") + '><span class="full">Arts et Métiers</span><span class="short">A&amp;M</span></a>' + sems + "</div>";
   }
 
   function allTags() {
@@ -902,37 +911,34 @@ footer { padding-bottom: 36px; }
         '<div class="h4-media">' + (h.video ? '<video class="h4-vid" autoplay muted playsinline preload="auto" poster="' + esc(h.image) + '" aria-label="' + esc(h.alt) + '"><source src="' + esc(h.video) + '" type="video/mp4"></video>' : '<img class="h4-vid" src="' + esc(h.image) + '" alt="' + esc(h.alt) + '">') + "</div>" +
         '<div class="h4-text"><h1 class="mega">' + esc(pr.nom) + '<span class="dot">.</span></h1>' +
           '<p class="hero-role">' + esc(pr.titre) + '</p><p class="lead">' + esc(pr.accroche) + "</p>" +
-          '<div class="cta"><a class="btn primary" href="#projets">Voir mes projets</a><a class="btn" href="#accueil" data-scroll="parcours">Mon parcours</a>' + links + "</div></div>" +
+          '<div class="cta"><a class="btn primary" href="#ensam">Arts et Métiers</a><a class="btn" href="#scorpe">SCORPE</a><a class="btn" href="#accueil" data-scroll="parcours">Mon parcours</a>' + links + "</div></div>" +
       "</section>" +
       (bref ? '<dl class="bref-grid">' + bref + "</dl>" : "") +
-      '<section class="sec" aria-labelledby="h-feat"><div class="sec-head"><h2 id="h-feat">Projets phares</h2><p>Deux projets, deux contextes : l\'entreprise et l\'école.</p></div><div class="pcards">' + feats.join("") + '</div><p class="more"><a class="btn" href="#projets">Tous les projets et le récit du pied prothétique</a></p></section>' +
+      '<section class="sec" aria-labelledby="h-feat"><div class="sec-head"><h2 id="h-feat">Projets phares</h2><p>Deux projets, deux contextes : l\'entreprise et l\'école.</p></div><div class="pcards">' + feats.join("") + '</div><p class="more"><a class="btn" href="#ensam">Arts et Métiers : les six semestres</a><a class="btn" href="#scorpe">SCORPE : l\'alternance de BUT</a></p></section>' +
       '<section class="sec two" id="parcours"><div><div class="sec-head"><h2>Parcours</h2></div><ol class="path">' + cells + "</ol></div>" +
         '<div><div class="sec-head"><h2>Compétences</h2><p>Reprises des projets, mises à jour automatiquement.</p></div>' + skillGroups(t) + "</div></section>";
   }
 
-  function viewProjets() {
-    var cur = currentProject();
-    var key = cur ? cur.s.id + "-" + cur.p.id : "";
-    var ents = (data.entreprises || []).map(function (e) {
-      return '<section class="sec t-scorpe sec-ent" aria-labelledby="h-' + e.id + '"><div class="sec-head"><p class="am-mark"><span class="am-dot" aria-hidden="true"></span>Avant l\'école, en BUT GMP</p><h2 id="h-' + e.id + '">' + esc(e.titreProjets || e.nom) + "</h2><p>" + esc(e.intro) + '</p></div><div class="pcards">' + (e.projets || []).map(function (p) { return projCardHTML(e, p); }).join("") + "</div></section>";
-    }).join("");
+  function viewAM() {
+    var s0 = data.semestres[0], first = s0 && (s0.projets || [])[0];
+    var key = first ? s0.id + "-" + first.id : "";
     var semCards = data.semestres.filter(function (s) { return (s.projets || []).length; }).map(function (s) {
       return (s.projets || []).map(function (p) { return projCardHTML(s, p); }).join("");
     }).join("");
+    var am = data.ecole || {};
     app.innerHTML =
-      '<header class="page-hero"><h1>Projets</h1><p class="lead">Ce que j\'ai conçu, calculé et testé, en entreprise puis à Arts et Métiers. On commence par le projet en cours, raconté en cinq images.</p></header>' +
-      (cur ? storyHTML(cur.p.recit, key) : "") +
-      (cur ? '<div class="story-cta"><a class="btn primary" href="#' + key + '">Ouvrir le dossier complet du projet</a><span class="small">' + esc(cur.p.equipe) + (cur.p.encadrant ? ", encadré par " + esc(cur.p.encadrant) : "") + "</span></div>" : "") +
-      labHTML() +
-      '<section class="sec" aria-labelledby="h-sem"><div class="sec-head"><p class="am-mark"><span class="am-dot" aria-hidden="true"></span>École d\'ingénieurs, apprentissage</p><h2 id="h-sem">À Arts et Métiers</h2><p>Trois ans, six semestres, de S1 à S6. Chaque semestre a sa page, complétée au fil des projets.</p></div>' + rulerHTML() + (semCards ? '<div class="pcards sem-cards">' + semCards + "</div>" : "") + "</section>" +
-      ents;
+      '<nav class="crumbs" aria-label="Fil d\'Ariane"><a href="#accueil">Accueil</a><span aria-hidden="true">/</span><span>Arts et Métiers</span></nav>' +
+      '<header class="ent-head am-head"><p class="ent-word am-word" aria-hidden="true">Arts et Métiers</p><div><p class="eyebrow">' + esc(am.periode || "") + ", " + esc(am.role || "") + "</p><h1>" + esc(am.titre || "Arts et Métiers") + '</h1><p class="lead">' + esc(am.intro || "") + "</p>" +
+        (am.faits ? '<dl class="facts ent-facts">' + am.faits.map(function (f) { return "<div><dt>" + esc(f.k) + "</dt><dd>" + esc(f.v) + "</dd></div>"; }).join("") + "</dl>" : "") + "</div></header>" +
+      '<section class="sec" aria-labelledby="h-sem"><div class="sec-head"><h2 id="h-sem">Six semestres, de S1 à S6</h2><p>Chaque semestre a sa page, complétée au fil des projets.</p></div>' + rulerHTML() + (semCards ? '<div class="pcards sem-cards">' + semCards + "</div>" : "") + "</section>" +
+      (first ? storyHTML(first.recitCourt || first.recit, key) : "") +
+      (first ? '<div class="story-cta"><a class="btn primary" href="#' + key + '">Ouvrir le dossier complet du projet</a><span class="small">' + esc(first.equipe) + (first.encadrant ? ", encadré par " + esc(first.encadrant) : "") + "</span></div>" : "");
     rulerObserve();
     initStory();
-    initLab();
   }
 
   function viewEnt(e) {
-    var html = '<nav class="crumbs" aria-label="Fil d\'Ariane"><a href="#accueil">Accueil</a><span aria-hidden="true">/</span><a href="#projets">Projets</a><span aria-hidden="true">/</span><span>' + esc(e.nom) + "</span></nav>" +
+    var html = '<nav class="crumbs" aria-label="Fil d\'Ariane"><a href="#accueil">Accueil</a><span aria-hidden="true">/</span><span>' + esc(e.nom) + "</span></nav>" +
       '<header class="ent-head"><p class="ent-word" aria-hidden="true">' + esc(e.nom) + '</p><div><p class="eyebrow">' + esc(e.periode) + ", " + esc(e.role) + "</p><h1>" + esc(e.titre) + '</h1><p class="lead">' + esc(e.intro) + "</p>" +
       (e.faits ? '<dl class="facts ent-facts">' + e.faits.map(function (f) { return "<div><dt>" + esc(f.k) + "</dt><dd>" + esc(f.v) + "</dd></div>"; }).join("") + "</dl>" : "") + "</div></header>" +
       (e.video ? '<div class="ent-band"><video autoplay muted loop playsinline preload="metadata" poster="' + esc(e.poster) + '" aria-label="' + esc(e.videoAlt) + '"><source src="' + esc(e.video) + '" type="video/mp4"></video></div>' : "") +
@@ -955,7 +961,7 @@ footer { padding-bottom: 36px; }
 
   function viewSem(s) {
     var i = data.semestres.indexOf(s), pr = semProgress(s);
-    var html = '<nav class="crumbs" aria-label="Fil d\'Ariane"><a href="#accueil">Accueil</a><span aria-hidden="true">/</span><a href="#projets">Arts et Métiers</a><span aria-hidden="true">/</span><span>' + esc(s.nom) + "</span></nav>" +
+    var html = '<nav class="crumbs" aria-label="Fil d\'Ariane"><a href="#accueil">Accueil</a><span aria-hidden="true">/</span><a href="#ensam">Arts et Métiers</a><span aria-hidden="true">/</span><span>' + esc(s.nom) + "</span></nav>" +
       '<header class="sem-head"><span class="sem-big" aria-hidden="true">S' + (i + 1) + '</span><div><p class="am-mark"><span class="am-dot" aria-hidden="true"></span>Arts et Métiers, Programme Grande École</p><p class="eyebrow">' + esc(s.annee) + ", " + esc(s.periode) + "</p><h1>" + esc(s.nom) + "</h1>" + (s.intro ? '<p class="lead">' + esc(s.intro) + "</p>" : "") +
       '<div class="rs-bar big"><span style="--p:' + pr.toFixed(3) + '"></span></div><p class="small">' + (pr >= 1 ? "Semestre terminé" : pr > 0 ? "En cours, " + Math.round(pr * 100) + " % du semestre écoulé" : "Ce semestre n'a pas encore commencé") + "</p></div></header>";
     if (!(s.projets || []).length) {
@@ -1002,7 +1008,7 @@ footer { padding-bottom: 36px; }
     }).join("");
     var h = p.hero || {};
     app.innerHTML =
-      '<nav class="crumbs" aria-label="Fil d\'Ariane"><a href="#accueil">Accueil</a><span aria-hidden="true">/</span>' + (s.type === "entreprise" ? "" : '<a href="#projets">Arts et Métiers</a><span aria-hidden="true">/</span>') + '<a href="#' + s.id + '">' + esc(s.nom) + '</a><span aria-hidden="true">/</span><span>' + esc(p.titreCourt || p.titre) + "</span></nav>" +
+      '<nav class="crumbs" aria-label="Fil d\'Ariane"><a href="#accueil">Accueil</a><span aria-hidden="true">/</span>' + (s.type === "entreprise" ? "" : '<a href="#ensam">Arts et Métiers</a><span aria-hidden="true">/</span>') + '<a href="#' + s.id + '">' + esc(s.nom) + '</a><span aria-hidden="true">/</span><span>' + esc(p.titreCourt || p.titre) + "</span></nav>" +
       '<section class="proj-hero">' + (h.image ? '<div class="ph-media">' + media(h) + aiTag(h.note) + "</div>" : "") +
         '<div class="ph-text"><p class="eyebrow">' + esc(s.carte || s.nom) + ", " + esc(lc(p.periode)) + "</p><h1>" + esc(p.titre) + "</h1><p>" + esc(p.sousTitre) + "</p></div></section>" +
       '<section class="proj-intro"><p class="lede">' + esc(p.resume) + '</p><dl class="facts">' +
@@ -1201,11 +1207,11 @@ footer { padding-bottom: 36px; }
     var r = routes[h] || routes.accueil;
     document.body.classList.toggle("t-scorpe", !!(r.s && r.s.theme === "scorpe"));
     if (r.view === "home") { renderTabs(null, "home"); viewHome(); window.scrollTo(0, 0); }
-    else if (r.view === "projets") { renderTabs(null, "projets"); viewProjets(); window.scrollTo(0, 0); }
+    else if (r.view === "am") { renderTabs(null, "am"); viewAM(); window.scrollTo(0, 0); }
     else if (r.view === "sem") { renderTabs(r.s.id); viewSem(r.s); window.scrollTo(0, 0); }
     else if (r.view === "ent") { renderTabs(r.s.id); viewEnt(r.s); window.scrollTo(0, 0); }
     else { renderTabs(r.s.id); viewProj(r.s, r.p, r.part); }
-    document.title = r.view === "home" ? "Yann Leduc, apprenti ingénieur Arts et Métiers" : r.view === "projets" ? "Projets, Yann Leduc" : (r.p ? r.p.titre : r.s.nom) + ", Yann Leduc";
+    document.title = r.view === "home" ? "Yann Leduc, apprenti ingénieur Arts et Métiers" : r.view === "am" ? "Arts et Métiers, Yann Leduc" : (r.p ? r.p.titre : r.s.nom) + ", Yann Leduc";
   }
 
   // Barre de lecture
