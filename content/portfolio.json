@@ -2,7 +2,7 @@
   "maj": "2026-11-17",
   "profil": {
     "nom": "Yann Leduc",
-    "titre": "Apprenti ingénieur · Arts et Métiers, Programme Grande École",
+    "titre": "Apprenti ingénieur à Arts et Métiers, Programme Grande École",
     "accroche": "Je conçois des pièces mécaniques de l'idée jusqu'à l'essai : on part d'un besoin, on dimensionne à la main, on modélise, puis on vérifie sur une vraie pièce. Avant Arts et Métiers, j'ai fait un BUT Génie Mécanique et Productique en alternance. Ce portfolio suit mes projets semestre par semestre, avec ce qui a marché et ce qui reste à prouver.",
     "parcours": [
       {
@@ -100,7 +100,7 @@
             {
               "id": "veille-cdcf",
               "titre": "Veille brevets et cahier des charges",
-              "module": "COPI · Propriété industrielle, Analyse de la valeur",
+              "module": "COPI, propriété industrielle et analyse de la valeur",
               "date": "Sept. – oct. 2026",
               "texte": [
                 "On a commencé par regarder ce qui existe. Sur Espacenet, data.inpi.fr et Google Patents, on a retenu 23 brevets de 1991 à 2025. La plupart sont des pieds en carbone ou en composite, mais 14 ont une forme assez simple pour être imprimée : ce qui les rend chers, c'est le carbone, pas la géométrie. Aucun ne vise un pied d'enfant imprimé en FDM.",
@@ -158,7 +158,7 @@
             {
               "id": "rdm",
               "titre": "Pré-dimensionnement par la théorie des poutres",
-              "module": "REPI · Résistance des matériaux",
+              "module": "REPI, résistance des matériaux",
               "date": "Sept. – oct. 2026",
               "texte": [
                 "On a modélisé le pied comme une poutre encastrée à la cheville et chargée à la pointe. Une lame d'épaisseur constante ne marche pas. À 11,5 mm, elle plie assez mais monte à 170 MPa à quatre fois le poids : elle casse. À 14,8 mm, elle tient, mais ne plie plus que de 10,7 mm.",
@@ -213,7 +213,7 @@
             {
               "id": "materiau",
               "titre": "Choix du matériau et du procédé",
-              "module": "MATI · Granta EduPack",
+              "module": "MATI, Granta EduPack",
               "date": "Oct. 2026",
               "texte": [
                 "Dans Granta EduPack, on a resserré toute la base comme un entonnoir. D'abord des limites : Re d'au moins 60 MPa, module entre 2 et 8 GPa pour que la lame puisse plier. Ensuite l'indice Re/(E·ρ) face au coût, qui laisse 11 matériaux. Enfin la tenue aux UV, à l'eau douce et à l'eau salée, qui en laisse 3.",
@@ -258,7 +258,7 @@
             {
               "id": "flexion",
               "titre": "Essai de flexion 3 points sur PLA imprimé",
-              "module": "MDSI · Essais mécaniques",
+              "module": "MDSI, essais mécaniques",
               "date": "05/10/2026",
               "texte": [
                 "Les valeurs du TD supposaient un PLA idéal. Or une pièce imprimée est anisotrope : tout dépend du sens des filaments et de l'adhésion entre couches. On a donc testé des éprouvettes imprimées en flexion 3 points, selon une version simplifiée de l'ISO 178, puis converti les courbes effort-déplacement en contrainte-déformation.",
@@ -304,7 +304,7 @@
             {
               "id": "cao",
               "titre": "Modélisation CAO et simulation",
-              "module": "MDSI · 3DExperience",
+              "module": "MDSI, 3DExperience",
               "date": "Oct. 2026",
               "texte": [
                 "Dans 3DExperience, on a dessiné une esquisse paramétrée pilotée par trois cotes : petite section, grande section et longueur du pied. Changer de pointure, c'est changer ces valeurs. On a ajouté des congés sur les arêtes contre les concentrations de contraintes, et un bloc à quatre trous pour l'adaptateur standard.",
@@ -372,7 +372,7 @@
             {
               "id": "elements-finis",
               "titre": "Méthode des éléments finis",
-              "module": "MDSI · MATLAB et Abaqus",
+              "module": "MDSI, MATLAB et Abaqus",
               "date": "Nov. 2026",
               "texte": [
                 "Pour comprendre ce que fait un logiciel de simulation, on a programmé la méthode nous-mêmes sous MATLAB sur un treillis plan de quinze barres : matrices de rigidité élémentaires, assemblage, conditions aux limites, résolution de K·U = F. Puis on a refait le même calcul dans Abaqus.",
@@ -423,7 +423,7 @@
             {
               "id": "bilan",
               "titre": "Bilan du Bloc 1 et suite du projet",
-              "module": "Soutenance · Bloc 2",
+              "module": "Soutenance et Bloc 2",
               "date": "Oct. – déc. 2026",
               "texte": [
                 "On a présenté le Bloc 1 en soutenance le 17 octobre, à deux voix. Le pied tient ses deux objectifs principaux sur le papier, mais plusieurs choses manquent : la marge est mince, notre modèle ne charge que la pointe alors qu'à la marche l'effort roule du talon vers les orteils, le talon n'est pas encore dessiné et la fatigue n'a pas été testée. Enfin, la forme est très carrée, peu engageante pour un enfant et sans doute pas idéale pour dérouler le pas.",
