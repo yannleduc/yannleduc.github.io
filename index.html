@@ -494,6 +494,10 @@ body.t-scorpe .brand span { color: #111; }
 .ent-facts { margin-top: 26px; max-width: 760px; grid-template-columns: repeat(3, 1fr); }
 @media (max-width: 640px) { .ent-facts { grid-template-columns: 1fr 1fr; } }
 
+/* Bandeau vidéo SCORPE */
+.ent-band { margin: 0 0 56px; border-radius: 14px; overflow: hidden; background: #f3f3f3; }
+.ent-band video { width: 100%; aspect-ratio: 21 / 8; object-fit: cover; }
+@media (max-width: 640px) { .ent-band { margin: 0 -18px 40px; border-radius: 0; } .ent-band video { aspect-ratio: 16 / 9; } }
 /* Parcours : point vert pour SCORPE */
 .path li.t-scorpe::before { border-color: #138a3e; }
 
@@ -576,7 +580,7 @@ footer { padding-bottom: 36px; }
 </header>
 <main id="main"><div class="wrap" id="app" tabindex="-1"><p class="loading">Chargement du portfolio…</p><noscript><p>Ce portfolio a besoin de JavaScript pour s'afficher. Activez-le dans votre navigateur puis rechargez la page.</p></noscript></div></main>
 <footer><div class="wrap"><a class="big" href="#accueil">Yann Leduc<span>.</span></a><div class="small"><span>Apprenti ingénieur à Arts et Métiers</span><span id="foot-right"></span></div></div>
-<div class="wrap ai-note"><p>Images générées par IA. Pied prothétique : la vidéo d'en-tête, les cinq vues du récit (mise en plan, maillage, contraintes, impression, pièce), le rendu du pied et les illustrations en tête de chaque étape, créés à partir de la CAO ; la pièce n'est pas encore imprimée. SCORPE : toutes les images sont des illustrations d'ambiance (batterie, foret, véhicule, composants, salon, pièces imprimées) et ne montrent pas le SEB, qui reste confidentiel. Les captures 3DExperience et Abaqus, le plan coté, les calculs et le modèle 3D viennent directement des projets.</p></div></footer>
+<div class="wrap ai-note"><p>Images générées par IA. Pied prothétique : la vidéo d'en-tête, les cinq vues du récit (mise en plan, maillage, contraintes, impression, pièce), le rendu du pied et les illustrations en tête de chaque étape, créés à partir de la CAO ; la pièce n'est pas encore imprimée. SCORPE : toutes les images et la vidéo du foret sont des illustrations d'ambiance (batterie, foret, véhicule, composants, salon, pièces imprimées) et ne montrent pas le SEB, qui reste confidentiel. Les captures 3DExperience et Abaqus, le plan coté, les calculs et le modèle 3D viennent directement des projets.</p></div></footer>
 
 <div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Image agrandie">
   <button class="x" id="lb-close" type="button">Fermer ✕</button>
@@ -904,6 +908,7 @@ footer { padding-bottom: 36px; }
     var html = '<nav class="crumbs" aria-label="Fil d\'Ariane"><a href="#accueil">Accueil</a><span aria-hidden="true">/</span><a href="#projets">Projets</a><span aria-hidden="true">/</span><span>' + esc(e.nom) + "</span></nav>" +
       '<header class="ent-head"><p class="ent-word" aria-hidden="true">' + esc(e.nom) + '</p><div><p class="eyebrow">' + esc(e.periode) + ", " + esc(e.role) + "</p><h1>" + esc(e.titre) + '</h1><p class="lead">' + esc(e.intro) + "</p>" +
       (e.faits ? '<dl class="facts ent-facts">' + e.faits.map(function (f) { return "<div><dt>" + esc(f.k) + "</dt><dd>" + esc(f.v) + "</dd></div>"; }).join("") + "</dl>" : "") + "</div></header>" +
+      (e.video ? '<div class="ent-band"><video autoplay muted loop playsinline preload="metadata" poster="' + esc(e.poster) + '" aria-label="' + esc(e.videoAlt) + '"><source src="' + esc(e.video) + '" type="video/mp4"></video></div>' : "") +
       '<div class="pcards">' + (e.projets || []).map(function (p, i) { return projCardHTML(e, p, i === 0); }).join("") + "</div>";
     app.innerHTML = html;
   }
