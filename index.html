@@ -291,6 +291,7 @@ main { padding-bottom: 104px; }
 @media (max-width: 960px) {
   .steps { position: static; display: flex; overflow-x: auto; gap: 6px; padding-bottom: 6px; }
   .steps .lbl { display: none; }
+  .steps .bloc-lbl { margin: 0 2px 0 6px; align-self: center; white-space: nowrap; }
   .steps a { white-space: nowrap; border: 1px solid var(--rule); border-radius: 999px; grid-template-columns: auto auto; padding: 5px 12px; }
   .steps a.on { border-color: var(--accent); }
 }
@@ -438,7 +439,7 @@ footer .small { color: #f0e2ec; text-align: right; display: grid; gap: 4px; }
 
 
 /* ==== Version 5 : pages Accueil / Projets / SCORPE ==== */
-.t-scorpe { --accent: #138a3e; --accent-deep: #0b5e29; --accent-soft: #e5f3ea; --gold: #111111; --gold-ink: #111111; --gold-soft: #ececec; --tint: #f5f7f5; }
+.t-scorpe { --accent: #3f7413; --accent-deep: #2c540b; --accent-soft: #eef7e3; --lime: #9ed05f; --gold: #9ed05f; --gold-ink: #111111; --gold-soft: #eef7e3; --tint: #f6f8f3; }
 body.t-scorpe .brand span { color: #111; }
 /* Navigation */
 .mainnav { display: flex; gap: 4px; margin-left: auto; }
@@ -446,13 +447,36 @@ body.t-scorpe .brand span { color: #111; }
 .mainnav a:hover { color: var(--ink); background: var(--tint); }
 .mainnav a[aria-current="page"] { color: var(--accent); }
 .tabs { margin-left: 0; align-items: center; }
-.tab-ent { color: #138a3e; }
-.tab-ent[aria-current="page"] { background: #138a3e !important; color: #fff !important; }
-.tab-sep { width: 1px; height: 18px; background: var(--rule); margin: 0 4px; }
+/* Deux groupes d'onglets : SCORPE (BUT) et Arts et Métiers */
+.tabs { border: 0; padding: 0; gap: 8px; border-radius: 0; }
+.tg { display: inline-flex; align-items: center; gap: 2px; padding: 3px 3px 3px 10px; border: 1px solid var(--rule); border-radius: 999px; background: #fff; }
+.tg-l { font-size: 12.5px; font-weight: 700; color: var(--muted); padding-right: 6px; margin-right: 2px; border-right: 1px solid var(--rule); line-height: 1.1; white-space: nowrap; }
+.tg-l .short { display: none; }
+.tg-ent { border-color: #c9e5a6; }
+.tg-ent .tg-l { color: #2c540b; border-right-color: #c9e5a6; }
+.tg-am { border-color: #e2c9dc; }
+.tg-am .tg-l { color: #80276c; border-right-color: #e2c9dc; }
+.tab-ent { color: #111; }
+.tab-ent:hover { color: #2c540b !important; }
+.tab-ent[aria-current="page"] { background: #9ed05f !important; color: #111 !important; }
+.tg-am .tab[aria-current="page"] { background: #80276c; color: #fff; }
+.am-mark { display: inline-flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 600; color: #80276c; margin: 0 0 8px; }
+.am-dot { width: 10px; height: 10px; border-radius: 50%; background: #80276c; box-shadow: 14px 0 0 #ffa300; margin-right: 14px; }
+.t-scorpe .am-mark { color: #2c540b; }
+.t-scorpe .am-dot { background: #111; box-shadow: 14px 0 0 #9ed05f; }
+.sec-ent { border-top: 6px solid #9ed05f; }
+/* Blocs du projet */
+.bloc-lbl { display: block; font-size: 12.5px; font-weight: 700; color: var(--accent); margin: 14px 0 4px 12px; }
+.steps .lbl + .bloc-lbl { margin-top: 0; }
+@media (max-width: 430px) { .tg-l .full { display: none; } .tg-l .short { display: inline; } .tg { padding-left: 8px; } }
+.bloc-band { display: flex; align-items: baseline; gap: 14px; padding: 14px 0 12px; margin: 28px 0 8px; border-top: 2px solid var(--ink); border-bottom: 1px solid var(--rule); color: var(--muted); font-size: 15px; }
+.bloc-band:first-child { margin-top: 0; }
+.bloc-band .b { font-family: var(--font-display); font-weight: 700; font-size: 26px; color: var(--accent); }
 @media (max-width: 760px) {
   .top .wrap { row-gap: 6px; }
   .mainnav { margin-left: auto; }
-  .tabs { order: 3; width: 100%; justify-content: space-between; overflow-x: auto; }
+  .tabs { order: 3; width: 100%; justify-content: flex-start; overflow-x: auto; }
+  .tg-am { flex: 1; justify-content: space-between; }
 }
 
 /* Accueil : en bref */
@@ -649,11 +673,14 @@ footer { padding-bottom: 36px; }
       var cur = active === e.id ? ' aria-current="page"' : "";
       return '<a class="tab tab-ent" href="#' + e.id + '"' + cur + ' title="' + esc(e.nom + ", " + e.periode) + '">' + esc(e.onglet || e.nom) + "</a>";
     }).join("");
-    document.getElementById("tabs").innerHTML = ents + (ents ? '<span class="tab-sep" aria-hidden="true"></span>' : "") + data.semestres.map(function (s, i) {
+    var sems = data.semestres.map(function (s, i) {
       var cur = active === s.id ? ' aria-current="page"' : "";
       var empty = (s.projets || []).length ? "" : " empty";
-      return '<a class="tab' + empty + '" href="#' + s.id + '"' + cur + ' title="' + esc(s.nom + ", " + s.periode) + '">S' + (i + 1) + "</a>";
+      return '<a class="tab' + empty + '" href="#' + s.id + '"' + cur + ' title="' + esc((s.carte || s.nom) + ", " + s.periode) + '" aria-label="' + esc(s.carte || s.nom) + '">S' + (i + 1) + "</a>";
     }).join("");
+    document.getElementById("tabs").innerHTML =
+      (ents ? '<div class="tg tg-ent" role="group" aria-label="Alternance de BUT"><span class="tg-l">BUT</span>' + ents + "</div>" : "") +
+      '<div class="tg tg-am" role="group" aria-label="Arts et Métiers"><span class="tg-l"><span class="full">Arts et Métiers</span><span class="short">A&amp;M</span></span>' + sems + "</div>";
   }
 
   function allTags() {
@@ -760,7 +787,7 @@ footer { padding-bottom: 36px; }
     var segs = data.semestres.map(function (s, i) {
       var pr = semProgress(s), n = (s.projets || []).length;
       var state = pr >= 1 ? "done" : (pr > 0 ? "live" : "next");
-      return '<a class="rs ' + state + '" href="#' + s.id + '" aria-label="' + esc(s.nom + ", " + s.periode) + '">' +
+      return '<a class="rs ' + state + '" href="#' + s.id + '" aria-label="' + esc((s.carte || s.nom) + ", " + s.periode) + '">' +
         '<span class="rs-num">S' + (i + 1) + "</span>" +
         '<span class="rs-bar"><span style="--p:' + pr.toFixed(3) + '"></span></span>' +
         '<span class="rs-per">' + esc(s.periode) + "</span>" +
@@ -887,7 +914,7 @@ footer { padding-bottom: 36px; }
     var cur = currentProject();
     var key = cur ? cur.s.id + "-" + cur.p.id : "";
     var ents = (data.entreprises || []).map(function (e) {
-      return '<section class="sec t-scorpe" aria-labelledby="h-' + e.id + '"><div class="sec-head"><h2 id="h-' + e.id + '">' + esc(e.titreProjets || e.nom) + "</h2><p>" + esc(e.intro) + '</p></div><div class="pcards">' + (e.projets || []).map(function (p) { return projCardHTML(e, p); }).join("") + "</div></section>";
+      return '<section class="sec t-scorpe sec-ent" aria-labelledby="h-' + e.id + '"><div class="sec-head"><p class="am-mark"><span class="am-dot" aria-hidden="true"></span>Avant l\'école, en BUT GMP</p><h2 id="h-' + e.id + '">' + esc(e.titreProjets || e.nom) + "</h2><p>" + esc(e.intro) + '</p></div><div class="pcards">' + (e.projets || []).map(function (p) { return projCardHTML(e, p); }).join("") + "</div></section>";
     }).join("");
     var semCards = data.semestres.filter(function (s) { return (s.projets || []).length; }).map(function (s) {
       return (s.projets || []).map(function (p) { return projCardHTML(s, p); }).join("");
@@ -897,7 +924,7 @@ footer { padding-bottom: 36px; }
       (cur ? storyHTML(cur.p.recit, key) : "") +
       (cur ? '<div class="story-cta"><a class="btn primary" href="#' + key + '">Ouvrir le dossier complet du projet</a><span class="small">' + esc(cur.p.equipe) + (cur.p.encadrant ? ", encadré par " + esc(cur.p.encadrant) : "") + "</span></div>" : "") +
       labHTML() +
-      '<section class="sec" aria-labelledby="h-sem"><div class="sec-head"><h2 id="h-sem">À Arts et Métiers</h2><p>Trois ans, six semestres. Chaque semestre a sa page, complétée au fil des projets.</p></div>' + rulerHTML() + (semCards ? '<div class="pcards sem-cards">' + semCards + "</div>" : "") + "</section>" +
+      '<section class="sec" aria-labelledby="h-sem"><div class="sec-head"><p class="am-mark"><span class="am-dot" aria-hidden="true"></span>École d\'ingénieurs, apprentissage</p><h2 id="h-sem">À Arts et Métiers</h2><p>Trois ans, six semestres, de S1 à S6. Chaque semestre a sa page, complétée au fil des projets.</p></div>' + rulerHTML() + (semCards ? '<div class="pcards sem-cards">' + semCards + "</div>" : "") + "</section>" +
       ents;
     rulerObserve();
     initStory();
@@ -928,8 +955,8 @@ footer { padding-bottom: 36px; }
 
   function viewSem(s) {
     var i = data.semestres.indexOf(s), pr = semProgress(s);
-    var html = '<nav class="crumbs" aria-label="Fil d\'Ariane"><a href="#accueil">Accueil</a><span aria-hidden="true">/</span><span>' + esc(s.nom) + "</span></nav>" +
-      '<header class="sem-head"><span class="sem-big" aria-hidden="true">S' + (i + 1) + '</span><div><p class="eyebrow">' + esc(s.periode) + ", " + esc(s.annee) + "</p><h1>" + esc(s.nom) + "</h1>" + (s.intro ? '<p class="lead">' + esc(s.intro) + "</p>" : "") +
+    var html = '<nav class="crumbs" aria-label="Fil d\'Ariane"><a href="#accueil">Accueil</a><span aria-hidden="true">/</span><a href="#projets">Arts et Métiers</a><span aria-hidden="true">/</span><span>' + esc(s.nom) + "</span></nav>" +
+      '<header class="sem-head"><span class="sem-big" aria-hidden="true">S' + (i + 1) + '</span><div><p class="am-mark"><span class="am-dot" aria-hidden="true"></span>Arts et Métiers, Programme Grande École</p><p class="eyebrow">' + esc(s.annee) + ", " + esc(s.periode) + "</p><h1>" + esc(s.nom) + "</h1>" + (s.intro ? '<p class="lead">' + esc(s.intro) + "</p>" : "") +
       '<div class="rs-bar big"><span style="--p:' + pr.toFixed(3) + '"></span></div><p class="small">' + (pr >= 1 ? "Semestre terminé" : pr > 0 ? "En cours, " + Math.round(pr * 100) + " % du semestre écoulé" : "Ce semestre n'a pas encore commencé") + "</p></div></header>";
     if (!(s.projets || []).length) {
       html += '<div class="empty-state"><span class="sem-ghost" aria-hidden="true">S' + (i + 1) + '</span><div><strong>Pas encore de projet ici</strong><p>Les projets du semestre ' + (i + 1) + " seront ajoutés au fil de l'année.</p></div></div>";
@@ -967,14 +994,17 @@ footer { padding-bottom: 36px; }
 
   function viewProj(s, p, partId) {
     var base = s.id + "-" + p.id;
+    var prevBloc = null, prevBloc2 = null;
     var steps = (p.parties || []).map(function (pa, i) {
-      return '<a href="#' + base + "-" + pa.id + '" data-step="' + base + "-" + pa.id + '"><span class="n">' + pad(i + 1) + "</span><span>" + esc(pa.titre) + "</span></a>";
+      var lbl = "";
+      if (pa.bloc && pa.bloc !== prevBloc) { lbl = '<span class="bloc-lbl">Bloc ' + pa.bloc + "</span>"; prevBloc = pa.bloc; }
+      return lbl + '<a href="#' + base + "-" + pa.id + '" data-step="' + base + "-" + pa.id + '"><span class="n">' + pad(i + 1) + "</span><span>" + esc(pa.titre) + "</span></a>";
     }).join("");
     var h = p.hero || {};
     app.innerHTML =
-      '<nav class="crumbs" aria-label="Fil d\'Ariane"><a href="#accueil">Accueil</a><span aria-hidden="true">/</span><a href="#' + s.id + '">' + esc(s.nom) + '</a><span aria-hidden="true">/</span><span>' + esc(p.titreCourt || p.titre) + "</span></nav>" +
+      '<nav class="crumbs" aria-label="Fil d\'Ariane"><a href="#accueil">Accueil</a><span aria-hidden="true">/</span>' + (s.type === "entreprise" ? "" : '<a href="#projets">Arts et Métiers</a><span aria-hidden="true">/</span>') + '<a href="#' + s.id + '">' + esc(s.nom) + '</a><span aria-hidden="true">/</span><span>' + esc(p.titreCourt || p.titre) + "</span></nav>" +
       '<section class="proj-hero">' + (h.image ? '<div class="ph-media">' + media(h) + aiTag(h.note) + "</div>" : "") +
-        '<div class="ph-text"><p class="eyebrow">' + esc(s.nom) + ", " + esc(lc(p.periode)) + "</p><h1>" + esc(p.titre) + "</h1><p>" + esc(p.sousTitre) + "</p></div></section>" +
+        '<div class="ph-text"><p class="eyebrow">' + esc(s.carte || s.nom) + ", " + esc(lc(p.periode)) + "</p><h1>" + esc(p.titre) + "</h1><p>" + esc(p.sousTitre) + "</p></div></section>" +
       '<section class="proj-intro"><p class="lede">' + esc(p.resume) + '</p><dl class="facts">' +
         "<div><dt>Équipe</dt><dd>" + esc(p.equipe) + "</dd></div>" +
         (p.encadrant ? "<div><dt>Encadrant</dt><dd>" + esc(p.encadrant) + "</dd></div>" : "") +
@@ -985,7 +1015,11 @@ footer { padding-bottom: 36px; }
       planHTML(p, base) +
       '<div class="modebar"><span class="lbl">Niveau de lecture</span><div class="seg" role="group" aria-label="Niveau de lecture"><button type="button" data-mode="court">Version 2 minutes</button><button type="button" data-mode="detail">Version détaillée</button></div></div>' +
       '<div class="proj-layout" id="proj-layout"><nav class="steps" aria-label="Étapes du projet"><span class="lbl">Étapes du projet</span>' + steps + "</nav>" +
-      '<div class="parts">' + (p.parties || []).map(function (pa, i) { return viewPart(pa, i, base + "-" + pa.id); }).join("") + "</div></div>";
+      '<div class="parts">' + (p.parties || []).map(function (pa, i) {
+        var band = "";
+        if (pa.bloc && pa.bloc !== prevBloc2) { band = '<div class="bloc-band"><span class="b">Bloc ' + pa.bloc + "</span><span>" + esc((p.blocs || {})[pa.bloc] || "") + "</span></div>"; prevBloc2 = pa.bloc; }
+        return band + viewPart(pa, i, base + "-" + pa.id);
+      }).join("") + "</div></div>";
     watchSteps();
     loadModels();
     if (p.recit && p.recitSurPage) initStory();

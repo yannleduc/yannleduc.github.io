@@ -166,7 +166,8 @@
               "banniere": {
                 "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_165459_53b98134-43e6-4102-8488-9885c39dfd93_min.webp",
                 "alt": "Baskets alignées de la plus petite à la plus grande, une paire violette"
-              }
+              },
+              "bloc": 1
             },
             {
               "id": "veille-cdcf",
@@ -224,7 +225,8 @@
               "banniere": {
                 "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_193456_b484d98a-140c-45ed-af89-0cfd13769b69_min.webp",
                 "alt": "Planches de brevets et stylo violet sur un bureau"
-              }
+              },
+              "bloc": 1
             },
             {
               "id": "rdm",
@@ -279,7 +281,8 @@
               "banniere": {
                 "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_164636_75cee634-b2a9-4fd7-aa05-9d33bb7ad579_min.webp",
                 "alt": "Schéma d'une poutre encastrée dessiné sur papier millimétré"
-              }
+              },
+              "bloc": 1
             },
             {
               "id": "materiau",
@@ -324,7 +327,8 @@
               "banniere": {
                 "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_164926_d869f55b-2d30-4fb9-ab0a-4a7b0fa4330c_min.webp",
                 "alt": "Bobine de PLA violet, granulés et échantillon transparent"
-              }
+              },
+              "bloc": 1
             },
             {
               "id": "flexion",
@@ -370,7 +374,8 @@
               "banniere": {
                 "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_165110_7281ecd6-4967-459c-8b2a-bd338ebe94e4_min.webp",
                 "alt": "Montage de flexion 3 points sur une éprouvette en PLA violet"
-              }
+              },
+              "bloc": 1
             },
             {
               "id": "cao",
@@ -438,12 +443,63 @@
               "banniere": {
                 "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_193548_b2a2e166-fb7a-499b-9e23-4ff92f272ed5_min.webp",
                 "alt": "Le pied en maillage d'éléments finis et en carte de contraintes"
-              }
+              },
+              "bloc": 1
+            },
+            {
+              "id": "bilan",
+              "titre": "Soutenance du Bloc 1",
+              "module": "Oral de fin de Bloc 1",
+              "date": "17/10/2026",
+              "texte": [
+                "On a présenté le Bloc 1 en soutenance le 17 octobre, à deux voix. Le pied tient ses deux objectifs principaux sur le papier, mais plusieurs choses manquent : la marge est mince, notre modèle ne charge que la pointe alors qu'à la marche l'effort roule du talon vers les orteils, le talon n'est pas encore dessiné et la fatigue n'a pas été testée. Enfin, la forme est très carrée, peu engageante pour un enfant et sans doute pas idéale pour dérouler le pas.",
+                "Le Bloc 2, jusqu'au 8 décembre, transforme le dessin en pièce. Il commence par les éléments finis, pour savoir ce que fait vraiment un logiciel de simulation avant de l'appliquer à la lame. Viennent ensuite la métrologie, pour mesurer l'écart entre la CAO et le pied imprimé et régler l'impression, puis l'essai du premier pied. En parallèle, on redessine le talon, on arrondit les formes et on allège le pied en éloignant la matière de la fibre neutre."
+              ],
+              "chiffres": [
+                {
+                  "valeur": "Atteint",
+                  "label": "flèche de 8° en plantiflexion"
+                },
+                {
+                  "valeur": "Atteint",
+                  "label": "résistance à 4 × P (marge ≈ 1,07)"
+                },
+                {
+                  "valeur": "À faire",
+                  "label": "talon, 15° de dorsiflexion"
+                },
+                {
+                  "valeur": "À faire",
+                  "label": "fatigue sur ≈ 6 mois d'usage"
+                }
+              ],
+              "competences": [
+                "Présentation orale",
+                "Esprit critique",
+                "Planification"
+              ],
+              "outils": [
+                "PowerPoint"
+              ],
+              "livrables": [
+                {
+                  "titre": "Soutenance Bloc 1 (10 min + 8 min de questions)",
+                  "statut": "rendu",
+                  "date": "17/10/2026"
+                }
+              ],
+              "images": [],
+              "enBref": "Les objectifs sont tenus sur le papier, avec une marge mince. Le Bloc 2 doit imprimer, mesurer, tester et dessiner le talon.",
+              "banniere": {
+                "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_164441_85913f29-373d-472b-b54f-8e27dbcde699_min.webp",
+                "alt": "Buse d'imprimante 3D déposant du PLA violet"
+              },
+              "bloc": 1
             },
             {
               "id": "elements-finis",
               "titre": "Méthode des éléments finis",
-              "module": "MDSI, MATLAB et Abaqus",
+              "module": "Bloc 2, MDSI, MATLAB et Abaqus",
               "date": "Nov. 2026",
               "texte": [
                 "Pour comprendre ce que fait un logiciel de simulation, on a programmé la méthode nous-mêmes sous MATLAB sur un treillis plan de quinze barres : matrices de rigidité élémentaires, assemblage, conditions aux limites, résolution de K·U = F. Puis on a refait le même calcul dans Abaqus.",
@@ -477,60 +533,6 @@
                   "titre": "Rapport de TP éléments finis n°1",
                   "statut": "rendu",
                   "date": "Nov. 2026"
-                }
-              ],
-              "images": [
-                {
-                  "src": "img/s1-ef-abaqus.png",
-                  "legende": "Treillis de quinze barres sous Abaqus, déformée amplifiée."
-                }
-              ],
-              "enBref": "On a codé la méthode des éléments finis sous MATLAB et retrouvé exactement les résultats d'Abaqus.",
-              "banniere": {
-                "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_165217_ea29124c-521b-4a37-ae83-ffa215e0b94f_min.webp",
-                "alt": "Treillis plan de quinze barres violettes et nœuds jaunes"
-              }
-            },
-            {
-              "id": "bilan",
-              "titre": "Bilan du Bloc 1 et suite du projet",
-              "module": "Soutenance et Bloc 2",
-              "date": "Oct. – déc. 2026",
-              "texte": [
-                "On a présenté le Bloc 1 en soutenance le 17 octobre, à deux voix. Le pied tient ses deux objectifs principaux sur le papier, mais plusieurs choses manquent : la marge est mince, notre modèle ne charge que la pointe alors qu'à la marche l'effort roule du talon vers les orteils, le talon n'est pas encore dessiné et la fatigue n'a pas été testée. Enfin, la forme est très carrée, peu engageante pour un enfant et sans doute pas idéale pour dérouler le pas.",
-                "Le Bloc 2, jusqu'au 8 décembre, transforme le dessin en pièce. D'abord la métrologie, pour mesurer l'écart entre la CAO et le pied imprimé et régler les paramètres d'impression. Puis l'essai du premier pied. En parallèle, on redessine le talon, on arrondit les formes et on allège le pied en éloignant la matière de la fibre neutre."
-              ],
-              "chiffres": [
-                {
-                  "valeur": "Atteint",
-                  "label": "flèche de 8° en plantiflexion"
-                },
-                {
-                  "valeur": "Atteint",
-                  "label": "résistance à 4 × P (marge ≈ 1,07)"
-                },
-                {
-                  "valeur": "À faire",
-                  "label": "talon, 15° de dorsiflexion"
-                },
-                {
-                  "valeur": "À faire",
-                  "label": "fatigue sur ≈ 6 mois d'usage"
-                }
-              ],
-              "competences": [
-                "Présentation orale",
-                "Esprit critique",
-                "Planification"
-              ],
-              "outils": [
-                "PowerPoint"
-              ],
-              "livrables": [
-                {
-                  "titre": "Soutenance Bloc 1 (10 min + 8 min de questions)",
-                  "statut": "rendu",
-                  "date": "17/10/2026"
                 },
                 {
                   "titre": "Executive summary en anglais",
@@ -543,12 +545,18 @@
                   "date": "08/12/2026"
                 }
               ],
-              "images": [],
-              "enBref": "Les objectifs sont tenus sur le papier, avec une marge mince. Au Bloc 2 : imprimer, mesurer, tester et dessiner le talon.",
+              "images": [
+                {
+                  "src": "img/s1-ef-abaqus.png",
+                  "legende": "Treillis de quinze barres sous Abaqus, déformée amplifiée."
+                }
+              ],
+              "enBref": "Premier travail du Bloc 2 : on a codé la méthode des éléments finis sous MATLAB et retrouvé exactement les résultats d'Abaqus.",
               "banniere": {
-                "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_164441_85913f29-373d-472b-b54f-8e27dbcde699_min.webp",
-                "alt": "Buse d'imprimante 3D déposant du PLA violet"
-              }
+                "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_165217_ea29124c-521b-4a37-ae83-ffa215e0b94f_min.webp",
+                "alt": "Treillis plan de quinze barres violettes et nœuds jaunes"
+              },
+              "bloc": 2
             }
           ],
           "plan": {
@@ -674,11 +682,16 @@
               }
             ]
           },
-          "phare": true
+          "phare": true,
+          "blocs": {
+            "1": "Du besoin au premier pied dimensionné, jusqu'à la soutenance du 17 octobre",
+            "2": "Du dessin à la vraie pièce, jusqu'au 8 décembre"
+          }
         }
       ],
       "debut": "2026-09-01",
-      "fin": "2027-01-31"
+      "fin": "2027-01-31",
+      "carte": "Arts et Métiers, semestre 1"
     },
     {
       "id": "s2",
@@ -689,7 +702,8 @@
       "intro": "",
       "projets": [],
       "debut": "2027-02-01",
-      "fin": "2027-07-31"
+      "fin": "2027-07-31",
+      "carte": "Arts et Métiers, semestre 2"
     },
     {
       "id": "s3",
@@ -700,7 +714,8 @@
       "intro": "",
       "projets": [],
       "debut": "2027-09-01",
-      "fin": "2028-01-31"
+      "fin": "2028-01-31",
+      "carte": "Arts et Métiers, semestre 3"
     },
     {
       "id": "s4",
@@ -711,7 +726,8 @@
       "intro": "",
       "projets": [],
       "debut": "2028-02-01",
-      "fin": "2028-07-31"
+      "fin": "2028-07-31",
+      "carte": "Arts et Métiers, semestre 4"
     },
     {
       "id": "s5",
@@ -722,7 +738,8 @@
       "intro": "",
       "projets": [],
       "debut": "2028-09-01",
-      "fin": "2029-01-31"
+      "fin": "2029-01-31",
+      "carte": "Arts et Métiers, semestre 5"
     },
     {
       "id": "s6",
@@ -733,7 +750,8 @@
       "intro": "",
       "projets": [],
       "debut": "2029-02-01",
-      "fin": "2029-07-31"
+      "fin": "2029-07-31",
+      "carte": "Arts et Métiers, semestre 6"
     }
   ],
   "entreprises": [
@@ -748,7 +766,7 @@
       "role": "BUT GMP en alternance",
       "periode": "2024 – 2026",
       "titreProjets": "Chez SCORPE, en alternance",
-      "intro": "Avant Arts et Métiers, j'ai fait mon alternance de BUT au bureau d'études de SCORPE, qui conçoit et fabrique du matériel de secours pour les sapeurs-pompiers. J'y ai mené le projet SEB de la conception aux essais.",
+      "intro": "Avant Arts et Métiers, j'ai fait mon alternance de BUT GMP chez SCORPE, qui conçoit et fabrique du matériel de secours pour les sapeurs-pompiers depuis 1994. Au bureau d'études du groupe, j'ai mené le projet SEB de la conception aux essais, et travaillé sur la plupart des autres produits.",
       "faits": [
         {
           "k": "Secteur",
@@ -756,11 +774,11 @@
         },
         {
           "k": "Mon poste",
-          "v": "Apprenti au bureau d'études"
+          "v": "Apprenti au bureau d'études Innov-SaintGer, filiale de SCORPE"
         },
         {
           "k": "Lieu",
-          "v": "Witry-lès-Reims (Marne)"
+          "v": "Saint-Germainmont (Ardennes)"
         }
       ],
       "projets": [
@@ -769,19 +787,19 @@
           "titre": "SEB, système d'extinction de batterie",
           "titreCourt": "SEB",
           "sousTitre": "Un équipement pour aider les sapeurs-pompiers à éteindre un feu de batterie de véhicule électrique",
-          "equipe": "Bureau d'études SCORPE, avec mon tuteur",
+          "equipe": "Bureau d'études Innov-SaintGer (SCORPE)",
           "encadrant": "",
           "periode": "2024 – 2026",
           "phare": true,
           "recitSurPage": true,
           "resume": "Une batterie de voiture électrique qui prend feu brûle à l'intérieur d'un carter fermé : l'eau projetée de l'extérieur ne l'atteint pas. Le SEB est l'équipement que SCORPE développe pour les sapeurs-pompiers afin d'amener l'eau là où elle sert. J'y ai réalisé environ 80 % du travail, de la conception aux essais, avec des échecs formateurs et un produit qui a fini par tenir ses promesses.",
           "hero": {
-            "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_200119_87efbcca-18e1-4e39-b7dc-c10f1ef5efe2_min.webp",
-            "alt": "Pack batterie de véhicule électrique ouvert"
+            "image": "media/scorpe/seb-rendu.webp",
+            "alt": "Rendu 3D du SEB, châssis noir et vert sur roues"
           },
           "couverture": {
-            "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_200119_87efbcca-18e1-4e39-b7dc-c10f1ef5efe2_min.webp",
-            "alt": "Pack batterie de véhicule électrique ouvert"
+            "image": "media/scorpe/seb-rendu.webp",
+            "alt": "Rendu 3D du SEB, châssis noir et vert sur roues"
           },
           "chiffres": [
             {
@@ -809,7 +827,7 @@
                 "titre": "Un feu qu'on n'atteint pas",
                 "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_200119_87efbcca-18e1-4e39-b7dc-c10f1ef5efe2_min.webp",
                 "alt": "Pack batterie ouvert",
-                "texte": "Dans une voiture électrique, la batterie brûle à l'intérieur d'un carter étanche. Arroser de l'extérieur ne suffit pas, il faut amener l'eau au cœur du pack. C'est tout l'enjeu du SEB, développé avec les SDIS qui l'utiliseront.",
+                "texte": "Dans une voiture électrique, la batterie brûle à l'intérieur d'un carter étanche, et le feu peut repartir jusqu'à 24 heures après. Arroser de l'extérieur ne suffit pas, il faut amener l'eau au cœur du pack. C'est tout l'enjeu du SEB, commandé par deux SDIS qui l'utiliseront.",
                 "chiffre": {
                   "valeur": "SDIS",
                   "label": "les sapeurs-pompiers, utilisateurs finaux du produit"
@@ -840,8 +858,8 @@
               },
               {
                 "titre": "Du plan au prototype",
-                "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_200625_1842a771-7bef-453b-ac12-61ed246e197c_min.webp",
-                "alt": "Composants mécaniques alignés",
+                "image": "media/scorpe/seb-proto.webp",
+                "alt": "Prototype du SEB sur l'établi du bureau d'études",
                 "texte": "Moteurs de perçage et de levage, vis à billes, renvoi d'angle, paliers : chaque composant a été choisi pour supporter l'eau, la chaleur et une manipulation brusque. Plans, devis, commandes, puis un premier prototype complet et des versions améliorées.",
                 "chiffre": {
                   "valeur": "Eau, chaleur, chocs",
@@ -851,8 +869,8 @@
               },
               {
                 "titre": "Interschutz, puis les SDIS",
-                "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_200728_5dac7357-7cc3-4270-ad11-bb9d300ebc40_min.webp",
-                "alt": "Hall d'exposition",
+                "image": "media/scorpe/seb-salon.webp",
+                "alt": "Le SEB exposé sur le stand SCORPE",
                 "texte": "En juin 2026, le SEB a été présenté au salon Interschutz, le plus grand salon du secours en Europe, qui n'a lieu que tous les quatre ans. Il y a été très bien accueilli. Restait l'essai final devant les SDIS, en septembre.",
                 "chiffre": {
                   "valeur": "Tous les 4 ans",
@@ -870,14 +888,28 @@
               "date": "2024 – 2025",
               "enBref": "Un feu de batterie de véhicule électrique se joue à l'intérieur du pack : il faut y amener l'eau, de façon sûre pour les pompiers.",
               "texte": [
-                "Le feu d'une batterie de voiture électrique ne ressemble à aucun autre. Les cellules s'emballent à l'intérieur d'un carter fermé, et l'eau projetée de l'extérieur n'atteint pas le foyer. Les SDIS cherchaient un moyen d'intervenir au plus près de la batterie, sans exposer les sapeurs-pompiers.",
-                "Le SEB répond à ce besoin. On l'a développé en lien direct avec les SDIS, qui ont suivi les prototypes, donné leur avis à chaque étape et qui l'utiliseront sur le terrain."
+                "Le feu d'une batterie de voiture électrique ne ressemble à aucun autre. Les cellules s'emballent à l'intérieur d'un carter fermé, dégagent des gaz toxiques, et le feu peut reprendre jusqu'à 24 heures après. L'eau projetée de l'extérieur n'atteint pas le foyer. Les SDIS cherchaient un moyen d'intervenir au plus près de la batterie, sans exposer les sapeurs-pompiers.",
+                "Le SEB répond à ce besoin. Il est commandé par deux SDIS et suivi par la Sécurité civile, sur dix-huit mois de développement. Le cahier des charges est clair : un équipement mobile, porté par deux pompiers, qui se range dans un véhicule d'intervention et qui travaille à distance du véhicule en feu.",
+                "Pour les essais, on a disposé d'une Fiat 500e électrique et de son pack batterie, sur lequel on a enchaîné les tests de perçage. Chaque essai raté a donné une piste d'amélioration. Le principe a été présenté aux SDIS en juin 2025, et validé."
               ],
               "banniere": {
                 "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_200119_87efbcca-18e1-4e39-b7dc-c10f1ef5efe2_min.webp",
                 "alt": "Pack batterie de véhicule électrique ouvert"
               },
-              "chiffres": [],
+              "chiffres": [
+                {
+                  "valeur": "18 mois",
+                  "label": "de développement"
+                },
+                {
+                  "valeur": "2 pompiers",
+                  "label": "pour le porter et le mettre en œuvre"
+                },
+                {
+                  "valeur": "24 h",
+                  "label": "délai pendant lequel un feu de batterie peut reprendre"
+                }
+              ],
               "competences": [
                 "Analyse du besoin",
                 "Travail avec les utilisateurs finaux"
@@ -926,11 +958,11 @@
               "enBref": "Choix des composants pour l'eau, la chaleur et les chocs, plans, devis, puis un premier prototype complet et des versions améliorées.",
               "texte": [
                 "J'ai choisi les composants standards : deux moteurs pour le perçage et le levage, une vis à billes, un renvoi d'angle, des paliers, des accouplements, des roues de transport et une poignée. Chaque choix devait tenir à l'eau, à la chaleur et à une manipulation brusque, parce que c'est la réalité d'une intervention.",
-                "J'ai ensuite adapté la maquette 3D, réalisé les plans de tôlerie et d'usinage, demandé les devis et passé les commandes. Le montage du premier prototype complet a été compliqué, et j'ai noté chaque difficulté pour la version suivante. De mars à mai, de nouvelles versions ont été commandées pour être prêtes avant le salon."
+                "J'ai ensuite adapté la maquette 3D, réalisé les plans de tôlerie et d'usinage, demandé les devis et passé les commandes. Le montage du premier prototype complet a été compliqué, et j'ai noté chaque difficulté pour la version suivante. De mars à mai, de nouvelles versions ont été commandées pour être prêtes avant le salon. Le boîtier de commande et la télécommande, qui permettent de piloter le SEB à distance, ont suivi le même chemin : maquette 3D, puis pièce réelle."
               ],
               "banniere": {
-                "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_200625_1842a771-7bef-453b-ac12-61ed246e197c_min.webp",
-                "alt": "Composants mécaniques alignés"
+                "image": "media/scorpe/seb-boitier.webp",
+                "alt": "Boîtier de commande du SEB, coque noire et cadre vert"
               },
               "chiffres": [],
               "competences": [
@@ -942,7 +974,24 @@
                 "SolidWorks"
               ],
               "livrables": [],
-              "images": []
+              "images": [
+                {
+                  "src": "media/scorpe/seb-rendu.webp",
+                  "legende": "Rendu 3D du SEB complet"
+                },
+                {
+                  "src": "media/scorpe/seb-proto.webp",
+                  "legende": "Premier prototype complet, en montage au bureau d'études"
+                },
+                {
+                  "src": "media/scorpe/seb-boitier-cao.webp",
+                  "legende": "Maquette 3D du boîtier de commande"
+                },
+                {
+                  "src": "media/scorpe/seb-boitier.webp",
+                  "legende": "Boîtier de commande fabriqué"
+                }
+              ]
             },
             {
               "id": "inclinaison",
@@ -979,8 +1028,8 @@
                 "Le dernier jalon était l'essai final devant les SDIS en septembre, avec une exigence simple : tout devait fonctionner parfaitement."
               ],
               "banniere": {
-                "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_200728_5dac7357-7cc3-4270-ad11-bb9d300ebc40_min.webp",
-                "alt": "Hall d'exposition"
+                "image": "media/scorpe/seb-salon.webp",
+                "alt": "Stand SCORPE au salon, le SEB posé sur une colonne"
               },
               "chiffres": [],
               "competences": [
@@ -995,7 +1044,16 @@
                   "date": "Juin 2026"
                 }
               ],
-              "images": []
+              "images": [
+                {
+                  "src": "media/scorpe/seb-essai.webp",
+                  "legende": "Essai du SEB sous un véhicule"
+                },
+                {
+                  "src": "media/scorpe/seb-salon.webp",
+                  "legende": "Le SEB sur le stand SCORPE au salon Interschutz"
+                }
+              ]
             },
             {
               "id": "brevet",
@@ -1032,12 +1090,12 @@
           "periode": "2024 – 2026",
           "resume": "À côté du SEB, j'ai participé à la plupart des produits du bureau d'études : des étais de sauvetage présentés à un grand fabricant européen, des ventilateurs pour lesquels j'ai réalisé des pièces imprimées en 3D, et le suivi de productions en série.",
           "hero": {
-            "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_200847_d67df90f-e458-40ff-b811-2459f2334232_min.webp",
-            "alt": "Pièces techniques imprimées en 3D"
+            "image": "media/scorpe/etais-tripode.webp",
+            "alt": "Étai de sauvetage AIRACLÈS en configuration trépied, à l'atelier"
           },
           "couverture": {
-            "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_200847_d67df90f-e458-40ff-b811-2459f2334232_min.webp",
-            "alt": "Pièces techniques imprimées en 3D"
+            "image": "media/scorpe/etais-tripode.webp",
+            "alt": "Étai de sauvetage AIRACLÈS en configuration trépied, à l'atelier"
           },
           "chiffres": [],
           "parties": [
@@ -1048,7 +1106,7 @@
               "date": "2025 – 2026",
               "enBref": "Des étais testés en conditions réelles par un grand fabricant européen et retenus pour être revendus.",
               "texte": [
-                "Les étais servent à stabiliser un véhicule ou une structure pendant une opération de secours. Avant le départ, on a passé une semaine à préparer les étais, puis je suis parti deux jours en Autriche avec mon tuteur pour les présenter à un grand fabricant européen d'outils de désincarcération.",
+                "Les étais AIRACLÈS servent à stabiliser un véhicule ou une structure pendant une opération de secours. Avant le départ, on a passé une semaine à préparer les étais, puis je suis parti deux jours en Autriche avec mon tuteur pour les présenter à un grand fabricant européen d'outils de désincarcération.",
                 "Leur équipe les a manipulés puis testés en tenue de pompier, sous un véhicule et dans une tranchée. Ils ont relevé des points à améliorer qu'on n'avait pas anticipés, mais les étais ont été retenus pour être revendus, un contrat important pour SCORPE. Dès le retour, l'équipe a retravaillé ces points et produit des prototypes améliorés."
               ],
               "chiffres": [],
@@ -1058,7 +1116,32 @@
               ],
               "outils": [],
               "livrables": [],
-              "images": []
+              "images": [
+                {
+                  "src": "media/scorpe/etais-tripode.webp",
+                  "legende": "Étais en configuration trépied"
+                },
+                {
+                  "src": "media/scorpe/etais-bipied.webp",
+                  "legende": "Étais en bipied, reliés par une chaîne"
+                },
+                {
+                  "src": "media/scorpe/etais-mono.webp",
+                  "legende": "Étai en renfort oblique"
+                },
+                {
+                  "src": "media/scorpe/etais-essai.webp",
+                  "legende": "Essai sur un véhicule accidenté"
+                },
+                {
+                  "src": "media/scorpe/etais-prod.webp",
+                  "legende": "Série d'étais prête à partir"
+                }
+              ],
+              "banniere": {
+                "image": "media/scorpe/etais-essai.webp",
+                "alt": "Essai des étais sur un véhicule accidenté, sur un terrain d'entraînement"
+              }
             },
             {
               "id": "ventilateurs",
@@ -1067,7 +1150,7 @@
               "date": "2024 – 2026",
               "enBref": "Des pièces imprimées en 3D pour les ventilateurs, en ASA, ABS et PLA, et des plateaux d'impression optimisés jour et nuit.",
               "texte": [
-                "Pour les ventilateurs, j'ai réalisé des pièces en impression 3D au bureau d'études : de l'ASA et de l'ABS pour les pièces qui doivent résister, du PLA pour les prototypes. C'est là que j'ai pris goût à la fabrication additive.",
+                "Pour les ventilateurs à pression positive, qui chassent la fumée d'un bâtiment, j'ai réalisé des pièces en impression 3D au bureau d'études : de l'ASA et de l'ABS pour les pièces qui doivent résister, du PLA pour les prototypes. C'est là que j'ai pris goût à la fabrication additive.",
                 "Je gère aussi les commandes de pièces plastiques en optimisant les plateaux d'impression : des plateaux courts dans la journée, qu'on peut relancer, et des plateaux longs la nuit."
               ],
               "chiffres": [],
@@ -1076,7 +1159,20 @@
               ],
               "outils": [],
               "livrables": [],
-              "images": []
+              "images": [
+                {
+                  "src": "media/scorpe/ventilateurs.webp",
+                  "legende": "Ventilateurs à pression positive de la gamme Scoralp"
+                },
+                {
+                  "src": "media/scorpe/impression.webp",
+                  "legende": "Plateau d'impression 3D de pièces techniques"
+                }
+              ],
+              "banniere": {
+                "image": "media/scorpe/ventilateurs.webp",
+                "alt": "Ventilateurs à pression positive alignés à l'atelier"
+              }
             },
             {
               "id": "production",
@@ -1094,7 +1190,16 @@
               ],
               "outils": [],
               "livrables": [],
-              "images": []
+              "images": [
+                {
+                  "src": "media/scorpe/atelier.webp",
+                  "legende": "L'atelier pendant une production d'étais"
+                }
+              ],
+              "banniere": {
+                "image": "media/scorpe/atelier.webp",
+                "alt": "Atelier SCORPE, étais en cours de montage sur l'établi"
+              }
             }
           ]
         }
