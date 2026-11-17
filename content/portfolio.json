@@ -19,8 +19,8 @@
     ],
     "liens": [],
     "hero": {
-      "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_194254_1dc8971e-a4de-4170-b498-8b5c15a7d1ef_min.webp",
-      "video": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_194444_d10f819f-3a9d-4d8b-82b9-6a558dcd33ac.mp4",
+      "image": "media/ia/1dc8971e.webp",
+      "video": "media/ia/d10f819f.mp4",
       "alt": "La mise en plan du pied se remplit couche par couche jusqu'à la pièce en PLA violet",
       "note": "Vidéo IA à partir de la CAO"
     },
@@ -184,7 +184,7 @@
               "images": [],
               "enBref": "Un pied en carbone coûte cher, et l'enfant change de pointure tous les six mois. On veut un pied imprimé en 3D, qu'on réimprime à la bonne taille.",
               "banniere": {
-                "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_165459_53b98134-43e6-4102-8488-9885c39dfd93_min.webp",
+                "image": "media/ia/53b98134.webp",
                 "alt": "Baskets alignées de la plus petite à la plus grande, une paire violette"
               },
               "bloc": 1
@@ -243,7 +243,7 @@
               "images": [],
               "enBref": "23 brevets analysés, et aucun pied d'enfant imprimé en FDM. Le cahier des charges oppose deux exigences : bien marcher (30 %) et résister (27 %).",
               "banniere": {
-                "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_193456_b484d98a-140c-45ed-af89-0cfd13769b69_min.webp",
+                "image": "media/ia/b484d98a.webp",
                 "alt": "Planches de brevets et stylo violet sur un bureau"
               },
               "bloc": 1
@@ -299,7 +299,7 @@
               "enBref": "Une lame droite ne peut pas être à la fois souple et solide. La forme en L, épaisse à la cheville et fine à la pointe, tient les deux : 23,2 mm de flèche et 78 MPa.",
               "calculateur": "poutre-pied",
               "banniere": {
-                "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_164636_75cee634-b2a9-4fd7-aa05-9d33bb7ad579_min.webp",
+                "image": "media/ia/75cee634.webp",
                 "alt": "Schéma d'une poutre encastrée dessiné sur papier millimétré"
               },
               "bloc": 1
@@ -345,7 +345,7 @@
               "images": [],
               "enBref": "Granta a réduit toute la base à 3 matériaux. On a pris le PLA en FDM : pas cher, facile à imprimer, et pas de moule.",
               "banniere": {
-                "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_164926_d869f55b-2d30-4fb9-ab0a-4a7b0fa4330c_min.webp",
+                "image": "media/ia/d869f55b.webp",
                 "alt": "Bobine de PLA violet, granulés et échantillon transparent"
               },
               "bloc": 1
@@ -392,7 +392,7 @@
               "images": [],
               "enBref": "Les essais montrent qu'il faut imprimer avec les filaments dans la longueur (YZ) : E ≈ 2 985 MPa, Re ≈ 94 MPa.",
               "banniere": {
-                "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_165110_7281ecd6-4967-459c-8b2a-bd338ebe94e4_min.webp",
+                "image": "media/ia/7281ecd6.webp",
                 "alt": "Montage de flexion 3 points sur une éprouvette en PLA violet"
               },
               "bloc": 1
@@ -461,7 +461,7 @@
               ],
               "enBref": "Le modèle est piloté par 3 cotes, donc adaptable à chaque pointure. La simulation confirme le calcul : 23,5 mm de flèche, 87,8 MPa au pire.",
               "banniere": {
-                "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_193548_b2a2e166-fb7a-499b-9e23-4ff92f272ed5_min.webp",
+                "image": "media/ia/b2a2e166.webp",
                 "alt": "Le pied en maillage d'éléments finis et en carte de contraintes"
               },
               "bloc": 1
@@ -511,7 +511,7 @@
               "images": [],
               "enBref": "Les objectifs sont tenus sur le papier, avec une marge mince. Le Bloc 2 doit imprimer, mesurer, tester et dessiner le talon.",
               "banniere": {
-                "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_164441_85913f29-373d-472b-b54f-8e27dbcde699_min.webp",
+                "image": "media/ia/85913f29.webp",
                 "alt": "Buse d'imprimante 3D déposant du PLA violet"
               },
               "bloc": 1
@@ -573,7 +573,7 @@
               ],
               "enBref": "Premier travail du Bloc 2 : on a codé la méthode des éléments finis sous MATLAB et retrouvé exactement les résultats d'Abaqus.",
               "banniere": {
-                "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_165217_ea29124c-521b-4a37-ae83-ffa215e0b94f_min.webp",
+                "image": "media/ia/ea29124c.webp",
                 "alt": "Treillis plan de quinze barres violettes et nœuds jaunes"
               },
               "bloc": 2
@@ -630,12 +630,12 @@
           },
           "titreCourt": "Pied prothétique imprimé en 3D",
           "hero": {
-            "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_164509_45638d62-7251-4dc5-b2b5-d2fdff5ed350_min.webp",
+            "image": "media/ia/45638d62.webp",
             "alt": "Rendu du pied prothétique, version A, en PLA violet",
             "note": "Rendu IA à partir de la CAO"
           },
           "couverture": {
-            "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_164509_45638d62-7251-4dc5-b2b5-d2fdff5ed350_min.webp",
+            "image": "media/ia/45638d62.webp",
             "alt": "Rendu du pied prothétique, version A, en PLA violet",
             "note": "Rendu IA à partir de la CAO"
           },
@@ -645,7 +645,7 @@
             "etapes": [
               {
                 "titre": "Le dessin d'abord",
-                "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_194254_1dc8971e-a4de-4170-b498-8b5c15a7d1ef_min.webp",
+                "image": "media/ia/1dc8971e.webp",
                 "alt": "Mise en plan du pied en traits violets",
                 "texte": "Une lame droite ne peut pas être à la fois souple et solide. On a donc dessiné une équerre en L : épaisse à la cheville pour résister, fine en pointe pour plier. Trois cotes pilotent toute la forme, et changer de pointure revient à changer ces valeurs.",
                 "chiffre": {
@@ -656,7 +656,7 @@
               },
               {
                 "titre": "Découper pour calculer",
-                "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_194352_8db6ab30-9199-4be7-836f-9fd40b58df69_min.webp",
+                "image": "media/ia/8db6ab30.webp",
                 "alt": "Le pied découpé en maillage d'éléments finis",
                 "texte": "Pour savoir où la pièce souffre, on la découpe en milliers de petits éléments. On a d'abord programmé la méthode nous-mêmes sous MATLAB, sur un treillis, pour comprendre ce que fait le logiciel avant de lui faire confiance.",
                 "chiffre": {
@@ -667,7 +667,7 @@
               },
               {
                 "titre": "Là où ça force",
-                "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_194556_c767664f-e9d1-4a67-b682-18c4fc87cffa_min.webp",
+                "image": "media/ia/c767664f.webp",
                 "alt": "Carte des contraintes sur le pied, maximum dans le coin",
                 "texte": "À quatre fois le poids de l'enfant, la simulation trouve 87,8 MPa dans le coin entre la colonne et la lame. Le calcul à la main prévoyait 78 MPa : même ordre de grandeur, le logiciel voit simplement le vrai coin.",
                 "chiffre": {
@@ -678,7 +678,7 @@
               },
               {
                 "titre": "Filament par filament",
-                "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_194724_840bc470-b90e-4f2a-be8d-a3cd341a0a6d_min.webp",
+                "image": "media/ia/840bc470.webp",
                 "alt": "Le pied en cours d'impression, couche par couche",
                 "texte": "Les essais de flexion sur éprouvettes imprimées ont montré qu'il faut déposer les filaments dans la longueur de la lame. C'est l'orientation retenue pour imprimer le premier pied en PLA.",
                 "chiffre": {
@@ -690,7 +690,7 @@
               },
               {
                 "titre": "Une pièce qu'on réimprime",
-                "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_164509_45638d62-7251-4dc5-b2b5-d2fdff5ed350_min.webp",
+                "image": "media/ia/45638d62.webp",
                 "alt": "Rendu du pied en PLA violet",
                 "texte": "Le pied mesure 220 mm, plie de 23 mm sous le poids pour une marche naturelle et coûte quelques euros de PLA. Quand l'enfant grandit, on change trois cotes et on relance l'impression.",
                 "chiffre": {
@@ -713,35 +713,35 @@
             "etapes": [
               {
                 "titre": "Partir du besoin",
-                "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_194254_1dc8971e-a4de-4170-b498-8b5c15a7d1ef_min.webp",
+                "image": "media/ia/1dc8971e.webp",
                 "alt": "Mise en plan du pied en traits violets",
                 "texte": "Un enfant amputé sous le genou, un pied qui doit plier sans casser et suivre sa croissance. La veille et le cahier des charges traduisent ce besoin en chiffres.",
                 "partie": "veille-cdcf"
               },
               {
                 "titre": "Dimensionner",
-                "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_194352_8db6ab30-9199-4be7-836f-9fd40b58df69_min.webp",
+                "image": "media/ia/8db6ab30.webp",
                 "alt": "Le pied découpé en maillage d'éléments finis",
                 "texte": "Un premier calcul à la main, par la théorie des poutres, donne la forme et les épaisseurs avant tout logiciel.",
                 "partie": "rdm"
               },
               {
                 "titre": "Simuler",
-                "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_194556_c767664f-e9d1-4a67-b682-18c4fc87cffa_min.webp",
+                "image": "media/ia/c767664f.webp",
                 "alt": "Carte des contraintes sur le pied, maximum dans le coin",
                 "texte": "La CAO et la simulation vérifient que la pièce tient à quatre fois le poids de l'enfant.",
                 "partie": "cao"
               },
               {
                 "titre": "Choisir et tester la matière",
-                "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_194724_840bc470-b90e-4f2a-be8d-a3cd341a0a6d_min.webp",
+                "image": "media/ia/840bc470.webp",
                 "alt": "Le pied en cours d'impression, couche par couche",
                 "texte": "Le matériau et le procédé sont choisis, puis validés par des essais sur éprouvettes imprimées.",
                 "partie": "flexion"
               },
               {
                 "titre": "Fabriquer et recommencer",
-                "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_164509_45638d62-7251-4dc5-b2b5-d2fdff5ed350_min.webp",
+                "image": "media/ia/45638d62.webp",
                 "alt": "Rendu du pied en PLA violet",
                 "texte": "On imprime, on mesure, on teste, puis on corrige. Un pied qu'on réimprime à chaque pointure.",
                 "partie": "bilan"
@@ -760,7 +760,7 @@
                 "À compléter : comment on a mesuré les pièces imprimées, les écarts trouvés par rapport à la CAO et les paramètres d'impression corrigés."
               ],
               "banniere": {
-                "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_194724_840bc470-b90e-4f2a-be8d-a3cd341a0a6d_min.webp",
+                "image": "media/ia/840bc470.webp",
                 "alt": "Impression du pied en PLA"
               },
               "chiffres": [],
@@ -786,7 +786,7 @@
                 "À compléter : le montage d'essai, la charge appliquée, la flèche mesurée comparée au calcul, et ce qui a cédé ou tenu."
               ],
               "banniere": {
-                "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_164509_45638d62-7251-4dc5-b2b5-d2fdff5ed350_min.webp",
+                "image": "media/ia/45638d62.webp",
                 "alt": "Pied prothétique imprimé"
               },
               "chiffres": [],
@@ -812,7 +812,7 @@
                 "À compléter : le dessin du talon pour la dorsiflexion, les formes arrondies, et l'allègement en éloignant la matière de la fibre neutre."
               ],
               "banniere": {
-                "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_211807_eff0ae5a-a5f2-4eb3-a8c8-85db135fa10a_min.webp",
+                "image": "media/ia/eff0ae5a.webp",
                 "alt": "Modèle 3D en cours de conception"
               },
               "chiffres": [],
@@ -838,7 +838,7 @@
                 "À compléter : ce qui a été présenté le 8 décembre, les retours du jury et les pistes pour la suite."
               ],
               "banniere": {
-                "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_212028_0d3b196f-6589-4f84-b4ba-86987be4b131_min.webp",
+                "image": "media/ia/0d3b196f.webp",
                 "alt": "Plans et pièces posés sur une table"
               },
               "chiffres": [],
@@ -886,11 +886,11 @@
           "periode": "Févr. – juil. 2027",
           "resume": "Trois ou quatre phrases : le problème de départ, ce qu'on a conçu, ce que ça a donné, ce qu'il reste à faire.",
           "hero": {
-            "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_210924_7671b41f-aefd-4515-a897-01d4a6880160_min.webp",
+            "image": "media/ia/7671b41f.webp",
             "alt": "Image du projet du semestre 2"
           },
           "couverture": {
-            "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_210924_7671b41f-aefd-4515-a897-01d4a6880160_min.webp",
+            "image": "media/ia/7671b41f.webp",
             "alt": "Image du projet du semestre 2"
           },
           "chiffres": [],
@@ -907,7 +907,7 @@
                 "D'où vient le projet, pour qui, et ce qu'on attend du produit."
               ],
               "banniere": {
-                "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_211659_ef360c62-1d2f-4e75-b43c-4ce301c94674_min.webp",
+                "image": "media/ia/ef360c62.webp",
                 "alt": "Croquis de recherche sur papier"
               },
               "chiffres": [],
@@ -933,7 +933,7 @@
                 "Les solutions envisagées, celle qu'on a retenue et pourquoi."
               ],
               "banniere": {
-                "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_211807_eff0ae5a-a5f2-4eb3-a8c8-85db135fa10a_min.webp",
+                "image": "media/ia/eff0ae5a.webp",
                 "alt": "Modèle 3D en cours de conception"
               },
               "chiffres": [],
@@ -959,7 +959,7 @@
                 "Le dimensionnement, la simulation et les essais, avec les chiffres qui comptent."
               ],
               "banniere": {
-                "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_211917_0915c237-b4ba-4628-b05b-416f4d65e5b1_min.webp",
+                "image": "media/ia/0915c237.webp",
                 "alt": "Machine d'essai mécanique"
               },
               "chiffres": [],
@@ -985,7 +985,7 @@
                 "Les objectifs atteints, les limites, et ce que j'en retiens."
               ],
               "banniere": {
-                "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_212028_0d3b196f-6589-4f84-b4ba-86987be4b131_min.webp",
+                "image": "media/ia/0d3b196f.webp",
                 "alt": "Plans et pièces posés sur une table"
               },
               "chiffres": [],
@@ -1029,11 +1029,11 @@
           "periode": "Sept. 2027 – janv. 2028",
           "resume": "Trois ou quatre phrases : le problème de départ, ce qu'on a conçu, ce que ça a donné, ce qu'il reste à faire.",
           "hero": {
-            "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_211028_fd04a75a-95d9-4ddb-a5b5-dfdcf22f88fc_min.webp",
+            "image": "media/ia/fd04a75a.webp",
             "alt": "Image du projet du semestre 3"
           },
           "couverture": {
-            "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_211028_fd04a75a-95d9-4ddb-a5b5-dfdcf22f88fc_min.webp",
+            "image": "media/ia/fd04a75a.webp",
             "alt": "Image du projet du semestre 3"
           },
           "chiffres": [],
@@ -1050,7 +1050,7 @@
                 "D'où vient le projet, pour qui, et ce qu'on attend du produit."
               ],
               "banniere": {
-                "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_211659_ef360c62-1d2f-4e75-b43c-4ce301c94674_min.webp",
+                "image": "media/ia/ef360c62.webp",
                 "alt": "Croquis de recherche sur papier"
               },
               "chiffres": [],
@@ -1076,7 +1076,7 @@
                 "Les solutions envisagées, celle qu'on a retenue et pourquoi."
               ],
               "banniere": {
-                "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_211807_eff0ae5a-a5f2-4eb3-a8c8-85db135fa10a_min.webp",
+                "image": "media/ia/eff0ae5a.webp",
                 "alt": "Modèle 3D en cours de conception"
               },
               "chiffres": [],
@@ -1102,7 +1102,7 @@
                 "Le dimensionnement, la simulation et les essais, avec les chiffres qui comptent."
               ],
               "banniere": {
-                "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_211917_0915c237-b4ba-4628-b05b-416f4d65e5b1_min.webp",
+                "image": "media/ia/0915c237.webp",
                 "alt": "Machine d'essai mécanique"
               },
               "chiffres": [],
@@ -1128,7 +1128,7 @@
                 "Les objectifs atteints, les limites, et ce que j'en retiens."
               ],
               "banniere": {
-                "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_212028_0d3b196f-6589-4f84-b4ba-86987be4b131_min.webp",
+                "image": "media/ia/0d3b196f.webp",
                 "alt": "Plans et pièces posés sur une table"
               },
               "chiffres": [],
@@ -1172,11 +1172,11 @@
           "periode": "Févr. – juil. 2028",
           "resume": "Trois ou quatre phrases : le problème de départ, ce qu'on a conçu, ce que ça a donné, ce qu'il reste à faire.",
           "hero": {
-            "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_211128_3f071c44-610e-4a3c-8b29-5d40a2a0e483_min.webp",
+            "image": "media/ia/3f071c44.webp",
             "alt": "Image du projet du semestre 4"
           },
           "couverture": {
-            "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_211128_3f071c44-610e-4a3c-8b29-5d40a2a0e483_min.webp",
+            "image": "media/ia/3f071c44.webp",
             "alt": "Image du projet du semestre 4"
           },
           "chiffres": [],
@@ -1193,7 +1193,7 @@
                 "D'où vient le projet, pour qui, et ce qu'on attend du produit."
               ],
               "banniere": {
-                "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_211659_ef360c62-1d2f-4e75-b43c-4ce301c94674_min.webp",
+                "image": "media/ia/ef360c62.webp",
                 "alt": "Croquis de recherche sur papier"
               },
               "chiffres": [],
@@ -1219,7 +1219,7 @@
                 "Les solutions envisagées, celle qu'on a retenue et pourquoi."
               ],
               "banniere": {
-                "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_211807_eff0ae5a-a5f2-4eb3-a8c8-85db135fa10a_min.webp",
+                "image": "media/ia/eff0ae5a.webp",
                 "alt": "Modèle 3D en cours de conception"
               },
               "chiffres": [],
@@ -1245,7 +1245,7 @@
                 "Le dimensionnement, la simulation et les essais, avec les chiffres qui comptent."
               ],
               "banniere": {
-                "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_211917_0915c237-b4ba-4628-b05b-416f4d65e5b1_min.webp",
+                "image": "media/ia/0915c237.webp",
                 "alt": "Machine d'essai mécanique"
               },
               "chiffres": [],
@@ -1271,7 +1271,7 @@
                 "Les objectifs atteints, les limites, et ce que j'en retiens."
               ],
               "banniere": {
-                "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_212028_0d3b196f-6589-4f84-b4ba-86987be4b131_min.webp",
+                "image": "media/ia/0d3b196f.webp",
                 "alt": "Plans et pièces posés sur une table"
               },
               "chiffres": [],
@@ -1315,11 +1315,11 @@
           "periode": "Sept. 2028 – janv. 2029",
           "resume": "Trois ou quatre phrases : le problème de départ, ce qu'on a conçu, ce que ça a donné, ce qu'il reste à faire.",
           "hero": {
-            "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_211236_63c1d129-240d-4f6b-960e-011ecf7f4371_min.webp",
+            "image": "media/ia/63c1d129.webp",
             "alt": "Image du projet du semestre 5"
           },
           "couverture": {
-            "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_211236_63c1d129-240d-4f6b-960e-011ecf7f4371_min.webp",
+            "image": "media/ia/63c1d129.webp",
             "alt": "Image du projet du semestre 5"
           },
           "chiffres": [],
@@ -1336,7 +1336,7 @@
                 "D'où vient le projet, pour qui, et ce qu'on attend du produit."
               ],
               "banniere": {
-                "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_211659_ef360c62-1d2f-4e75-b43c-4ce301c94674_min.webp",
+                "image": "media/ia/ef360c62.webp",
                 "alt": "Croquis de recherche sur papier"
               },
               "chiffres": [],
@@ -1362,7 +1362,7 @@
                 "Les solutions envisagées, celle qu'on a retenue et pourquoi."
               ],
               "banniere": {
-                "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_211807_eff0ae5a-a5f2-4eb3-a8c8-85db135fa10a_min.webp",
+                "image": "media/ia/eff0ae5a.webp",
                 "alt": "Modèle 3D en cours de conception"
               },
               "chiffres": [],
@@ -1388,7 +1388,7 @@
                 "Le dimensionnement, la simulation et les essais, avec les chiffres qui comptent."
               ],
               "banniere": {
-                "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_211917_0915c237-b4ba-4628-b05b-416f4d65e5b1_min.webp",
+                "image": "media/ia/0915c237.webp",
                 "alt": "Machine d'essai mécanique"
               },
               "chiffres": [],
@@ -1414,7 +1414,7 @@
                 "Les objectifs atteints, les limites, et ce que j'en retiens."
               ],
               "banniere": {
-                "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_212028_0d3b196f-6589-4f84-b4ba-86987be4b131_min.webp",
+                "image": "media/ia/0d3b196f.webp",
                 "alt": "Plans et pièces posés sur une table"
               },
               "chiffres": [],
@@ -1458,11 +1458,11 @@
           "periode": "Févr. – juil. 2029",
           "resume": "Trois ou quatre phrases : le problème de départ, ce qu'on a conçu, ce que ça a donné, ce qu'il reste à faire.",
           "hero": {
-            "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_211551_79111e15-d4fb-42a7-bdef-81a3d11f74a3_min.webp",
+            "image": "media/ia/79111e15.webp",
             "alt": "Image du projet du semestre 6"
           },
           "couverture": {
-            "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_211551_79111e15-d4fb-42a7-bdef-81a3d11f74a3_min.webp",
+            "image": "media/ia/79111e15.webp",
             "alt": "Image du projet du semestre 6"
           },
           "chiffres": [],
@@ -1479,7 +1479,7 @@
                 "D'où vient le projet, pour qui, et ce qu'on attend du produit."
               ],
               "banniere": {
-                "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_211659_ef360c62-1d2f-4e75-b43c-4ce301c94674_min.webp",
+                "image": "media/ia/ef360c62.webp",
                 "alt": "Croquis de recherche sur papier"
               },
               "chiffres": [],
@@ -1505,7 +1505,7 @@
                 "Les solutions envisagées, celle qu'on a retenue et pourquoi."
               ],
               "banniere": {
-                "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_211807_eff0ae5a-a5f2-4eb3-a8c8-85db135fa10a_min.webp",
+                "image": "media/ia/eff0ae5a.webp",
                 "alt": "Modèle 3D en cours de conception"
               },
               "chiffres": [],
@@ -1531,7 +1531,7 @@
                 "Le dimensionnement, la simulation et les essais, avec les chiffres qui comptent."
               ],
               "banniere": {
-                "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_211917_0915c237-b4ba-4628-b05b-416f4d65e5b1_min.webp",
+                "image": "media/ia/0915c237.webp",
                 "alt": "Machine d'essai mécanique"
               },
               "chiffres": [],
@@ -1557,7 +1557,7 @@
                 "Les objectifs atteints, les limites, et ce que j'en retiens."
               ],
               "banniere": {
-                "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_212028_0d3b196f-6589-4f84-b4ba-86987be4b131_min.webp",
+                "image": "media/ia/0d3b196f.webp",
                 "alt": "Plans et pièces posés sur une table"
               },
               "chiffres": [],
@@ -1626,11 +1626,11 @@
           "recitSurPage": true,
           "resume": "Une batterie de voiture électrique qui prend feu brûle à l'intérieur d'un carter fermé : l'eau projetée de l'extérieur ne l'atteint pas. Le SEB est l'équipement que SCORPE développe pour les sapeurs-pompiers afin d'amener l'eau au cœur du pack. Son inventeur est Claude Gilmer, directeur industriel de SCORPE et mon tuteur : j'ai mené le projet sous sa supervision, avec une autonomie de plus en plus large, et porté environ 80 % du travail, de la conception aux essais.",
           "hero": {
-            "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_203532_51fede33-723b-4ab6-b51b-9e3b8bf13659_min.webp",
+            "image": "media/ia/51fede33.webp",
             "alt": "Rendu studio du SEB, châssis noir et vert sur roues"
           },
           "couverture": {
-            "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_203532_51fede33-723b-4ab6-b51b-9e3b8bf13659_min.webp",
+            "image": "media/ia/51fede33.webp",
             "alt": "Rendu studio du SEB, châssis noir et vert sur roues"
           },
           "chiffres": [
@@ -1657,7 +1657,7 @@
             "etapes": [
               {
                 "titre": "Un feu qu'on n'atteint pas",
-                "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_200119_87efbcca-18e1-4e39-b7dc-c10f1ef5efe2_min.webp",
+                "image": "media/ia/87efbcca.webp",
                 "alt": "Pack batterie ouvert",
                 "texte": "Dans une voiture électrique, la batterie brûle à l'intérieur d'un carter étanche, et le feu peut repartir jusqu'à 24 heures après. Arroser de l'extérieur ne suffit pas, il faut amener l'eau au cœur du pack. C'est tout l'enjeu du SEB, commandé par deux SDIS qui l'utiliseront.",
                 "chiffre": {
@@ -1679,7 +1679,7 @@
               },
               {
                 "titre": "Percer droit sur un véhicule penché",
-                "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_200521_01bbf883-bc21-429d-9b12-bc35ac318e72_min.webp",
+                "image": "media/ia/01bbf883.webp",
                 "alt": "Schéma d'une voiture inclinée",
                 "texte": "Après un accident, la voiture est rarement à plat. J'ai conçu seul le système qui compense l'inclinaison pour que le perçage reste fiable. C'est la partie du projet dont je suis le plus fier.",
                 "chiffre": {
@@ -1690,7 +1690,7 @@
               },
               {
                 "titre": "Du plan au prototype",
-                "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_210042_50d889d4-380c-41f8-a5d3-d5f39224475f_min.webp",
+                "image": "media/ia/50d889d4.webp",
                 "alt": "Prototype du SEB sur l'établi du bureau d'études",
                 "texte": "Moteurs de perçage et de levage, vis à billes, renvoi d'angle, paliers : chaque composant a été choisi pour supporter l'eau, la chaleur et une manipulation brusque. Plans, devis, commandes, puis un premier prototype complet et des versions améliorées.",
                 "chiffre": {
@@ -1725,7 +1725,7 @@
                 "Pour les essais, on a disposé d'une Fiat 500e électrique et de son pack batterie, sur lequel on a enchaîné les tests de perçage. Chaque essai raté a donné une piste d'amélioration. Le principe a été présenté aux SDIS en juin 2025, et validé."
               ],
               "banniere": {
-                "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_200119_87efbcca-18e1-4e39-b7dc-c10f1ef5efe2_min.webp",
+                "image": "media/ia/87efbcca.webp",
                 "alt": "Pack batterie de véhicule électrique ouvert"
               },
               "chiffres": [
@@ -1827,7 +1827,7 @@
                 "J'ai ensuite adapté la maquette 3D, réalisé les plans de tôlerie et d'usinage, demandé les devis et passé les commandes. Le montage du premier prototype complet a été compliqué, et j'ai noté chaque difficulté pour la version suivante. De mars à mai, de nouvelles versions ont été commandées pour être prêtes avant le salon. Le boîtier de commande et la télécommande, qui permettent de piloter le SEB à distance, ont suivi le même chemin : maquette 3D, puis pièce réelle."
               ],
               "banniere": {
-                "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_203532_51fede33-723b-4ab6-b51b-9e3b8bf13659_min.webp",
+                "image": "media/ia/51fede33.webp",
                 "alt": "Rendu studio du SEB complet"
               },
               "chiffres": [],
@@ -1846,7 +1846,7 @@
                   "legende": "Rendu 3D du SEB complet"
                 },
                 {
-                  "src": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_210042_50d889d4-380c-41f8-a5d3-d5f39224475f_min.webp",
+                  "src": "media/ia/50d889d4.webp",
                   "legende": "Premier prototype complet, en montage au bureau d'études"
                 },
                 {
@@ -1870,7 +1870,7 @@
                 "J'ai conçu seul le sous-ensemble qui compense cette inclinaison, de l'idée jusqu'aux plans de fabrication. C'est le développement dont je suis le plus fier. Le détail du mécanisme reste confidentiel, il fait partie des éléments couverts par la démarche de brevet."
               ],
               "banniere": {
-                "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_200521_01bbf883-bc21-429d-9b12-bc35ac318e72_min.webp",
+                "image": "media/ia/01bbf883.webp",
                 "alt": "Schéma d'une voiture inclinée"
               },
               "chiffres": [],
@@ -2070,8 +2070,8 @@
           ]
         }
       ],
-      "video": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_200430_ac5e2a78-ba0b-480e-878d-2306f5edbd1a.mp4",
-      "poster": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_200250_6eaa40e4-8b2d-48f2-b54d-c64508a255c6_min.webp",
+      "video": "media/ia/ac5e2a78.mp4",
+      "poster": "media/ia/6eaa40e4.webp",
       "videoAlt": "Travelling macro le long d'un foret en acier rapide"
     }
   ]

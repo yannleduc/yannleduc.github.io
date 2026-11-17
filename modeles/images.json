@@ -3,7 +3,7 @@
   "visuels": [
     {
       "id": "85913f29",
-      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_164441_85913f29-373d-472b-b54f-8e27dbcde699_min.webp",
+      "url": "media/ia/85913f29.webp",
       "description": "Buse d'imprimante 3D déposant du PLA violet",
       "utilise_dans": [
         "/bilan",
@@ -18,7 +18,7 @@
     },
     {
       "id": "45638d62",
-      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_164509_45638d62-7251-4dc5-b2b5-d2fdff5ed350_min.webp",
+      "url": "media/ia/45638d62.webp",
       "description": "Rendu du pied prothétique, version A, en PLA violet",
       "utilise_dans": [
         "/essai-pied",
@@ -33,7 +33,7 @@
     },
     {
       "id": "75cee634",
-      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_164636_75cee634-b2a9-4fd7-aa05-9d33bb7ad579_min.webp",
+      "url": "media/ia/75cee634.webp",
       "description": "Schéma d'une poutre encastrée dessiné sur papier millimétré",
       "utilise_dans": [
         "/pied-prothetique",
@@ -48,7 +48,7 @@
     },
     {
       "id": "d869f55b",
-      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_164926_d869f55b-2d30-4fb9-ab0a-4a7b0fa4330c_min.webp",
+      "url": "media/ia/d869f55b.webp",
       "description": "Bobine de PLA violet, granulés et échantillon transparent",
       "utilise_dans": [
         "/materiau",
@@ -63,7 +63,7 @@
     },
     {
       "id": "7281ecd6",
-      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_165110_7281ecd6-4967-459c-8b2a-bd338ebe94e4_min.webp",
+      "url": "media/ia/7281ecd6.webp",
       "description": "Montage de flexion 3 points sur une éprouvette en PLA violet",
       "utilise_dans": [
         "/flexion",
@@ -78,7 +78,7 @@
     },
     {
       "id": "ea29124c",
-      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_165217_ea29124c-521b-4a37-ae83-ffa215e0b94f_min.webp",
+      "url": "media/ia/ea29124c.webp",
       "description": "Treillis plan de quinze barres violettes et nœuds jaunes",
       "utilise_dans": [
         "/elements-finis",
@@ -93,7 +93,7 @@
     },
     {
       "id": "53b98134",
-      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_165459_53b98134-43e6-4102-8488-9885c39dfd93_min.webp",
+      "url": "media/ia/53b98134.webp",
       "description": "Baskets alignées de la plus petite à la plus grande, une paire violette",
       "utilise_dans": [
         "/contexte",
@@ -108,7 +108,7 @@
     },
     {
       "id": "b484d98a",
-      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_193456_b484d98a-140c-45ed-af89-0cfd13769b69_min.webp",
+      "url": "media/ia/b484d98a.webp",
       "description": "Planches de brevets et stylo violet sur un bureau",
       "utilise_dans": [
         "/pied-prothetique",
@@ -123,7 +123,7 @@
     },
     {
       "id": "b2a2e166",
-      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_193548_b2a2e166-fb7a-499b-9e23-4ff92f272ed5_min.webp",
+      "url": "media/ia/b2a2e166.webp",
       "description": "Le pied en maillage d'éléments finis et en carte de contraintes",
       "utilise_dans": [
         "/cao",
@@ -138,7 +138,7 @@
     },
     {
       "id": "1dc8971e",
-      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_194254_1dc8971e-a4de-4170-b498-8b5c15a7d1ef_min.webp",
+      "url": "media/ia/1dc8971e.webp",
       "description": "La mise en plan du pied se remplit couche par couche jusqu'à la pièce en PLA violet",
       "utilise_dans": [
         "/pied-prothetique",
@@ -149,7 +149,7 @@
     },
     {
       "id": "8db6ab30",
-      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_194352_8db6ab30-9199-4be7-836f-9fd40b58df69_min.webp",
+      "url": "media/ia/8db6ab30.webp",
       "description": "Le pied découpé en maillage d'éléments finis",
       "utilise_dans": [
         "/pied-prothetique",
@@ -160,14 +160,14 @@
     },
     {
       "id": "d10f819f",
-      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_194444_d10f819f-3a9d-4d8b-82b9-6a558dcd33ac.mp4",
+      "url": "media/ia/d10f819f.mp4",
       "description": "La mise en plan du pied se remplit couche par couche jusqu'à la pièce en PLA violet",
       "utilise_dans": [],
       "type": "video"
     },
     {
       "id": "c767664f",
-      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_194556_c767664f-e9d1-4a67-b682-18c4fc87cffa_min.webp",
+      "url": "media/ia/c767664f.webp",
       "description": "Carte des contraintes sur le pied, maximum dans le coin",
       "utilise_dans": [
         "/pied-prothetique",
@@ -178,7 +178,7 @@
     },
     {
       "id": "840bc470",
-      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_194724_840bc470-b90e-4f2a-be8d-a3cd341a0a6d_min.webp",
+      "url": "media/ia/840bc470.webp",
       "description": "Le pied en cours d'impression, couche par couche",
       "utilise_dans": [
         "/metrologie",
@@ -193,7 +193,7 @@
     },
     {
       "id": "87efbcca",
-      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_200119_87efbcca-18e1-4e39-b7dc-c10f1ef5efe2_min.webp",
+      "url": "media/ia/87efbcca.webp",
       "description": "Pack batterie ouvert",
       "utilise_dans": [
         "/besoin",
@@ -208,21 +208,21 @@
     },
     {
       "id": "6eaa40e4",
-      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_200250_6eaa40e4-8b2d-48f2-b54d-c64508a255c6_min.webp",
+      "url": "media/ia/6eaa40e4.webp",
       "description": "Travelling macro le long d'un foret en acier rapide",
       "utilise_dans": [],
       "type": "image"
     },
     {
       "id": "ac5e2a78",
-      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_200430_ac5e2a78-ba0b-480e-878d-2306f5edbd1a.mp4",
+      "url": "media/ia/ac5e2a78.mp4",
       "description": "Travelling macro le long d'un foret en acier rapide",
       "utilise_dans": [],
       "type": "video"
     },
     {
       "id": "01bbf883",
-      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_200521_01bbf883-bc21-429d-9b12-bc35ac318e72_min.webp",
+      "url": "media/ia/01bbf883.webp",
       "description": "Schéma d'une voiture inclinée",
       "utilise_dans": [
         "/inclinaison",
@@ -237,7 +237,7 @@
     },
     {
       "id": "51fede33",
-      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_203532_51fede33-723b-4ab6-b51b-9e3b8bf13659_min.webp",
+      "url": "media/ia/51fede33.webp",
       "description": "Rendu studio du SEB, châssis noir et vert sur roues",
       "utilise_dans": [
         "/prototype",
@@ -252,7 +252,7 @@
     },
     {
       "id": "50d889d4",
-      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_210042_50d889d4-380c-41f8-a5d3-d5f39224475f_min.webp",
+      "url": "media/ia/50d889d4.webp",
       "description": "Prototype du SEB sur l'établi du bureau d'études",
       "utilise_dans": [
         "/prototype",
@@ -267,7 +267,7 @@
     },
     {
       "id": "7671b41f",
-      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_210924_7671b41f-aefd-4515-a897-01d4a6880160_min.webp",
+      "url": "media/ia/7671b41f.webp",
       "description": "Boîte d'engrenages violette et jaune, fond blanc (couverture générique)",
       "utilise_dans": [
         "/projet-s2",
@@ -278,7 +278,7 @@
     },
     {
       "id": "fd04a75a",
-      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_211028_fd04a75a-95d9-4ddb-a5b5-dfdcf22f88fc_min.webp",
+      "url": "media/ia/fd04a75a.webp",
       "description": "Pièce en aluminium usinée, équerre violette et pied à coulisse jaune, fond blanc",
       "utilise_dans": [
         "/projet-s3",
@@ -289,7 +289,7 @@
     },
     {
       "id": "3f071c44",
-      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_211128_3f071c44-610e-4a3c-8b29-5d40a2a0e483_min.webp",
+      "url": "media/ia/3f071c44.webp",
       "description": "Treillis en poutres violettes avec goussets jaunes, fond blanc",
       "utilise_dans": [
         "/projet-s4",
@@ -300,7 +300,7 @@
     },
     {
       "id": "63c1d129",
-      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_211236_63c1d129-240d-4f6b-960e-011ecf7f4371_min.webp",
+      "url": "media/ia/63c1d129.webp",
       "description": "Échangeur thermique à ailettes, embouts violets et raccords jaunes, fond blanc",
       "utilise_dans": [
         "/projet-s5",
@@ -311,7 +311,7 @@
     },
     {
       "id": "79111e15",
-      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_211551_79111e15-d4fb-42a7-bdef-81a3d11f74a3_min.webp",
+      "url": "media/ia/79111e15.webp",
       "description": "Vérin pneumatique violet avec raccords jaunes, fond blanc",
       "utilise_dans": [
         "/projet-s6",
@@ -322,7 +322,7 @@
     },
     {
       "id": "ef360c62",
-      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_211659_ef360c62-1d2f-4e75-b43c-4ce301c94674_min.webp",
+      "url": "media/ia/ef360c62.webp",
       "description": "Croquis de pièce mécanique au crayon, crayon violet et surligneur jaune (bannière contexte)",
       "utilise_dans": [
         "/contexte",
@@ -361,7 +361,7 @@
     },
     {
       "id": "eff0ae5a",
-      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_211807_eff0ae5a-a5f2-4eb3-a8c8-85db135fa10a_min.webp",
+      "url": "media/ia/eff0ae5a.webp",
       "description": "Écran avec une maquette CAO violette et jaune (bannière conception)",
       "utilise_dans": [
         "/conception",
@@ -407,7 +407,7 @@
     },
     {
       "id": "0915c237",
-      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_211917_0915c237-b4ba-4628-b05b-416f4d65e5b1_min.webp",
+      "url": "media/ia/0915c237.webp",
       "description": "Machine de traction avec éprouvette, touches violettes et jaunes (bannière essais)",
       "utilise_dans": [
         "/calcul-essais",
@@ -446,7 +446,7 @@
     },
     {
       "id": "0d3b196f",
-      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_212028_0d3b196f-6589-4f84-b4ba-86987be4b131_min.webp",
+      "url": "media/ia/0d3b196f.webp",
       "description": "Table avec plans, pièce imprimée violette, carnet jaune et ordinateur (bannière bilan)",
       "utilise_dans": [
         "/bilan",
@@ -492,7 +492,7 @@
     },
     {
       "id": "bad9792e",
-      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_213932_bad9792e-13ec-4aa8-a767-f731d9fb7cb8_min.webp",
+      "url": "media/ia/bad9792e.webp",
       "description": "Pièce imprimée en 3D à structure lattice, PLA violet, insert jaune",
       "usage": "couverture de projet (16:9)",
       "type": "image",
@@ -500,7 +500,7 @@
     },
     {
       "id": "7ae41309",
-      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_214046_7ae41309-c204-409a-803d-5092a585d067_min.webp",
+      "url": "media/ia/7ae41309.webp",
       "description": "Équerre en tôle pliée violette, vis et rondelles jaunes",
       "usage": "couverture de projet (16:9)",
       "type": "image",
@@ -508,7 +508,7 @@
     },
     {
       "id": "3a6da75b",
-      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_214153_3a6da75b-5c28-46a9-8bc7-e7cfc2ada2a4_min.webp",
+      "url": "media/ia/3a6da75b.webp",
       "description": "Carte électronique prototype violette, microcontrôleur, capteurs, connecteurs jaunes",
       "usage": "couverture de projet (16:9)",
       "type": "image",
@@ -516,7 +516,7 @@
     },
     {
       "id": "1d39cf66",
-      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_214331_1d39cf66-5fa8-4291-92b7-4d90aca038e3_min.webp",
+      "url": "media/ia/1d39cf66.webp",
       "description": "Maquette d'ossature de bâtiment, poutres et poteaux violets, platines jaunes (génie civil)",
       "usage": "couverture de projet (16:9)",
       "type": "image",
@@ -524,7 +524,7 @@
     },
     {
       "id": "d09da4fa",
-      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_214500_d09da4fa-7f13-48b6-ba68-defbdcc3e78b_min.webp",
+      "url": "media/ia/d09da4fa.webp",
       "description": "Éprouvette de poutre en béton armé avec cage d'armatures, mètre violet et niveau jaune (génie civil)",
       "usage": "couverture de projet (16:9)",
       "type": "image",
@@ -532,7 +532,7 @@
     },
     {
       "id": "40ec762e",
-      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_214604_40ec762e-112e-499e-942e-e6ba16962e0b_min.webp",
+      "url": "media/ia/40ec762e.webp",
       "description": "Module de translation à vis à billes, chariot violet, butées jaunes",
       "usage": "couverture de projet (16:9)",
       "type": "image",
@@ -540,7 +540,7 @@
     },
     {
       "id": "5d485840",
-      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_214711_5d485840-1a25-402b-9b39-215fff123e02_min.webp",
+      "url": "media/ia/5d485840.webp",
       "description": "Pompe à engrenages en coupe, carter violet, joints jaunes (mécanique des fluides)",
       "usage": "couverture de projet (16:9)",
       "type": "image",
@@ -548,7 +548,7 @@
     },
     {
       "id": "19d986d6",
-      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_214823_19d986d6-9f9b-4cc5-94de-d5674c661267_min.webp",
+      "url": "media/ia/19d986d6.webp",
       "description": "Échantillons de matériaux : carbone, aluminium, polymère violet, composite jaune",
       "usage": "couverture de projet (16:9)",
       "type": "image",
@@ -556,7 +556,7 @@
     },
     {
       "id": "28af9950",
-      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_214937_28af9950-290a-4005-95c5-60178d17c209_min.webp",
+      "url": "media/ia/28af9950.webp",
       "description": "Mur de post-it violets et jaunes (analyse du besoin, analyse fonctionnelle, brainstorming)",
       "usage": "bannière d'étape (21:9)",
       "type": "image",
@@ -564,7 +564,7 @@
     },
     {
       "id": "ec9f5a79",
-      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_215046_ec9f5a79-3c98-4c67-ad6f-225e42cf6f1a_min.webp",
+      "url": "media/ia/ec9f5a79.webp",
       "description": "Fraiseuse CN usinant un bloc d'aluminium, étau violet, bride jaune (usinage, fabrication)",
       "usage": "bannière d'étape (21:9)",
       "type": "image",
@@ -572,7 +572,7 @@
     },
     {
       "id": "fe8ea88a",
-      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_215157_fe8ea88a-3ccb-4b8b-ba2a-ca6994c56670_min.webp",
+      "url": "media/ia/fe8ea88a.webp",
       "description": "Pied à coulisse mesurant une pièce imprimée violette sur marbre, cale jaune (métrologie, contrôle)",
       "usage": "bannière d'étape (21:9)",
       "type": "image",
@@ -580,7 +580,7 @@
     },
     {
       "id": "c117b3e4",
-      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_215308_c117b3e4-7376-4449-8823-ec27d99d64a0_min.webp",
+      "url": "media/ia/c117b3e4.webp",
       "description": "Établi vu de dessus, prototype violet en montage, visserie, tournevis jaune (assemblage, prototypage)",
       "usage": "bannière d'étape (21:9)",
       "type": "image",
@@ -588,7 +588,7 @@
     },
     {
       "id": "0c05a475",
-      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_215419_0c05a475-0cc1-4ef2-b91e-792d95596cc1_min.webp",
+      "url": "media/ia/0c05a475.webp",
       "description": "Écran avec une carte de contraintes éléments finis violet → jaune (simulation, MEF)",
       "usage": "bannière d'étape (21:9)",
       "type": "image",
@@ -596,7 +596,7 @@
     },
     {
       "id": "0a486b14",
-      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_215544_0a486b14-b4c3-4627-b298-a884852db94b_min.webp",
+      "url": "media/ia/0a486b14.webp",
       "description": "Ordinateur avec du code et carte microcontrôleur reliée à un capteur violet (programmation, électronique)",
       "usage": "bannière d'étape (21:9)",
       "type": "image",
@@ -604,7 +604,7 @@
     },
     {
       "id": "153cfb1d",
-      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_215659_153cfb1d-4ceb-4f65-a9c0-f05643da80d7_min.webp",
+      "url": "media/ia/153cfb1d.webp",
       "description": "Planning de projet imprimé, post-it violets et jaunes (gestion de projet)",
       "usage": "bannière d'étape (21:9)",
       "type": "image",
@@ -612,7 +612,7 @@
     },
     {
       "id": "4eb18e03",
-      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_215901_4eb18e03-5a77-43ed-9bec-3970e927cbfa_min.webp",
+      "url": "media/ia/4eb18e03.webp",
       "description": "Salle de présentation vide, écran avec une diapositive violette et jaune (soutenance, oral)",
       "usage": "bannière d'étape (21:9)",
       "type": "image",
@@ -620,7 +620,7 @@
     },
     {
       "id": "fe624502",
-      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_220021_fe624502-3100-400b-9dfb-9dd87e2c962b_min.webp",
+      "url": "media/ia/fe624502.webp",
       "description": "Mains autour d'une pièce imprimée violette et d'un plan, sans visages (travail en équipe, revue de conception)",
       "usage": "bannière d'étape (21:9)",
       "type": "image",
@@ -628,7 +628,7 @@
     },
     {
       "id": "377e718a",
-      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_220131_377e718a-8ad7-4bb3-9407-76f10599e2aa_min.webp",
+      "url": "media/ia/377e718a.webp",
       "description": "Rapport relié à couverture violette, carnet de calculs, stylo jaune et calculatrice (rédaction, rapport, livrable)",
       "usage": "bannière d'étape (21:9)",
       "type": "image",
