@@ -1582,6 +1582,15 @@
       "id": "scorpe",
       "type": "entreprise",
       "theme": "scorpe",
+      "couleurs": {
+        "_aide": "RAL 6018 (vert jaune) pour les fonds, version foncée pour le texte (contraste AA sur blanc). Noir en accent.",
+        "fond": "#57A639",
+        "texte": "#3D7A26",
+        "fonce": "#2E6A1A",
+        "doux": "#EAF4E4",
+        "teinte": "#F5F9F2",
+        "bord": "#BCDDAE"
+      },
       "nom": "SCORPE",
       "onglet": "SCORPE",
       "carte": "SCORPE",

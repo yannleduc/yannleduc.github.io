@@ -439,8 +439,12 @@ footer .small { color: #f0e2ec; text-align: right; display: grid; gap: 4px; }
 
 
 /* ==== Version 5 : pages Accueil / Projets / SCORPE ==== */
-.t-scorpe { --accent: #3f7413; --accent-deep: #2c540b; --accent-soft: #eef7e3; --lime: #9ed05f; --gold: #9ed05f; --gold-ink: #111111; --gold-soft: #eef7e3; --tint: #f6f8f3; }
-body.t-scorpe .brand span { color: #111; }
+/* Couleurs d'entreprise : valeurs par défaut = SCORPE (RAL 6018 vert jaune + noir).
+   Une autre entreprise peut fournir ses propres couleurs (champ "couleurs" dans portfolio.json),
+   appliquées en variables --e-* sur la page et sur ses cartes. */
+:root { --e-fond: #57a639; --e-texte: #3d7a26; --e-fonce: #2e6a1a; --e-doux: #eaf4e4; --e-teinte: #f5f9f2; --e-bord: #bcddae; }
+.t-scorpe, .t-ent { --accent: var(--e-texte); --accent-deep: var(--e-fonce); --accent-soft: var(--e-doux); --lime: var(--e-fond); --gold: var(--e-fond); --gold-ink: #111111; --gold-soft: var(--e-doux); --tint: var(--e-teinte); --ai-dot: var(--e-fond); }
+body.t-scorpe .brand span, body.t-ent .brand span { color: #111; }
 /* Navigation */
 .mainnav { display: flex; gap: 4px; margin-left: auto; }
 .mainnav a { font-weight: 600; font-size: 15.5px; color: var(--muted); text-decoration: none; padding: 8px 12px; border-radius: 999px; min-height: 36px; display: inline-flex; align-items: center; transition: color .2s var(--ease), background .2s var(--ease); }
@@ -452,19 +456,19 @@ body.t-scorpe .brand span { color: #111; }
 .tg { display: inline-flex; align-items: center; gap: 2px; padding: 3px 3px 3px 10px; border: 1px solid var(--rule); border-radius: 999px; background: #fff; }
 .tg-l { font-size: 12.5px; font-weight: 700; color: var(--muted); padding-right: 6px; margin-right: 2px; border-right: 1px solid var(--rule); line-height: 1.1; white-space: nowrap; }
 .tg-l .short { display: none; }
-.tg-ent { border-color: #c9e5a6; }
-.tg-ent .tg-l { color: #2c540b; border-right-color: #c9e5a6; }
+.tg-ent { border-color: var(--e-bord); }
+.tg-ent .tg-l { color: var(--e-fonce); border-right-color: var(--e-bord); }
 .tg-am { border-color: #e2c9dc; }
 .tg-am .tg-l { color: #80276c; border-right-color: #e2c9dc; }
 .tab-ent { color: #111; }
-.tab-ent:hover { color: #2c540b !important; }
-.tab-ent[aria-current="page"] { background: #9ed05f !important; color: #111 !important; }
+.tab-ent:hover { color: var(--e-fonce) !important; }
+.tab-ent[aria-current="page"] { background: var(--e-fond) !important; color: #111 !important; }
 .tg-am .tab[aria-current="page"] { background: #80276c; color: #fff; }
 .am-mark { display: inline-flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 600; color: #80276c; margin: 0 0 8px; }
 .am-dot { width: 10px; height: 10px; border-radius: 50%; background: #80276c; box-shadow: 14px 0 0 #ffa300; margin-right: 14px; }
-.t-scorpe .am-mark { color: #2c540b; }
-.t-scorpe .am-dot { background: #111; box-shadow: 14px 0 0 #9ed05f; }
-.sec-ent { border-top: 6px solid #9ed05f; }
+.t-scorpe .am-mark, .t-ent .am-mark { color: var(--e-fonce); }
+.t-scorpe .am-dot, .t-ent .am-dot { background: #111; box-shadow: 14px 0 0 var(--e-fond); }
+.sec-ent { border-top: 6px solid var(--e-fond); }
 /* Blocs du projet */
 .bloc-lbl { display: block; font-size: 12.5px; font-weight: 700; color: var(--accent); margin: 14px 0 4px 12px; }
 .steps .lbl + .bloc-lbl { margin-top: 0; }
@@ -523,7 +527,7 @@ body.t-scorpe .brand span { color: #111; }
 .ent-band video { width: 100%; aspect-ratio: 21 / 8; object-fit: cover; }
 @media (max-width: 640px) { .ent-band { margin: 0 -18px 40px; border-radius: 0; } .ent-band video { aspect-ratio: 16 / 9; } }
 /* Parcours : point vert pour SCORPE */
-.path li.t-scorpe::before { border-color: #138a3e; }
+.path li.t-scorpe::before, .path li.t-ent::before { border-color: var(--e-fond); }
 
 /* ---- Ajouts checklist 10K ---- */
 .skip { position: absolute; left: 12px; top: -60px; z-index: 60; background: var(--accent); color: #fff; padding: 10px 16px; border-radius: 999px; font-weight: 600; text-decoration: none; transition: top .2s var(--ease); }
@@ -628,8 +632,8 @@ a.tg-l[aria-current="page"] { color: #fff; background: #80276c; border-radius: 9
 
 /* Point « visuel IA » */
 :root { --ai-dot: #80276c; }
-.t-scorpe { --ai-dot: #9ed05f; }
-.ai-dot { position: absolute; right: 12px; bottom: 12px; z-index: 3; width: 10px; height: 10px; border-radius: 50%; background: var(--ai-dot); box-shadow: 0 0 0 2px #fff, 0 1px 3px rgba(0, 0, 0, .25); }
+
+.ai-dot { position: absolute; right: 12px; bottom: 12px; z-index: 3; width: 7px; height: 7px; border-radius: 50%; background: var(--ai-dot); box-shadow: 0 0 0 2px #fff, 0 1px 3px rgba(0, 0, 0, .25); }
 .st-frame .ai-dot { display: none; }
 .st-frame.ai-on .ai-dot { display: block; }
 .ch-wrap { display: none; }
@@ -728,7 +732,7 @@ a.tg-l[aria-current="page"] { color: #fff; background: #80276c; border-radius: 9
       "";
     var ents = (data.entreprises || []).map(function (e) {
       var cur = active === e.id ? ' aria-current="page"' : "";
-      return '<a class="tab tab-ent" href="#' + e.id + '"' + cur + ' title="' + esc(e.nom + ", " + e.periode) + '">' + esc(e.onglet || e.nom) + "</a>";
+      return '<a class="tab tab-ent"' + (entVars(e) ? ' style="' + entVars(e) + '"' : "") + ' href="#' + e.id + '"' + cur + ' title="' + esc(e.nom + ", " + e.periode) + '">' + esc(e.onglet || e.nom) + "</a>";
     }).join("");
     var sems = data.semestres.map(function (s, i) {
       var cur = active === s.id ? ' aria-current="page"' : "";
@@ -937,9 +941,14 @@ a.tg-l[aria-current="page"] { color: #fff; background: #80276c; border-radius: 9
       io.observe(ru);
     } else { ru.classList.add("in"); }
   }
+  // Variables de couleur d'une entreprise (champ "couleurs" : fond, texte, fonce, doux, teinte, bord)
+  function entVars(g) {
+    var c = g && g.couleurs; if (!c) return "";
+    return ["fond", "texte", "fonce", "doux", "teinte", "bord"].filter(function (k) { return c[k]; }).map(function (k) { return "--e-" + k + ":" + c[k]; }).join(";");
+  }
   function projCardHTML(g, p, big) {
     var c = p.couverture || p.hero || {};
-    return '<a class="pcard' + (g.theme === "scorpe" ? " t-scorpe" : "") + (big ? " big" : "") + '" href="#' + g.id + "-" + p.id + '">' +
+    return '<a class="pcard' + (g.theme === "scorpe" ? " t-scorpe" : "") + (g.type === "entreprise" ? " t-ent" : "") + (big ? " big" : "") + '"' + (entVars(g) ? ' style="' + entVars(g) + '"' : "") + ' href="#' + g.id + "-" + p.id + '">' +
       '<span class="pc-pic">' + (c.image ? '<img decoding="async" loading="lazy" src="' + esc(c.image) + '" alt="' + esc(c.alt) + '">' : "") + "</span>" +
       '<span class="pc-body"><span class="pc-where">' + esc(g.carte || g.nom) + ", " + esc(lc(p.periode)) + "</span>" +
       '<span class="pc-title">' + esc(p.titre) + '</span><span class="pc-sub">' + esc(p.sousTitre) + '</span><span class="pc-go">Ouvrir le projet</span></span></a>';
@@ -949,7 +958,8 @@ a.tg-l[aria-current="page"] { color: #fff; background: #80276c; border-radius: 9
     var pr = data.profil, t = allTags();
     var h = pr.hero || {};
     var cells = (pr.parcours || []).map(function (c) {
-      return '<li' + (c.theme ? ' class="t-' + esc(c.theme) + '"' : "") + '><span class="k">' + esc(c.periode) + '</span><span class="v">' + esc(c.intitule) + "</span>" + (c.detail ? '<span class="d">' + esc(c.detail) + "</span>" : "") + "</li>";
+      var ce = (data.entreprises || []).filter(function (e) { return e.theme === c.theme || e.id === c.theme; })[0];
+      return '<li' + (c.theme ? ' class="t-' + esc(c.theme) + (ce ? " t-ent" : "") + '"' : "") + (ce && entVars(ce) ? ' style="' + entVars(ce) + '"' : "") + '><span class="k">' + esc(c.periode) + '</span><span class="v">' + esc(c.intitule) + "</span>" + (c.detail ? '<span class="d">' + esc(c.detail) + "</span>" : "") + "</li>";
     }).join("");
     var links = (pr.liens || []).map(function (l) { return '<a class="btn" href="' + esc(l.url) + '" rel="noopener">' + esc(l.label) + "</a>"; }).join("");
     var feats = [];
@@ -1290,6 +1300,11 @@ a.tg-l[aria-current="page"] { color: #fff; background: #80276c; border-radius: 9
     var h = (location.hash || "").replace(/^#/, "") || "accueil";
     var r = routes[h] || routes.accueil;
     document.body.classList.toggle("t-scorpe", !!(r.s && r.s.theme === "scorpe"));
+    document.body.classList.toggle("t-ent", !!(r.s && r.s.type === "entreprise"));
+    ["fond", "texte", "fonce", "doux", "teinte", "bord"].forEach(function (k) {
+      var v = r.s && r.s.type === "entreprise" && r.s.couleurs && r.s.couleurs[k];
+      if (v) document.body.style.setProperty("--e-" + k, v); else document.body.style.removeProperty("--e-" + k);
+    });
     if (r.view === "home") { renderTabs(null, "home"); viewHome(); window.scrollTo(0, 0); }
     else if (r.view === "am") { renderTabs(null, "am"); viewAM(); window.scrollTo(0, 0); }
     else if (r.view === "sem") { renderTabs(r.s.id); viewSem(r.s); window.scrollTo(0, 0); }
@@ -1300,12 +1315,13 @@ a.tg-l[aria-current="page"] { color: #fff; background: #80276c; border-radius: 9
   }
 
   // Repère discret des visuels générés par IA : petit point dans le coin bas droit
-  // (violet côté Arts et Métiers, vert côté SCORPE). Tout fichier servi par le CDN Higgsfield est un visuel IA.
+  // (violet côté Arts et Métiers, couleur de l'entreprise côté entreprise).
+  // Visuel IA = servi par le CDN Higgsfield, ou rapatrié dans media/ia/. Les vraies photos vont ailleurs (img/, media/<entreprise>/).
   var AI_HOST = "d8j0ntlcm91z4.cloudfront.net";
   function isAI(m) {
     var src = m.getAttribute("src") || "";
     if (!src && m.querySelector) { var so = m.querySelector("source"); src = so ? so.getAttribute("src") || "" : ""; }
-    return src.indexOf(AI_HOST) >= 0;
+    return src.indexOf(AI_HOST) >= 0 || src.indexOf("media/ia/") >= 0;
   }
   function aiDot() {
     var d = document.createElement("span");
