@@ -1,0 +1,31 @@
+{
+  "_aide": "Modèle d'une partie (une étape d'un projet). Copier cet objet dans 'parties' (publié) ou 'partiesAVenir' (en préparation) d'un projet. Supprimer les champs optionnels inutiles. Les clés qui commencent par _ sont ignorées par le site.",
+  "id": "identifiant-court-sans-espace",
+  "bloc": 2,
+  "titre": "Titre de l'étape",
+  "module": "Bloc 2, nom du cours ou du module",
+  "date": "Nov. 2026",
+  "enBref": "Une phrase pour la version 2 minutes.",
+  "texte": [
+    "Premier paragraphe : ce qu'on a fait et pourquoi.",
+    "Deuxième paragraphe : ce que ça a donné, avec les chiffres qui comptent."
+  ],
+  "banniere": { "image": "img/s1/ma-photo.webp", "alt": "Description courte de l'image" },
+  "chiffres": [
+    { "valeur": "87,8 MPa", "label": "contrainte maximale en simulation" },
+    { "valeur": "≈ 1,07", "label": "coefficient de sécurité" }
+  ],
+  "images": [
+    { "src": "img/s1/capture-1.webp", "legende": "Légende affichée sous l'image (et dans la loupe)" }
+  ],
+  "modele3d": { "_optionnel": "modèle 3D tournant", "src": "models/fichier.glb", "fallback": "img/s1/capture-cao.png", "legende": "Faites tourner le modèle à la souris ou au doigt." },
+  "calculateur": "poutre-pied",
+  "_calculateur": "optionnel ; seule valeur existante : poutre-pied (curseur de masse du pied). Retirer la clé sinon.",
+  "competences": ["Compétence montrée dans cette étape"],
+  "outils": ["Logiciel ou norme utilisé"],
+  "livrables": [
+    { "titre": "Rapport de TP", "statut": "rendu", "date": "Nov. 2026" },
+    { "titre": "Soutenance", "statut": "a-venir", "date": "08/12/2026" }
+  ],
+  "_statuts": "statut : rendu | en-cours | a-venir"
+}

@@ -1,0 +1,494 @@
+{
+  "_aide": "Bibliothèque des visuels générés avec Higgsfield (hébergés sur le CDN Higgsfield, liens permanents). Réutilisables tels quels : copier 'url' dans un champ image. 'utilise_dans' indique où chaque visuel sert déjà.",
+  "visuels": [
+    {
+      "id": "85913f29",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_164441_85913f29-373d-472b-b54f-8e27dbcde699_min.webp",
+      "description": "Buse d'imprimante 3D déposant du PLA violet",
+      "utilise_dans": [
+        "/bilan",
+        "/pied-prothetique",
+        "/pied-prothetique/bilan",
+        "/s1",
+        "/s1/bilan",
+        "/s1/pied-prothetique",
+        "/s1/pied-prothetique/bilan"
+      ],
+      "type": "image"
+    },
+    {
+      "id": "45638d62",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_164509_45638d62-7251-4dc5-b2b5-d2fdff5ed350_min.webp",
+      "description": "Rendu du pied prothétique, version A, en PLA violet",
+      "utilise_dans": [
+        "/essai-pied",
+        "/pied-prothetique",
+        "/pied-prothetique/essai-pied",
+        "/s1",
+        "/s1/essai-pied",
+        "/s1/pied-prothetique",
+        "/s1/pied-prothetique/essai-pied"
+      ],
+      "type": "image"
+    },
+    {
+      "id": "75cee634",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_164636_75cee634-b2a9-4fd7-aa05-9d33bb7ad579_min.webp",
+      "description": "Schéma d'une poutre encastrée dessiné sur papier millimétré",
+      "utilise_dans": [
+        "/pied-prothetique",
+        "/pied-prothetique/rdm",
+        "/rdm",
+        "/s1",
+        "/s1/pied-prothetique",
+        "/s1/pied-prothetique/rdm",
+        "/s1/rdm"
+      ],
+      "type": "image"
+    },
+    {
+      "id": "d869f55b",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_164926_d869f55b-2d30-4fb9-ab0a-4a7b0fa4330c_min.webp",
+      "description": "Bobine de PLA violet, granulés et échantillon transparent",
+      "utilise_dans": [
+        "/materiau",
+        "/pied-prothetique",
+        "/pied-prothetique/materiau",
+        "/s1",
+        "/s1/materiau",
+        "/s1/pied-prothetique",
+        "/s1/pied-prothetique/materiau"
+      ],
+      "type": "image"
+    },
+    {
+      "id": "7281ecd6",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_165110_7281ecd6-4967-459c-8b2a-bd338ebe94e4_min.webp",
+      "description": "Montage de flexion 3 points sur une éprouvette en PLA violet",
+      "utilise_dans": [
+        "/flexion",
+        "/pied-prothetique",
+        "/pied-prothetique/flexion",
+        "/s1",
+        "/s1/flexion",
+        "/s1/pied-prothetique",
+        "/s1/pied-prothetique/flexion"
+      ],
+      "type": "image"
+    },
+    {
+      "id": "ea29124c",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_165217_ea29124c-521b-4a37-ae83-ffa215e0b94f_min.webp",
+      "description": "Treillis plan de quinze barres violettes et nœuds jaunes",
+      "utilise_dans": [
+        "/elements-finis",
+        "/pied-prothetique",
+        "/pied-prothetique/elements-finis",
+        "/s1",
+        "/s1/elements-finis",
+        "/s1/pied-prothetique",
+        "/s1/pied-prothetique/elements-finis"
+      ],
+      "type": "image"
+    },
+    {
+      "id": "53b98134",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_165459_53b98134-43e6-4102-8488-9885c39dfd93_min.webp",
+      "description": "Baskets alignées de la plus petite à la plus grande, une paire violette",
+      "utilise_dans": [
+        "/contexte",
+        "/pied-prothetique",
+        "/pied-prothetique/contexte",
+        "/s1",
+        "/s1/contexte",
+        "/s1/pied-prothetique",
+        "/s1/pied-prothetique/contexte"
+      ],
+      "type": "image"
+    },
+    {
+      "id": "b484d98a",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_193456_b484d98a-140c-45ed-af89-0cfd13769b69_min.webp",
+      "description": "Planches de brevets et stylo violet sur un bureau",
+      "utilise_dans": [
+        "/pied-prothetique",
+        "/pied-prothetique/veille-cdcf",
+        "/s1",
+        "/s1/pied-prothetique",
+        "/s1/pied-prothetique/veille-cdcf",
+        "/s1/veille-cdcf",
+        "/veille-cdcf"
+      ],
+      "type": "image"
+    },
+    {
+      "id": "b2a2e166",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_193548_b2a2e166-fb7a-499b-9e23-4ff92f272ed5_min.webp",
+      "description": "Le pied en maillage d'éléments finis et en carte de contraintes",
+      "utilise_dans": [
+        "/cao",
+        "/pied-prothetique",
+        "/pied-prothetique/cao",
+        "/s1",
+        "/s1/cao",
+        "/s1/pied-prothetique",
+        "/s1/pied-prothetique/cao"
+      ],
+      "type": "image"
+    },
+    {
+      "id": "1dc8971e",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_194254_1dc8971e-a4de-4170-b498-8b5c15a7d1ef_min.webp",
+      "description": "La mise en plan du pied se remplit couche par couche jusqu'à la pièce en PLA violet",
+      "utilise_dans": [
+        "/pied-prothetique",
+        "/s1",
+        "/s1/pied-prothetique"
+      ],
+      "type": "image"
+    },
+    {
+      "id": "8db6ab30",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_194352_8db6ab30-9199-4be7-836f-9fd40b58df69_min.webp",
+      "description": "Le pied découpé en maillage d'éléments finis",
+      "utilise_dans": [
+        "/pied-prothetique",
+        "/s1",
+        "/s1/pied-prothetique"
+      ],
+      "type": "image"
+    },
+    {
+      "id": "d10f819f",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_194444_d10f819f-3a9d-4d8b-82b9-6a558dcd33ac.mp4",
+      "description": "La mise en plan du pied se remplit couche par couche jusqu'à la pièce en PLA violet",
+      "utilise_dans": [],
+      "type": "video"
+    },
+    {
+      "id": "c767664f",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_194556_c767664f-e9d1-4a67-b682-18c4fc87cffa_min.webp",
+      "description": "Carte des contraintes sur le pied, maximum dans le coin",
+      "utilise_dans": [
+        "/pied-prothetique",
+        "/s1",
+        "/s1/pied-prothetique"
+      ],
+      "type": "image"
+    },
+    {
+      "id": "840bc470",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_194724_840bc470-b90e-4f2a-be8d-a3cd341a0a6d_min.webp",
+      "description": "Le pied en cours d'impression, couche par couche",
+      "utilise_dans": [
+        "/metrologie",
+        "/pied-prothetique",
+        "/pied-prothetique/metrologie",
+        "/s1",
+        "/s1/metrologie",
+        "/s1/pied-prothetique",
+        "/s1/pied-prothetique/metrologie"
+      ],
+      "type": "image"
+    },
+    {
+      "id": "87efbcca",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_200119_87efbcca-18e1-4e39-b7dc-c10f1ef5efe2_min.webp",
+      "description": "Pack batterie ouvert",
+      "utilise_dans": [
+        "/besoin",
+        "/scorpe",
+        "/scorpe/besoin",
+        "/scorpe/seb",
+        "/scorpe/seb/besoin",
+        "/seb",
+        "/seb/besoin"
+      ],
+      "type": "image"
+    },
+    {
+      "id": "6eaa40e4",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_200250_6eaa40e4-8b2d-48f2-b54d-c64508a255c6_min.webp",
+      "description": "Travelling macro le long d'un foret en acier rapide",
+      "utilise_dans": [],
+      "type": "image"
+    },
+    {
+      "id": "ac5e2a78",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_200430_ac5e2a78-ba0b-480e-878d-2306f5edbd1a.mp4",
+      "description": "Travelling macro le long d'un foret en acier rapide",
+      "utilise_dans": [],
+      "type": "video"
+    },
+    {
+      "id": "01bbf883",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_200521_01bbf883-bc21-429d-9b12-bc35ac318e72_min.webp",
+      "description": "Schéma d'une voiture inclinée",
+      "utilise_dans": [
+        "/inclinaison",
+        "/scorpe",
+        "/scorpe/inclinaison",
+        "/scorpe/seb",
+        "/scorpe/seb/inclinaison",
+        "/seb",
+        "/seb/inclinaison"
+      ],
+      "type": "image"
+    },
+    {
+      "id": "51fede33",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_203532_51fede33-723b-4ab6-b51b-9e3b8bf13659_min.webp",
+      "description": "Rendu studio du SEB, châssis noir et vert sur roues",
+      "utilise_dans": [
+        "/prototype",
+        "/scorpe",
+        "/scorpe/prototype",
+        "/scorpe/seb",
+        "/scorpe/seb/prototype",
+        "/seb",
+        "/seb/prototype"
+      ],
+      "type": "image"
+    },
+    {
+      "id": "50d889d4",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_210042_50d889d4-380c-41f8-a5d3-d5f39224475f_min.webp",
+      "description": "Prototype du SEB sur l'établi du bureau d'études",
+      "utilise_dans": [
+        "/prototype",
+        "/scorpe",
+        "/scorpe/prototype",
+        "/scorpe/seb",
+        "/scorpe/seb/prototype",
+        "/seb",
+        "/seb/prototype"
+      ],
+      "type": "image"
+    },
+    {
+      "id": "7671b41f",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_210924_7671b41f-aefd-4515-a897-01d4a6880160_min.webp",
+      "description": "Boîte d'engrenages violette et jaune, fond blanc (couverture générique)",
+      "utilise_dans": [
+        "/projet-s2",
+        "/s2",
+        "/s2/projet-s2"
+      ],
+      "type": "image"
+    },
+    {
+      "id": "fd04a75a",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_211028_fd04a75a-95d9-4ddb-a5b5-dfdcf22f88fc_min.webp",
+      "description": "Pièce en aluminium usinée, équerre violette et pied à coulisse jaune, fond blanc",
+      "utilise_dans": [
+        "/projet-s3",
+        "/s3",
+        "/s3/projet-s3"
+      ],
+      "type": "image"
+    },
+    {
+      "id": "3f071c44",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_211128_3f071c44-610e-4a3c-8b29-5d40a2a0e483_min.webp",
+      "description": "Treillis en poutres violettes avec goussets jaunes, fond blanc",
+      "utilise_dans": [
+        "/projet-s4",
+        "/s4",
+        "/s4/projet-s4"
+      ],
+      "type": "image"
+    },
+    {
+      "id": "63c1d129",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_211236_63c1d129-240d-4f6b-960e-011ecf7f4371_min.webp",
+      "description": "Échangeur thermique à ailettes, embouts violets et raccords jaunes, fond blanc",
+      "utilise_dans": [
+        "/projet-s5",
+        "/s5",
+        "/s5/projet-s5"
+      ],
+      "type": "image"
+    },
+    {
+      "id": "79111e15",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_211551_79111e15-d4fb-42a7-bdef-81a3d11f74a3_min.webp",
+      "description": "Vérin pneumatique violet avec raccords jaunes, fond blanc",
+      "utilise_dans": [
+        "/projet-s6",
+        "/s6",
+        "/s6/projet-s6"
+      ],
+      "type": "image"
+    },
+    {
+      "id": "ef360c62",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_211659_ef360c62-1d2f-4e75-b43c-4ce301c94674_min.webp",
+      "description": "Croquis de pièce mécanique au crayon, crayon violet et surligneur jaune (bannière contexte)",
+      "utilise_dans": [
+        "/contexte",
+        "/projet-s2",
+        "/projet-s2/contexte",
+        "/projet-s3",
+        "/projet-s3/contexte",
+        "/projet-s4",
+        "/projet-s4/contexte",
+        "/projet-s5",
+        "/projet-s5/contexte",
+        "/projet-s6",
+        "/projet-s6/contexte",
+        "/s2",
+        "/s2/contexte",
+        "/s2/projet-s2",
+        "/s2/projet-s2/contexte",
+        "/s3",
+        "/s3/contexte",
+        "/s3/projet-s3",
+        "/s3/projet-s3/contexte",
+        "/s4",
+        "/s4/contexte",
+        "/s4/projet-s4",
+        "/s4/projet-s4/contexte",
+        "/s5",
+        "/s5/contexte",
+        "/s5/projet-s5",
+        "/s5/projet-s5/contexte",
+        "/s6",
+        "/s6/contexte",
+        "/s6/projet-s6",
+        "/s6/projet-s6/contexte"
+      ],
+      "type": "image"
+    },
+    {
+      "id": "eff0ae5a",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_211807_eff0ae5a-a5f2-4eb3-a8c8-85db135fa10a_min.webp",
+      "description": "Écran avec une maquette CAO violette et jaune (bannière conception)",
+      "utilise_dans": [
+        "/conception",
+        "/pied-prothetique",
+        "/pied-prothetique/refonte",
+        "/projet-s2",
+        "/projet-s2/conception",
+        "/projet-s3",
+        "/projet-s3/conception",
+        "/projet-s4",
+        "/projet-s4/conception",
+        "/projet-s5",
+        "/projet-s5/conception",
+        "/projet-s6",
+        "/projet-s6/conception",
+        "/refonte",
+        "/s1",
+        "/s1/pied-prothetique",
+        "/s1/pied-prothetique/refonte",
+        "/s1/refonte",
+        "/s2",
+        "/s2/conception",
+        "/s2/projet-s2",
+        "/s2/projet-s2/conception",
+        "/s3",
+        "/s3/conception",
+        "/s3/projet-s3",
+        "/s3/projet-s3/conception",
+        "/s4",
+        "/s4/conception",
+        "/s4/projet-s4",
+        "/s4/projet-s4/conception",
+        "/s5",
+        "/s5/conception",
+        "/s5/projet-s5",
+        "/s5/projet-s5/conception",
+        "/s6",
+        "/s6/conception",
+        "/s6/projet-s6",
+        "/s6/projet-s6/conception"
+      ],
+      "type": "image"
+    },
+    {
+      "id": "0915c237",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_211917_0915c237-b4ba-4628-b05b-416f4d65e5b1_min.webp",
+      "description": "Machine de traction avec éprouvette, touches violettes et jaunes (bannière essais)",
+      "utilise_dans": [
+        "/calcul-essais",
+        "/projet-s2",
+        "/projet-s2/calcul-essais",
+        "/projet-s3",
+        "/projet-s3/calcul-essais",
+        "/projet-s4",
+        "/projet-s4/calcul-essais",
+        "/projet-s5",
+        "/projet-s5/calcul-essais",
+        "/projet-s6",
+        "/projet-s6/calcul-essais",
+        "/s2",
+        "/s2/calcul-essais",
+        "/s2/projet-s2",
+        "/s2/projet-s2/calcul-essais",
+        "/s3",
+        "/s3/calcul-essais",
+        "/s3/projet-s3",
+        "/s3/projet-s3/calcul-essais",
+        "/s4",
+        "/s4/calcul-essais",
+        "/s4/projet-s4",
+        "/s4/projet-s4/calcul-essais",
+        "/s5",
+        "/s5/calcul-essais",
+        "/s5/projet-s5",
+        "/s5/projet-s5/calcul-essais",
+        "/s6",
+        "/s6/calcul-essais",
+        "/s6/projet-s6",
+        "/s6/projet-s6/calcul-essais"
+      ],
+      "type": "image"
+    },
+    {
+      "id": "0d3b196f",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_212028_0d3b196f-6589-4f84-b4ba-86987be4b131_min.webp",
+      "description": "Table avec plans, pièce imprimée violette, carnet jaune et ordinateur (bannière bilan)",
+      "utilise_dans": [
+        "/bilan",
+        "/pied-prothetique",
+        "/pied-prothetique/presentation-finale",
+        "/presentation-finale",
+        "/projet-s2",
+        "/projet-s2/bilan",
+        "/projet-s3",
+        "/projet-s3/bilan",
+        "/projet-s4",
+        "/projet-s4/bilan",
+        "/projet-s5",
+        "/projet-s5/bilan",
+        "/projet-s6",
+        "/projet-s6/bilan",
+        "/s1",
+        "/s1/pied-prothetique",
+        "/s1/pied-prothetique/presentation-finale",
+        "/s1/presentation-finale",
+        "/s2",
+        "/s2/bilan",
+        "/s2/projet-s2",
+        "/s2/projet-s2/bilan",
+        "/s3",
+        "/s3/bilan",
+        "/s3/projet-s3",
+        "/s3/projet-s3/bilan",
+        "/s4",
+        "/s4/bilan",
+        "/s4/projet-s4",
+        "/s4/projet-s4/bilan",
+        "/s5",
+        "/s5/bilan",
+        "/s5/projet-s5",
+        "/s5/projet-s5/bilan",
+        "/s6",
+        "/s6/bilan",
+        "/s6/projet-s6",
+        "/s6/projet-s6/bilan"
+      ],
+      "type": "image"
+    }
+  ]
+}

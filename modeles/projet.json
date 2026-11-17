@@ -1,0 +1,36 @@
+{
+  "_aide": "Modèle d'un projet complet. À placer dans data.semestres[i].projets (publié) ou data.semestres[i].aVenir (carte grisée « À venir », non cliquable). Les clés qui commencent par _ sont ignorées par le site. Voir partie.json pour le détail d'une partie.",
+  "id": "identifiant-court",
+  "titre": "Titre complet du projet",
+  "titreCourt": "Titre court (fil d'Ariane, frise)",
+  "sousTitre": "Une phrase : ce que fait le produit, pour qui.",
+  "equipe": "En binôme avec …",
+  "encadrant": "Nom de l'encadrant",
+  "periode": "Févr. – juil. 2027",
+  "phare": false,
+  "_phare": "true = affiché dans « Projets phares » sur l'accueil",
+  "resume": "Trois ou quatre phrases : problème, solution, résultat, suite.",
+  "hero": { "image": "img/s2/couverture.webp", "alt": "Description" },
+  "couverture": { "image": "img/s2/couverture.webp", "alt": "Description" },
+  "chiffres": [ { "valeur": "3", "label": "chiffre clé du projet" } ],
+  "blocs": { "1": "Phrase qui résume le Bloc 1", "2": "Phrase qui résume le Bloc 2" },
+  "_blocs": "optionnel : seulement si les parties ont un champ 'bloc'",
+  "recitCourt": {
+    "_optionnel": "récit au défilement en 5 images (affiché sur la page Arts et Métiers pour le premier projet ; sinon pas encore affiché)",
+    "titre": "Titre du récit",
+    "intro": "Une phrase d'introduction.",
+    "etapes": [
+      { "titre": "Étape", "image": "img/s2/etape-1.webp", "alt": "Description", "texte": "Une ou deux phrases.", "partie": "id-de-la-partie" }
+    ]
+  },
+  "plan": {
+    "_optionnel": "plan cliquable avec repères (en % de l'image)",
+    "image": "img/s2/plan.svg",
+    "titre": "La pièce, repère par repère",
+    "consigne": "Cliquez sur un repère pour aller à l'étape correspondante.",
+    "reperes": [ { "id": "A", "x": 26.9, "y": 21.5, "label": "Ce que montre ce repère", "partie": "id-de-la-partie" } ]
+  },
+  "parties": [],
+  "partiesAVenir": [],
+  "_partiesAVenir": "parties en préparation : invisibles, visibles seulement sur l'aperçu #apercu-<semestre>-<projet>"
+}

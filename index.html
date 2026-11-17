@@ -625,6 +625,8 @@ a.tg-l[aria-current="page"] { color: #fff; background: #80276c; border-radius: 9
 .pc-badge { position: absolute; left: 14px; top: 14px; font-size: 13px; font-weight: 700; color: #5c1a4d; background: #fff; border: 1px solid #e2c9dc; border-radius: 999px; padding: 4px 11px; }
 @media (max-width: 1000px) { .cr-track { grid-auto-columns: calc((100% - 24px) / 2); } }
 @media (max-width: 640px) { .cr-track { grid-auto-columns: 86%; gap: 16px; } .cr-prev { left: -6px; } .cr-next { right: -6px; } .cr-btn { width: 44px; height: 44px; } }
+
+.apercu-ban { margin: 18px 0 0; padding: 12px 16px; border: 2px dashed #ffa300; border-radius: 10px; background: #fff8ea; color: #5c3b00; font-size: 15px; }
 </style>
 </head>
 <body>
@@ -695,6 +697,17 @@ a.tg-l[aria-current="page"] { color: #fff; background: #80276c; border-radius: 9
         (p.parties || []).forEach(function (pa) {
           routes[pk + "-" + pa.id] = { view: "proj", s: s, p: p, part: pa.id };
         });
+      });
+      // Aperçus non publiés (liés nulle part) : #apercu-<semestre>-<projet>
+      // - projets en attente (s.aVenir)
+      // - projets publiés qui ont des parties en préparation (p.partiesAVenir)
+      (s.aVenir || []).concat(s.projets || []).forEach(function (p) {
+        var draft = (s.aVenir || []).indexOf(p) >= 0;
+        if (!draft && !(p.partiesAVenir || []).length) return;
+        var prev = Object.assign({}, p, { parties: (p.parties || []).concat(p.partiesAVenir || []), _apercu: true });
+        var ak = "apercu-" + s.id + "-" + p.id;
+        routes[ak] = { view: "proj", s: s, p: prev };
+        prev.parties.forEach(function (pa) { routes[ak + "-" + pa.id] = { view: "proj", s: s, p: prev, part: pa.id }; });
       });
     });
   }
@@ -1058,7 +1071,7 @@ a.tg-l[aria-current="page"] { color: #fff; background: #80276c; border-radius: 9
   }
 
   function viewProj(s, p, partId) {
-    var base = s.id + "-" + p.id;
+    var base = (p._apercu ? "apercu-" : "") + s.id + "-" + p.id;
     var prevBloc = null, prevBloc2 = null;
     var steps = (p.parties || []).map(function (pa, i) {
       var lbl = "";
@@ -1067,6 +1080,7 @@ a.tg-l[aria-current="page"] { color: #fff; background: #80276c; border-radius: 9
     }).join("");
     var h = p.hero || {};
     app.innerHTML =
+      (p._apercu ? '<p class="apercu-ban" role="note"><strong>Aperçu non publié.</strong> Cette page n\'est liée nulle part sur le site. Les parties en préparation y sont visibles.</p>' : "") +
       '<nav class="crumbs" aria-label="Fil d\'Ariane"><a href="#accueil">Accueil</a><span aria-hidden="true">/</span>' + (s.type === "entreprise" ? "" : '<a href="#ensam">Arts et Métiers</a><span aria-hidden="true">/</span>') + '<a href="#' + s.id + '">' + esc(s.nom) + '</a><span aria-hidden="true">/</span><span>' + esc(p.titreCourt || p.titre) + "</span></nav>" +
       '<section class="proj-hero">' + (h.image ? '<div class="ph-media">' + media(h) + aiTag(h.note) + "</div>" : "") +
         '<div class="ph-text"><p class="eyebrow">' + esc(s.carte || s.nom) + ", " + esc(lc(p.periode)) + "</p><h1>" + esc(p.titre) + "</h1><p>" + esc(p.sousTitre) + "</p></div></section>" +

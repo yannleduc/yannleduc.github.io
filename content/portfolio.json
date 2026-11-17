@@ -747,7 +747,114 @@
                 "partie": "bilan"
               }
             ]
-          }
+          },
+          "partiesAVenir": [
+            {
+              "id": "metrologie",
+              "bloc": 2,
+              "titre": "Métrologie et réglages d'impression",
+              "module": "Bloc 2, métrologie",
+              "date": "Nov. 2026",
+              "enBref": "À compléter : l'écart mesuré entre la CAO et la pièce imprimée, et les réglages retenus.",
+              "texte": [
+                "À compléter : comment on a mesuré les pièces imprimées, les écarts trouvés par rapport à la CAO et les paramètres d'impression corrigés."
+              ],
+              "banniere": {
+                "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_194724_840bc470-b90e-4f2a-be8d-a3cd341a0a6d_min.webp",
+                "alt": "Impression du pied en PLA"
+              },
+              "chiffres": [],
+              "competences": [],
+              "outils": [],
+              "livrables": [
+                {
+                  "titre": "Rapport de métrologie",
+                  "statut": "a-venir",
+                  "date": ""
+                }
+              ],
+              "images": []
+            },
+            {
+              "id": "essai-pied",
+              "bloc": 2,
+              "titre": "Impression et essai du premier pied",
+              "module": "Bloc 2, essais",
+              "date": "Nov. – déc. 2026",
+              "enBref": "À compléter : ce que l'essai du premier pied imprimé a montré.",
+              "texte": [
+                "À compléter : le montage d'essai, la charge appliquée, la flèche mesurée comparée au calcul, et ce qui a cédé ou tenu."
+              ],
+              "banniere": {
+                "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_164509_45638d62-7251-4dc5-b2b5-d2fdff5ed350_min.webp",
+                "alt": "Pied prothétique imprimé"
+              },
+              "chiffres": [],
+              "competences": [],
+              "outils": [],
+              "livrables": [
+                {
+                  "titre": "Rapport d'essai",
+                  "statut": "a-venir",
+                  "date": ""
+                }
+              ],
+              "images": []
+            },
+            {
+              "id": "refonte",
+              "bloc": 2,
+              "titre": "Talon, formes et allègement",
+              "module": "Bloc 2, conception",
+              "date": "Nov. – déc. 2026",
+              "enBref": "À compléter : le talon ajouté, les formes arrondies et la masse gagnée.",
+              "texte": [
+                "À compléter : le dessin du talon pour la dorsiflexion, les formes arrondies, et l'allègement en éloignant la matière de la fibre neutre."
+              ],
+              "banniere": {
+                "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_211807_eff0ae5a-a5f2-4eb3-a8c8-85db135fa10a_min.webp",
+                "alt": "Modèle 3D en cours de conception"
+              },
+              "chiffres": [],
+              "competences": [],
+              "outils": [],
+              "livrables": [
+                {
+                  "titre": "Nouvelle version CAO",
+                  "statut": "a-venir",
+                  "date": ""
+                }
+              ],
+              "images": []
+            },
+            {
+              "id": "presentation-finale",
+              "bloc": 2,
+              "titre": "Présentation finale du Bloc 2",
+              "module": "Soutenance",
+              "date": "08/12/2026",
+              "enBref": "À compléter : le bilan du Bloc 2 et la suite.",
+              "texte": [
+                "À compléter : ce qui a été présenté le 8 décembre, les retours du jury et les pistes pour la suite."
+              ],
+              "banniere": {
+                "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_212028_0d3b196f-6589-4f84-b4ba-86987be4b131_min.webp",
+                "alt": "Plans et pièces posés sur une table"
+              },
+              "chiffres": [],
+              "competences": [],
+              "outils": [],
+              "livrables": [
+                {
+                  "titre": "Présentation finale Bloc 2",
+                  "statut": "a-venir",
+                  "date": "08/12/2026"
+                }
+              ],
+              "images": []
+            }
+          ],
+          "_aide": "Parties publiées : 'parties'. Parties du Bloc 2 en préparation : 'partiesAVenir' (invisibles, aperçu sur #apercu-s1-pied-prothetique). Pour publier une partie : la compléter puis la déplacer de 'partiesAVenir' vers 'parties', à la bonne place."
         }
       ],
       "debut": "2026-09-01",
