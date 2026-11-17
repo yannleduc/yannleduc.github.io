@@ -919,7 +919,7 @@
               },
               {
                 "titre": "Du plan au prototype",
-                "image": "media/scorpe/seb-proto.webp",
+                "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_210042_50d889d4-380c-41f8-a5d3-d5f39224475f_min.webp",
                 "alt": "Prototype du SEB sur l'établi du bureau d'études",
                 "texte": "Moteurs de perçage et de levage, vis à billes, renvoi d'angle, paliers : chaque composant a été choisi pour supporter l'eau, la chaleur et une manipulation brusque. Plans, devis, commandes, puis un premier prototype complet et des versions améliorées.",
                 "chiffre": {
@@ -929,10 +929,10 @@
                 "partie": "prototype"
               },
               {
-                "titre": "Interschutz, puis les SDIS",
-                "image": "media/scorpe/seb-salon.webp",
-                "alt": "Le SEB exposé sur le stand SCORPE",
-                "texte": "En juin 2026, le SEB a été présenté au salon Interschutz, le plus grand salon du secours en Europe, qui n'a lieu que tous les quatre ans. Il y a été très bien accueilli. Restait l'essai final devant les SDIS, en septembre.",
+                "titre": "Des essais au salon",
+                "image": "media/scorpe/seb-essai.webp",
+                "alt": "Essai du SEB sous un véhicule",
+                "texte": "Après des mois d'essais sous véhicule, le SEB a été présenté en juin 2026 au salon Interschutz, le plus grand salon du secours en Europe, où il a été très bien accueilli. Restait l'essai final devant les SDIS, en septembre.",
                 "chiffre": {
                   "valeur": "Tous les 4 ans",
                   "label": "Interschutz, le plus grand salon du secours en Europe"
@@ -1075,7 +1075,7 @@
                   "legende": "Rendu 3D du SEB complet"
                 },
                 {
-                  "src": "media/scorpe/seb-proto.webp",
+                  "src": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_210042_50d889d4-380c-41f8-a5d3-d5f39224475f_min.webp",
                   "legende": "Premier prototype complet, en montage au bureau d'études"
                 },
                 {
@@ -1119,12 +1119,12 @@
               "date": "Juin – sept. 2026",
               "enBref": "Présenté au salon Interschutz en juin 2026 et très bien accueilli, puis essai final devant les SDIS en septembre.",
               "texte": [
-                "En juin 2026, nous avons présenté le SEB au salon Interschutz, le plus grand salon du secours en Europe, qui n'a lieu que tous les quatre ans. Les SDIS étaient d'abord réticents à montrer un produit pas encore finalisé ; une présentation statique, sans démonstration de fonctionnement, les a rassurés. Le SEB y a été très bien accueilli.",
+                "En juin 2026, nous avons présenté le SEB au salon Interschutz, le plus grand salon du secours en Europe, qui n'a lieu que tous les quatre ans. Il y a été présenté de façon statique, et très bien accueilli.",
                 "Le dernier jalon était l'essai final devant les SDIS en septembre, avec une exigence simple : tout devait fonctionner parfaitement."
               ],
               "banniere": {
-                "image": "media/scorpe/seb-salon.webp",
-                "alt": "Stand SCORPE au salon, le SEB posé sur une colonne"
+                "image": "media/scorpe/seb-essai.webp",
+                "alt": "Essai du SEB sous un véhicule"
               },
               "chiffres": [],
               "competences": [
@@ -1155,9 +1155,9 @@
               "titre": "Le brevet",
               "module": "Propriété industrielle",
               "date": "2025 – 2026",
-              "enBref": "Le SEB fait l'objet d'un brevet au nom de SCORPE, avec Claude Gilmer pour inventeur. J'en ai rédigé les écrits techniques, schémas compris.",
+              "enBref": "SCORPE a choisi de breveter la solution. J'ai participé à la rédaction technique, aux schémas et à un premier jet du brevet.",
               "texte": [
-                "Le SEB fait l'objet d'un brevet déposé par SCORPE, dont l'inventeur est Claude Gilmer. Ma part a été de rédiger les écrits techniques détaillés, avec leurs schémas, pour le SEB comme pour un outil d'effraction à froid. Ils ont été transmis à un cabinet de propriété industrielle, qui a jugé le travail très bien fait et n'a eu que peu de questions."
+                "SCORPE a choisi de breveter la solution, avec Claude Gilmer pour inventeur. J'ai participé à la rédaction technique et aux schémas explicatifs, ainsi qu'à un premier jet du brevet. Ce travail a ensuite été transmis à un cabinet de propriété industrielle, qui l'a apprécié."
               ],
               "chiffres": [],
               "competences": [
