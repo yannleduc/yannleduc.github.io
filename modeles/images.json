@@ -1,5 +1,5 @@
 {
-  "_aide": "Bibliothèque des visuels générés avec Higgsfield (hébergés sur le CDN Higgsfield, liens permanents). Réutilisables tels quels : copier 'url' dans un champ image. 'utilise_dans' indique où chaque visuel sert déjà.",
+  "_aide": "Bibliothèque des visuels générés (Higgsfield). Réutilisables tels quels : copier 'url' dans un champ image. 'usage' : couverture de projet (16:9) ou bannière d'étape (21:9). 'utilise_dans' : où il sert déjà (vide = libre). Tous ces visuels portent automatiquement le petit point IA sur le site.",
   "visuels": [
     {
       "id": "85913f29",
@@ -489,6 +489,150 @@
         "/s6/projet-s6/bilan"
       ],
       "type": "image"
+    },
+    {
+      "id": "bad9792e",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_213932_bad9792e-13ec-4aa8-a767-f731d9fb7cb8_min.webp",
+      "description": "Pièce imprimée en 3D à structure lattice, PLA violet, insert jaune",
+      "usage": "couverture de projet (16:9)",
+      "type": "image",
+      "utilise_dans": []
+    },
+    {
+      "id": "7ae41309",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_214046_7ae41309-c204-409a-803d-5092a585d067_min.webp",
+      "description": "Équerre en tôle pliée violette, vis et rondelles jaunes",
+      "usage": "couverture de projet (16:9)",
+      "type": "image",
+      "utilise_dans": []
+    },
+    {
+      "id": "3a6da75b",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_214153_3a6da75b-5c28-46a9-8bc7-e7cfc2ada2a4_min.webp",
+      "description": "Carte électronique prototype violette, microcontrôleur, capteurs, connecteurs jaunes",
+      "usage": "couverture de projet (16:9)",
+      "type": "image",
+      "utilise_dans": []
+    },
+    {
+      "id": "1d39cf66",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_214331_1d39cf66-5fa8-4291-92b7-4d90aca038e3_min.webp",
+      "description": "Maquette d'ossature de bâtiment, poutres et poteaux violets, platines jaunes (génie civil)",
+      "usage": "couverture de projet (16:9)",
+      "type": "image",
+      "utilise_dans": []
+    },
+    {
+      "id": "d09da4fa",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_214500_d09da4fa-7f13-48b6-ba68-defbdcc3e78b_min.webp",
+      "description": "Éprouvette de poutre en béton armé avec cage d'armatures, mètre violet et niveau jaune (génie civil)",
+      "usage": "couverture de projet (16:9)",
+      "type": "image",
+      "utilise_dans": []
+    },
+    {
+      "id": "40ec762e",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_214604_40ec762e-112e-499e-942e-e6ba16962e0b_min.webp",
+      "description": "Module de translation à vis à billes, chariot violet, butées jaunes",
+      "usage": "couverture de projet (16:9)",
+      "type": "image",
+      "utilise_dans": []
+    },
+    {
+      "id": "5d485840",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_214711_5d485840-1a25-402b-9b39-215fff123e02_min.webp",
+      "description": "Pompe à engrenages en coupe, carter violet, joints jaunes (mécanique des fluides)",
+      "usage": "couverture de projet (16:9)",
+      "type": "image",
+      "utilise_dans": []
+    },
+    {
+      "id": "19d986d6",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_214823_19d986d6-9f9b-4cc5-94de-d5674c661267_min.webp",
+      "description": "Échantillons de matériaux : carbone, aluminium, polymère violet, composite jaune",
+      "usage": "couverture de projet (16:9)",
+      "type": "image",
+      "utilise_dans": []
+    },
+    {
+      "id": "28af9950",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_214937_28af9950-290a-4005-95c5-60178d17c209_min.webp",
+      "description": "Mur de post-it violets et jaunes (analyse du besoin, analyse fonctionnelle, brainstorming)",
+      "usage": "bannière d'étape (21:9)",
+      "type": "image",
+      "utilise_dans": []
+    },
+    {
+      "id": "ec9f5a79",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_215046_ec9f5a79-3c98-4c67-ad6f-225e42cf6f1a_min.webp",
+      "description": "Fraiseuse CN usinant un bloc d'aluminium, étau violet, bride jaune (usinage, fabrication)",
+      "usage": "bannière d'étape (21:9)",
+      "type": "image",
+      "utilise_dans": []
+    },
+    {
+      "id": "fe8ea88a",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_215157_fe8ea88a-3ccb-4b8b-ba2a-ca6994c56670_min.webp",
+      "description": "Pied à coulisse mesurant une pièce imprimée violette sur marbre, cale jaune (métrologie, contrôle)",
+      "usage": "bannière d'étape (21:9)",
+      "type": "image",
+      "utilise_dans": []
+    },
+    {
+      "id": "c117b3e4",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_215308_c117b3e4-7376-4449-8823-ec27d99d64a0_min.webp",
+      "description": "Établi vu de dessus, prototype violet en montage, visserie, tournevis jaune (assemblage, prototypage)",
+      "usage": "bannière d'étape (21:9)",
+      "type": "image",
+      "utilise_dans": []
+    },
+    {
+      "id": "0c05a475",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_215419_0c05a475-0cc1-4ef2-b91e-792d95596cc1_min.webp",
+      "description": "Écran avec une carte de contraintes éléments finis violet → jaune (simulation, MEF)",
+      "usage": "bannière d'étape (21:9)",
+      "type": "image",
+      "utilise_dans": []
+    },
+    {
+      "id": "0a486b14",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_215544_0a486b14-b4c3-4627-b298-a884852db94b_min.webp",
+      "description": "Ordinateur avec du code et carte microcontrôleur reliée à un capteur violet (programmation, électronique)",
+      "usage": "bannière d'étape (21:9)",
+      "type": "image",
+      "utilise_dans": []
+    },
+    {
+      "id": "153cfb1d",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_215659_153cfb1d-4ceb-4f65-a9c0-f05643da80d7_min.webp",
+      "description": "Planning de projet imprimé, post-it violets et jaunes (gestion de projet)",
+      "usage": "bannière d'étape (21:9)",
+      "type": "image",
+      "utilise_dans": []
+    },
+    {
+      "id": "4eb18e03",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_215901_4eb18e03-5a77-43ed-9bec-3970e927cbfa_min.webp",
+      "description": "Salle de présentation vide, écran avec une diapositive violette et jaune (soutenance, oral)",
+      "usage": "bannière d'étape (21:9)",
+      "type": "image",
+      "utilise_dans": []
+    },
+    {
+      "id": "fe624502",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_220021_fe624502-3100-400b-9dfb-9dd87e2c962b_min.webp",
+      "description": "Mains autour d'une pièce imprimée violette et d'un plan, sans visages (travail en équipe, revue de conception)",
+      "usage": "bannière d'étape (21:9)",
+      "type": "image",
+      "utilise_dans": []
+    },
+    {
+      "id": "377e718a",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_220131_377e718a-8ad7-4bb3-9407-76f10599e2aa_min.webp",
+      "description": "Rapport relié à couverture violette, carnet de calculs, stylo jaune et calculatrice (rédaction, rapport, livrable)",
+      "usage": "bannière d'étape (21:9)",
+      "type": "image",
+      "utilise_dans": []
     }
   ]
 }

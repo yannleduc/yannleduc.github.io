@@ -1,0 +1,32 @@
+{
+  "_aide": "Modèle d'une entreprise (onglet dans le groupe de gauche de l'en-tête, comme SCORPE). À ajouter dans data.entreprises. Ses pages prennent automatiquement ses couleurs ; le point « visuel IA » prend sa couleur de fond. Ne pas mettre de 'theme' sauf pour SCORPE (\"scorpe\").",
+  "id": "identifiant-court",
+  "type": "entreprise",
+  "nom": "NOM",
+  "onglet": "NOM",
+  "carte": "NOM",
+  "couleurs": {
+    "_aide": "fond = couleur de la marque (onglet actif, filets, point IA) ; texte = version assez foncée pour être lisible sur blanc (contraste ≥ 4,5:1) ; fonce = encore plus foncé ; doux = teinte très claire (fonds de chiffres) ; teinte = quasi blanc ; bord = teinte claire pour les contours.",
+    "fond": "#57A639",
+    "texte": "#3D7A26",
+    "fonce": "#2E6A1A",
+    "doux": "#EAF4E4",
+    "teinte": "#F5F9F2",
+    "bord": "#BCDDAE"
+  },
+  "titre": "Ce que fait l'entreprise, en quelques mots",
+  "role": "Apprenti ingénieur",
+  "periode": "2026 – 2029",
+  "titreProjets": "Chez NOM, en alternance",
+  "intro": "Deux ou trois phrases : l'entreprise, mon poste, ce que j'y fais.",
+  "faits": [
+    { "k": "Secteur", "v": "…" },
+    { "k": "Mon poste", "v": "…" },
+    { "k": "Lieu", "v": "…" }
+  ],
+  "video": "",
+  "poster": "",
+  "videoAlt": "",
+  "_video": "optionnel : bandeau vidéo sous l'en-tête (mp4). Laisser vide sinon.",
+  "projets": []
+}
