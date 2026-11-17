@@ -22,7 +22,53 @@
       "video": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_164716_da5df8d9-d4cf-423c-ac83-c7908651aaa6.mp4",
       "alt": "Le pied prothétique de mon projet, imprimé en PLA violet, en rotation lente",
       "note": "Rendu IA à partir de ma CAO"
-    }
+    },
+    "groupesCompetences": [
+      {
+        "nom": "Conception",
+        "items": [
+          "Analyse du besoin",
+          "Analyse fonctionnelle",
+          "Rédaction de CdCF",
+          "Tri croisé",
+          "Veille technologique",
+          "Recherche bibliographique",
+          "CAO paramétrée"
+        ]
+      },
+      {
+        "nom": "Calcul et simulation",
+        "items": [
+          "Théorie des poutres",
+          "Dimensionnement en flexion",
+          "Comparaison de solutions",
+          "Simulation par éléments finis",
+          "Programmation de la MEF",
+          "Validation croisée de modèles",
+          "Lecture critique d'un post-traitement"
+        ]
+      },
+      {
+        "nom": "Matériaux et essais",
+        "items": [
+          "Sélection des matériaux (méthode Ashby)",
+          "Indices de performance",
+          "Choix de procédé",
+          "Essai normalisé (ISO 178)",
+          "Traitement de données d'essai",
+          "Anisotropie du FDM"
+        ]
+      },
+      {
+        "nom": "Démarche",
+        "items": [
+          "Analyse critique des résultats",
+          "Esprit critique",
+          "Planification",
+          "Présentation orale"
+        ]
+      }
+    ]
   },
   "semestres": [
     {
@@ -151,7 +197,7 @@
               "images": [],
               "enBref": "23 brevets analysés, et aucun pied d'enfant imprimé en FDM. Le cahier des charges oppose deux exigences : bien marcher (30 %) et résister (27 %).",
               "banniere": {
-                "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_164756_e78662e5-c804-4157-a5a0-44a07abd5e3c_min.webp",
+                "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_193456_b484d98a-140c-45ed-af89-0cfd13769b69_min.webp",
                 "alt": "Planches de brevets et stylo violet sur un bureau"
               }
             },
@@ -365,8 +411,8 @@
               ],
               "enBref": "Le modèle est piloté par 3 cotes, donc adaptable à chaque pointure. La simulation confirme le calcul : 23,5 mm de flèche, 87,8 MPa au pire.",
               "banniere": {
-                "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_165400_fd58acf4-78dd-49c3-8c4c-cd79ac93c048_min.webp",
-                "alt": "Le pied en maillage filaire et en carte de contraintes"
+                "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_193548_b2a2e166-fb7a-499b-9e23-4ff92f272ed5_min.webp",
+                "alt": "Le pied en maillage d'éléments finis et en carte de contraintes"
               }
             },
             {

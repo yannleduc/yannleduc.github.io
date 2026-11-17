@@ -3,11 +3,26 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Portfolio Yann Leduc</title>
+<title>Yann Leduc, apprenti ingénieur Arts et Métiers</title>
+<meta name="description" content="Portfolio de Yann Leduc, apprenti ingénieur à Arts et Métiers. Projets semestre par semestre : conception, dimensionnement, simulation et essais, dont un pied prothétique imprimé en 3D.">
+<meta name="author" content="Yann Leduc">
+<meta name="theme-color" content="#80276c">
+<link rel="canonical" href="https://yannleduc.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="Yann Leduc">
+<meta property="og:title" content="Yann Leduc, apprenti ingénieur Arts et Métiers">
+<meta property="og:description" content="Conception, dimensionnement, simulation et essais. Projet en cours : un pied prothétique pour enfant, imprimé en 3D.">
+<meta property="og:url" content="https://yannleduc.github.io/">
+<meta property="og:image" content="https://d8j0ntlcm91z4.cloudfront.net/user_3Jfl2HBgJyIlY2W8yE18pTDGev5/hf_20261117_164509_45638d62-7251-4dc5-b2b5-d2fdff5ed350_min.webp">
+<meta property="og:image:alt" content="Rendu du pied prothétique en PLA violet">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2380276c'/%3E%3Ctext x='13' y='47' font-family='Georgia,serif' font-weight='700' font-size='40' fill='%23fff'%3EY%3C/text%3E%3Ccircle cx='49' cy='44' r='5' fill='%23ffa300'/%3E%3C/svg%3E">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Yann Leduc","jobTitle":"Apprenti ingénieur","affiliation":{"@type":"CollegeOrUniversity","name":"Arts et Métiers (ENSAM)"},"url":"https://yannleduc.github.io/"}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,500;0,600;0,700;1,600&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-<script type="module" src="https://cdn.jsdelivr.net/npm/@google/model-viewer@3.5.0/dist/model-viewer.min.js"></script>
+<link rel="preconnect" href="https://d8j0ntlcm91z4.cloudfront.net" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@600;700&family=Source+Sans+3:wght@400;600;700&family=IBM+Plex+Mono:wght@400&display=swap" rel="stylesheet">
 <style>
 /* Portfolio de Yann Leduc. Charte Arts et Métiers 2023 sur fond blanc.
    Idée : un dossier d'ingénieur. L'accueil s'ouvre sur la mise en plan du pied, qui se trace puis fléchit
@@ -57,21 +72,20 @@ p { margin: 0; }
 .brand span { color: var(--gold); }
 .nav-label { margin-left: auto; font-size: 14px; color: var(--muted); }
 .tabs { display: flex; gap: 2px; padding: 3px; border: 1px solid var(--rule); border-radius: 999px; }
-.tab { font-size: 14.5px; font-weight: 600; text-decoration: none; color: var(--muted); padding: 5px 11px; border-radius: 999px; transition: color .2s var(--ease), background .2s var(--ease); }
+.tab { font-size: 14.5px; font-weight: 600; text-decoration: none; color: var(--muted); padding: 5px 11px; min-height: 32px; display: inline-flex; align-items: center; border-radius: 999px; transition: color .2s var(--ease), background .2s var(--ease); }
 .tab:hover { color: var(--accent); }
 .tab[aria-current="page"] { color: #fff; background: var(--accent); }
-.tab.empty { color: #b6adbb; }
+.tab.empty { color: #7d7484; }
 @media (max-width: 560px) { .nav-label { display: none; } .tabs { margin-left: auto; } .tab { padding: 4px 7px; font-size: 13.5px; } .brand { font-size: 20px; } .top .wrap { gap: 10px; } }
 
 main { padding-bottom: 104px; }
 
 /* Boutons */
-.btn { display: inline-flex; align-items: center; font: 600 16px var(--font-body); text-decoration: none; padding: 11px 20px; border-radius: 999px; border: 1.5px solid var(--accent); color: var(--accent); background: #fff; transition: background .2s var(--ease), color .2s var(--ease); }
+.btn { min-height: 44px; display: inline-flex; align-items: center; font: 600 16px var(--font-body); text-decoration: none; padding: 11px 20px; border-radius: 999px; border: 1.5px solid var(--accent); color: var(--accent); background: #fff; transition: background .2s var(--ease), color .2s var(--ease); }
 .btn:hover { background: var(--accent-soft); }
 .btn.primary { background: var(--accent); color: #fff; }
 .btn.primary:hover { background: var(--accent-deep); }
 .cta { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
-.ai-tag { position: absolute; right: 12px; bottom: 12px; font-size: 12px; color: var(--muted); background: rgba(255, 255, 255, .9); border: 1px solid var(--rule); padding: 2px 9px; border-radius: 999px; }
 
 /* Accueil : en-tête et mise en plan */
 .hero { display: grid; grid-template-columns: minmax(0, .95fr) minmax(0, 1.15fr); gap: 48px; align-items: center; padding: 56px 0 40px; }
@@ -81,7 +95,7 @@ main { padding-bottom: 104px; }
 .hero-role { font-family: var(--font-display); font-weight: 600; font-size: 22px; color: var(--ink); }
 .hero-drawing { margin: 0; display: grid; gap: 10px; }
 .hero-drawing figcaption { display: flex; justify-content: space-between; align-items: center; gap: 16px; font-size: 14px; color: var(--muted); }
-.replay { font: 600 14px var(--font-body); color: var(--accent); background: none; border: 1.5px solid var(--rule); border-radius: 999px; padding: 6px 14px; cursor: pointer; white-space: nowrap; transition: border-color .2s var(--ease); }
+.replay { min-height: 40px; font: 600 14px var(--font-body); color: var(--accent); background: none; border: 1.5px solid var(--rule); border-radius: 999px; padding: 6px 14px; cursor: pointer; white-space: nowrap; transition: border-color .2s var(--ease); }
 .replay:hover { border-color: var(--accent); }
 @media (max-width: 920px) { .hero { grid-template-columns: 1fr; gap: 32px; padding-top: 36px; } }
 
@@ -138,14 +152,21 @@ main { padding-bottom: 104px; }
 .rs { display: grid; gap: 8px; align-content: start; padding: 0 16px 20px 0; text-decoration: none; color: var(--ink); min-height: 156px; }
 .rs + .rs { padding-left: 16px; border-left: 1px solid var(--rule); }
 .rs-num { font-family: var(--font-display); font-weight: 700; font-size: 46px; line-height: 1; color: var(--accent); transition: color .2s var(--ease); }
-.rs.next .rs-num { color: #cfc6d3; }
+.rs.next .rs-num { color: #9a8fa0; }
 .rs:hover .rs-num { color: var(--gold); }
 .rs-bar { height: 5px; background: var(--rule); border-radius: 999px; overflow: hidden; display: block; }
-.rs-bar span { display: block; height: 100%; background: var(--accent); border-radius: 999px; }
+.rs-bar span { display: block; height: 100%; width: 100%; background: var(--accent); border-radius: 999px; transform-origin: left center; transform: scaleX(var(--p, 0)); }
+@media (prefers-reduced-motion: no-preference) {
+  .ruler .rs-bar span { transform: scaleX(0); transition: transform .7s cubic-bezier(.16, 1, .3, 1); }
+  .ruler.in .rs-bar span { transform: scaleX(var(--p, 0)); }
+  .ruler .rs:nth-child(4) .rs-bar span { transition-delay: .06s; } .ruler .rs:nth-child(5) .rs-bar span { transition-delay: .12s; }
+  .ruler-now { transform: scaleY(0); transform-origin: bottom; transition: transform .35s ease-out .55s; }
+  .ruler.in .ruler-now { transform: none; }
+}
 .rs-bar.big { height: 8px; max-width: 420px; margin: 20px 0 8px; }
 .rs-per { font-size: 13.5px; color: var(--muted); }
 .rs-what { font-size: 15.5px; font-weight: 600; line-height: 1.35; }
-.rs.next .rs-what { color: #b0a7b5; font-weight: 400; }
+.rs.next .rs-what { color: var(--muted); font-weight: 400; }
 @media (max-width: 860px) {
   .ruler { grid-template-columns: repeat(3, 1fr); row-gap: 24px; }
   .rs:nth-child(3n + 3) { padding-left: 0; border-left: 0; }
@@ -202,7 +223,7 @@ main { padding-bottom: 104px; }
 @media (max-width: 700px) { .sem-head { grid-template-columns: 1fr; gap: 8px; } }
 .empty-state { display: grid; grid-template-columns: auto 1fr; gap: 28px; align-items: center; border: 1.5px dashed var(--rule); border-radius: var(--radius); padding: 36px; color: var(--muted); }
 .empty-state strong { color: var(--ink); display: block; font-family: var(--font-display); font-size: 24px; margin-bottom: 4px; }
-.sem-ghost { font-family: var(--font-display); font-weight: 700; font-size: 96px; line-height: 1; -webkit-text-stroke: 1.5px #d8cfdc; color: transparent; }
+.sem-ghost { font-family: var(--font-display); font-weight: 700; font-size: 96px; line-height: 1; -webkit-text-stroke: 1.5px #a99eaf; color: transparent; }
 .proj-list { display: grid; gap: 32px; }
 .proj-card { display: grid; grid-template-columns: 1.1fr 1fr; text-decoration: none; color: var(--ink); border-top: 2px solid var(--ink); padding-top: 28px; gap: 40px; }
 .proj-card .pic { position: relative; border-radius: var(--radius); overflow: hidden; background: #f1efee; }
@@ -238,6 +259,7 @@ main { padding-bottom: 104px; }
 .plan-fig .inner { position: relative; }
 .plan-fig img { width: 100%; height: auto; }
 .rep { position: absolute; transform: translate(-50%, -50%); width: 32px; height: 32px; border-radius: 50%; border: 2.5px solid #fff; background: var(--accent); color: #fff; font: 700 14px var(--font-body); cursor: pointer; box-shadow: 0 2px 8px rgba(94, 26, 79, .3); display: grid; place-items: center; text-decoration: none; transition: background .2s var(--ease), transform .2s var(--ease), color .2s var(--ease); }
+.rep::before { content: ""; position: absolute; inset: -8px; border-radius: 50%; }
 .rep:hover, .rep.hot { background: var(--gold); color: var(--ink); transform: translate(-50%, -50%) scale(1.12); }
 @media (max-width: 480px) { .rep { width: 26px; height: 26px; font-size: 12px; } }
 .legend { list-style: none; margin: 0; padding: 0; display: grid; gap: 2px; }
@@ -317,7 +339,7 @@ main { padding-bottom: 104px; }
 .meter .row { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; font-size: 15.5px; }
 .meter .big { font-family: var(--font-display); font-weight: 700; font-size: 30px; }
 .bar { position: relative; height: 10px; background: #e7e0ea; border-radius: 999px; }
-.bar .fill { position: absolute; left: 0; top: 0; bottom: 0; border-radius: 999px; background: var(--ok); transition: width .18s linear, background .2s var(--ease); }
+.bar .fill { position: absolute; left: 0; top: 0; bottom: 0; width: 100%; border-radius: 999px; background: var(--ok); transform-origin: left center; transition: transform .16s linear, background .2s var(--ease); }
 .bar .fill.bad { background: #c0392b; }
 .bar .tick { position: absolute; top: -4px; bottom: -4px; width: 2px; background: var(--ink); }
 .meter .hint { font-size: 13.5px; color: var(--muted); }
@@ -341,10 +363,76 @@ footer .big span { color: var(--gold); }
 footer .small { color: #f0e2ec; text-align: right; display: grid; gap: 4px; }
 @media (max-width: 640px) { footer .wrap { grid-template-columns: 1fr; } footer .small { text-align: left; } }
 .loading { color: var(--muted); padding: 60px 0; }
+/* ---- Ajouts checklist 10K ---- */
+.skip { position: absolute; left: 12px; top: -60px; z-index: 60; background: var(--accent); color: #fff; padding: 10px 16px; border-radius: 999px; font-weight: 600; text-decoration: none; transition: top .2s var(--ease); }
+.skip:focus { top: 12px; }
+#app:focus { outline: none; }
+.btn:active, .replay:active, .seg button:active { transform: scale(.97); }
+.btn, .replay, .seg button { transition: background .2s var(--ease), color .2s var(--ease), border-color .2s var(--ease), transform .12s var(--ease); }
+::view-transition-old(root) { animation: vt-out .16s ease-in both; }
+::view-transition-new(root) { animation: vt-in .26s var(--ease) both; }
+@keyframes vt-out { to { opacity: 0; } }
+@keyframes vt-in { from { opacity: 0; transform: translateY(6px); } }
+.pill.done { background: var(--accent-soft); color: var(--accent-deep); }
+
+/* Compétences groupées */
+.sk-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 28px 36px; }
+.sk h3 { font-size: 20px; color: var(--accent); padding-bottom: 8px; margin-bottom: 10px; border-bottom: 2px solid var(--ink); }
+.sk ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+.sk li { font-size: 16px; line-height: 1.4; padding-left: 16px; position: relative; }
+.sk li::before { content: ""; position: absolute; left: 0; top: .62em; width: 7px; height: 2px; background: var(--gold); }
+.tools { margin-top: 32px; padding-top: 16px; border-top: 1px solid var(--rule); color: var(--muted); font-size: 15.5px; line-height: 1.7; }
+.tools strong { color: var(--ink); margin-right: 6px; }
+@media (max-width: 520px) { .sk-grid { grid-template-columns: 1fr; } }
+
+/* Mention IA */
+.ai-note { margin-top: 36px; padding-top: 18px; border-top: 1px solid rgba(255, 255, 255, .25); }
+.ai-note p { font-size: 13.5px; line-height: 1.55; color: #ecdfe9; max-width: 90ch; }
+footer { padding-bottom: 36px; }
+
+/* ---- Mobile pensé pour le téléphone ---- */
+@media (max-width: 960px) { .modebar { position: static; } .part { scroll-margin-top: 90px; } }
+@media (max-width: 640px) {
+  .hero { gap: 26px; padding-top: 28px; }
+  .hero-text { gap: 16px; }
+  .hero-role { font-size: 19px; }
+  .lead { font-size: 17.5px; }
+  .hero .cta .btn { flex: 1 1 auto; justify-content: center; }
+  .hero-drawing { margin: 0 -18px; }
+  .hero-drawing .drawing { border-radius: 0; border-left: 0; border-right: 0; }
+  .hero-drawing figcaption { padding: 0 18px; flex-direction: column; align-items: flex-start; gap: 10px; }
+  /* La règle devient une frise verticale */
+  .ruler { grid-template-columns: 1fr; border-top: 0; border-left: 2px solid var(--ink); padding: 4px 0 4px 20px; row-gap: 0; }
+  .ruler .rs, .ruler .rs + .rs, .ruler .rs:nth-child(n) { display: grid; grid-template-columns: 58px 1fr; grid-template-areas: "num per" "num what" "num bar"; column-gap: 14px; row-gap: 4px; padding: 14px 0; margin: 0; border-left: 0; border-bottom: 1px solid var(--rule); min-height: 0; position: relative; }
+  .ruler .rs::before { content: ""; position: absolute; left: -26px; top: 24px; width: 12px; height: 2px; background: var(--ink); }
+  .rs-num { grid-area: num; font-size: 40px; }
+  .rs-per { grid-area: per; }
+  .rs-what { grid-area: what; }
+  .rs-bar { grid-area: bar; margin-top: 4px; }
+  .sec { padding-top: 64px; }
+  .sec-head h2 { font-size: 32px; }
+  .figs { margin-top: 32px; }
+  .fig .val { font-size: 24px; }
+  .ph-media { margin: 0 -18px; border-radius: 0; }
+  .proj-intro .lede { font-size: 17.5px; }
+  .facts { grid-template-columns: 1fr 1fr; padding: 18px; }
+  .plan { margin-top: 64px; }
+  .plan-fig { margin: 0 -18px; border-radius: 0; border-left: 0; border-right: 0; padding: 12px; }
+  .legend a { padding: 10px 8px; min-height: 44px; }
+  .modebar { margin-top: 64px; }
+  .seg { width: 100%; } .seg button { flex: 1; padding: 9px 8px; }
+  .part-ban { margin: 0 -18px 22px; border-radius: 0; }
+  .parts { gap: 72px; }
+  .calc { margin: 0 -18px; border-radius: 0; padding: 22px 18px; }
+  .viewer model-viewer { height: 320px; }
+  .tab { min-height: 36px; }
+}
+
 @media (prefers-reduced-motion: no-preference) { html { scroll-behavior: smooth; } }
 </style>
 </head>
 <body>
+<a class="skip" href="#app">Aller au contenu</a>
 <div id="progress" aria-hidden="true"></div>
 <header class="top">
   <div class="wrap">
@@ -352,8 +440,9 @@ footer .small { color: #f0e2ec; text-align: right; display: grid; gap: 4px; }
     <span class="nav-label">Semestres</span><nav class="tabs" id="tabs" aria-label="Semestres"></nav>
   </div>
 </header>
-<main><div class="wrap" id="app"><p class="loading">Chargement du portfolio…</p></div></main>
-<footer><div class="wrap"><a class="big" href="#accueil">Yann Leduc<span>.</span></a><div class="small"><span>Apprenti ingénieur à Arts et Métiers</span><span id="foot-right"></span><span>Illustrations générées par IA, signalées sur chaque image. Captures, calculs et modèles issus des projets.</span></div></div></footer>
+<main id="main"><div class="wrap" id="app" tabindex="-1"><p class="loading">Chargement du portfolio…</p><noscript><p>Ce portfolio a besoin de JavaScript pour s'afficher. Activez-le dans votre navigateur puis rechargez la page.</p></noscript></div></main>
+<footer><div class="wrap"><a class="big" href="#accueil">Yann Leduc<span>.</span></a><div class="small"><span>Apprenti ingénieur à Arts et Métiers</span><span id="foot-right"></span></div></div>
+<div class="wrap ai-note"><p>Images générées par IA : le rendu et la vidéo du pied (créés à partir de la CAO, la pièce n'est pas encore imprimée) et les illustrations en tête de chaque étape. Les captures 3DExperience et Abaqus, le plan coté, les calculs et le modèle 3D viennent directement des projets.</p></div></footer>
 
 <div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Image agrandie">
   <button class="x" id="lb-close" type="button">Fermer ✕</button>
@@ -434,12 +523,13 @@ footer .small { color: #f0e2ec; text-align: right; display: grid; gap: 4px; }
     return { comp: comp, tools: tools };
   }
 
-  function aiTag(txt) { return '<span class="ai-tag">' + esc(txt || "Visuel généré par IA") + "</span>"; }
+  function aiTag() { return ""; } // mention IA regroupée dans le pied de page (demande de Yann)
   function media(m, cls) {
     if (!m) return "";
     if (m.video) return '<video class="' + (cls || "") + '" autoplay muted loop playsinline preload="metadata" poster="' + esc(m.image) + '" aria-label="' + esc(m.alt) + '"><source src="' + esc(m.video) + '" type="video/mp4"></video>';
-    return '<img class="' + (cls || "") + '" src="' + esc(m.image) + '" alt="' + esc(m.alt) + '">';
+    return '<img decoding="async" class="' + (cls || "") + '" src="' + esc(m.image) + '" alt="' + esc(m.alt) + '">';
   }
+  function lc(t) { t = String(t || ""); return t.charAt(0).toLowerCase() + t.slice(1); }
   function semProgress(s) {
     if (!s.debut || !s.fin) return 0;
     var a = Date.parse(s.debut), b = Date.parse(s.fin);
@@ -525,7 +615,7 @@ footer .small { color: #f0e2ec; text-align: right; display: grid; gap: 4px; }
       var state = pr >= 1 ? "done" : (pr > 0 ? "live" : "next");
       return '<a class="rs ' + state + '" href="#' + s.id + '" aria-label="' + esc(s.nom + ", " + s.periode) + '">' +
         '<span class="rs-num">S' + (i + 1) + "</span>" +
-        '<span class="rs-bar"><span style="width:' + Math.round(pr * 100) + '%"></span></span>' +
+        '<span class="rs-bar"><span style="--p:' + pr.toFixed(3) + '"></span></span>' +
         '<span class="rs-per">' + esc(s.periode) + "</span>" +
         '<span class="rs-what">' + (n ? s.projets.map(function (p) { return esc(p.titreCourt || p.titre); }).join("<br>") : "À venir") + "</span></a>";
     }).join("");
@@ -564,19 +654,37 @@ footer .small { color: #f0e2ec; text-align: right; display: grid; gap: 4px; }
       '<section class="sec" aria-labelledby="h-sem"><div class="sec-head"><h2 id="h-sem">Trois ans, six semestres</h2><p>Une page par semestre, complétée au fil des projets.</p></div>' + rulerHTML() + "</section>" +
       feat +
       '<section class="sec two" id="parcours"><div><div class="sec-head"><h2>Parcours</h2></div><ol class="path">' + cells + "</ol></div>" +
-        '<div><div class="sec-head"><h2>Compétences</h2><p>Reprises des projets, mises à jour automatiquement.</p></div>' +
-        '<div class="skills">' + t.comp.map(function (c) { return '<span class="chip">' + esc(c) + "</span>"; }).join("") + "</div>" +
-        '<h3 class="mini">Outils et normes</h3><div class="skills">' + t.tools.map(function (c) { return '<span class="chip tool">' + esc(c) + "</span>"; }).join("") + "</div></div></section>";
+        '<div><div class="sec-head"><h2>Compétences</h2><p>Reprises des projets, mises à jour automatiquement.</p></div>' + skillGroups(t) + "</div></section>";
+    var ru = document.querySelector(".ruler");
+    if (ru) {
+      if ("IntersectionObserver" in window) {
+        var io = new IntersectionObserver(function (es) { es.forEach(function (e) { if (e.isIntersecting) { ru.classList.add("in"); io.disconnect(); } }); }, { threshold: .35 });
+        io.observe(ru);
+      } else { ru.classList.add("in"); }
+    }
     var box = document.getElementById("hero-drawing");
     playDrawing(box);
     document.getElementById("replay").addEventListener("click", function () { playDrawing(box); });
+  }
+
+  function skillGroups(t) {
+    var groups = (data.profil.groupesCompetences || []).map(function (g) { return { nom: g.nom, items: [] }; });
+    var other = { nom: "Autres", items: [] };
+    t.comp.forEach(function (c) {
+      var g = (data.profil.groupesCompetences || []).findIndex(function (x) { return x.items.indexOf(c) >= 0; });
+      (g >= 0 ? groups[g] : other).items.push(c);
+    });
+    if (other.items.length) groups.push(other);
+    return '<div class="sk-grid">' + groups.filter(function (g) { return g.items.length; }).map(function (g) {
+      return '<div class="sk"><h3>' + esc(g.nom) + '</h3><ul>' + g.items.map(function (c) { return "<li>" + esc(c) + "</li>"; }).join("") + "</ul></div>";
+    }).join("") + '</div><p class="tools"><strong>Outils et normes</strong> ' + t.tools.map(esc).join(", ") + "</p>";
   }
 
   function viewSem(s) {
     var i = data.semestres.indexOf(s), pr = semProgress(s);
     var html = '<nav class="crumbs" aria-label="Fil d\'Ariane"><a href="#accueil">Accueil</a><span aria-hidden="true">/</span><span>' + esc(s.nom) + "</span></nav>" +
       '<header class="sem-head"><span class="sem-big" aria-hidden="true">S' + (i + 1) + '</span><div><p class="eyebrow">' + esc(s.periode) + ", " + esc(s.annee) + "</p><h1>" + esc(s.nom) + "</h1>" + (s.intro ? '<p class="lead">' + esc(s.intro) + "</p>" : "") +
-      '<div class="rs-bar big"><span style="width:' + Math.round(pr * 100) + '%"></span></div><p class="small">' + (pr >= 1 ? "Semestre terminé" : pr > 0 ? "En cours, " + Math.round(pr * 100) + " % du semestre écoulé" : "Ce semestre n'a pas encore commencé") + "</p></div></header>";
+      '<div class="rs-bar big"><span style="--p:' + pr.toFixed(3) + '"></span></div><p class="small">' + (pr >= 1 ? "Semestre terminé" : pr > 0 ? "En cours, " + Math.round(pr * 100) + " % du semestre écoulé" : "Ce semestre n'a pas encore commencé") + "</p></div></header>";
     if (!(s.projets || []).length) {
       html += '<div class="empty-state"><span class="sem-ghost" aria-hidden="true">S' + (i + 1) + '</span><div><strong>Pas encore de projet ici</strong><p>Les projets du semestre ' + (i + 1) + " seront ajoutés au fil de l'année.</p></div></div>";
     } else {
@@ -598,7 +706,7 @@ footer .small { color: #f0e2ec; text-align: right; display: grid; gap: 4px; }
     var deliv = (pa.livrables || []).map(function (l) {
       return "<li><span>" + esc(l.titre) + '</span><span class="dt">' + esc(l.date) + "</span>" + statusPill(l.statut) + "</li>";
     }).join("");
-    var ban = pa.banniere ? '<div class="part-ban"><img src="' + esc(pa.banniere.image) + '" alt="' + esc(pa.banniere.alt) + '" loading="lazy">' + aiTag("Illustration IA") + "</div>" : "";
+    var ban = pa.banniere ? '<div class="part-ban"><img decoding="async" src="' + esc(pa.banniere.image) + '" alt="' + esc(pa.banniere.alt) + '" loading="lazy">' + aiTag("Illustration IA") + "</div>" : "";
     return '<article class="part" id="' + key + '" aria-labelledby="' + key + '-t">' + ban +
       '<header class="part-head"><span class="n" aria-hidden="true">' + pad(i + 1) + '</span><div><h2 id="' + key + '-t">' + esc(pa.titre) + '</h2><p class="part-sub"><span>' + esc(pa.module) + "</span><span>" + esc(pa.date) + "</span></p></div></header>" +
       '<div class="part-body">' +
@@ -620,7 +728,7 @@ footer .small { color: #f0e2ec; text-align: right; display: grid; gap: 4px; }
     app.innerHTML =
       '<nav class="crumbs" aria-label="Fil d\'Ariane"><a href="#accueil">Accueil</a><span aria-hidden="true">/</span><a href="#' + s.id + '">' + esc(s.nom) + '</a><span aria-hidden="true">/</span><span>' + esc(p.titreCourt || p.titre) + "</span></nav>" +
       '<section class="proj-hero">' + (h.image ? '<div class="ph-media">' + media(h) + aiTag(h.note) + "</div>" : "") +
-        '<div class="ph-text"><p class="eyebrow">' + esc(s.nom) + ", " + esc(p.periode) + "</p><h1>" + esc(p.titre) + "</h1><p>" + esc(p.sousTitre) + "</p></div></section>" +
+        '<div class="ph-text"><p class="eyebrow">' + esc(s.nom) + ", " + esc(lc(p.periode)) + "</p><h1>" + esc(p.titre) + "</h1><p>" + esc(p.sousTitre) + "</p></div></section>" +
       '<section class="proj-intro"><p class="lede">' + esc(p.resume) + '</p><dl class="facts">' +
         "<div><dt>Équipe</dt><dd>" + esc(p.equipe) + "</dd></div>" +
         (p.encadrant ? "<div><dt>Encadrant</dt><dd>" + esc(p.encadrant) + "</dd></div>" : "") +
@@ -724,8 +832,8 @@ footer .small { color: #f0e2ec; text-align: right; display: grid; gap: 4px; }
       document.getElementById("r-s").textContent = fr(s, 0) + " MPa";
       var fMax = 50, sMax = 300;
       var bf = document.getElementById("b-f"), bs = document.getElementById("b-s");
-      bf.style.width = Math.min(100, f / fMax * 100) + "%"; bf.classList.toggle("bad", f < FT);
-      bs.style.width = Math.min(100, s / sMax * 100) + "%"; bs.classList.toggle("bad", s > Re);
+      bf.style.transform = "scaleX(" + Math.min(1, f / fMax).toFixed(4) + ")"; bf.classList.toggle("bad", f < FT);
+      bs.style.transform = "scaleX(" + Math.min(1, s / sMax).toFixed(4) + ")"; bs.classList.toggle("bad", s > Re);
       document.getElementById("t-f").style.left = (FT / fMax * 100) + "%";
       document.getElementById("t-s").style.left = (Re / sMax * 100) + "%";
       var okF = f >= FT, okS = s <= Re, v;
@@ -762,7 +870,14 @@ footer .small { color: #f0e2ec; text-align: right; display: grid; gap: 4px; }
     mv.replaceWith(Object.assign(document.createElement("img"), { src: fb, alt: "Modèle 3D du pied (vue de la simulation)" }));
     var cap = box.querySelector(".cap"); if (cap) cap.textContent = "Pied prothétique, version A (vue 3DExperience).";
   }
+  var mvLoaded = false;
   function loadModels() {
+    if (!mvLoaded && document.querySelector("model-viewer")) {
+      mvLoaded = true;
+      var sc = document.createElement("script"); sc.type = "module";
+      sc.src = "https://cdn.jsdelivr.net/npm/@google/model-viewer@3.5.0/dist/model-viewer.min.js";
+      document.head.appendChild(sc);
+    }
     document.querySelectorAll("model-viewer[data-b64]").forEach(function (mv) {
       var src = mv.getAttribute("data-b64");
       mv.addEventListener("error", function () { modelFallback(mv); });
@@ -796,12 +911,16 @@ footer .small { color: #f0e2ec; text-align: right; display: grid; gap: 4px; }
   }
 
   function route() {
+    var reduce = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (document.startViewTransition && !reduce && data) { document.startViewTransition(renderRoute); } else { renderRoute(); }
+  }
+  function renderRoute() {
     var h = (location.hash || "").replace(/^#/, "") || "accueil";
     var r = routes[h] || routes.accueil;
     if (r.view === "home") { renderTabs(null); viewHome(); window.scrollTo(0, 0); }
     else if (r.view === "sem") { renderTabs(r.s.id); viewSem(r.s); window.scrollTo(0, 0); }
     else { renderTabs(r.s.id); viewProj(r.s, r.p, r.part); }
-    document.title = r.view === "home" ? "Portfolio Yann Leduc" : (r.p ? r.p.titre : r.s.nom) + ", Yann Leduc";
+    document.title = r.view === "home" ? "Yann Leduc, apprenti ingénieur Arts et Métiers" : (r.p ? r.p.titre : r.s.nom) + ", Yann Leduc";
   }
 
   // Barre de lecture
