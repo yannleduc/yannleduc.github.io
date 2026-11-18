@@ -642,8 +642,9 @@ a.tg-l[aria-current="page"] { color: #fff; background: #80276c; border-radius: 9
 }
 
 /* Titre coté et quadrillage de fond (accueil) */
-.h4-grid { position: absolute; inset: 0; z-index: 0; pointer-events: none; background-image: linear-gradient(#eceef2 1px, transparent 1px), linear-gradient(90deg, #eceef2 1px, transparent 1px); background-size: 24px 24px; -webkit-mask-image: radial-gradient(ellipse 75% 85% at 35% 50%, #000 35%, transparent 78%); mask-image: radial-gradient(ellipse 75% 85% at 35% 50%, #000 35%, transparent 78%); }
 .h4-name { position: relative; padding: 34px 0 38px; }
+.h4-name { isolation: isolate; }
+.h4-name::before { content: ""; position: absolute; z-index: -1; inset: 0 -28px -6px -40px; pointer-events: none; background-image: linear-gradient(#e9ebf0 1px, transparent 1px), linear-gradient(90deg, #e9ebf0 1px, transparent 1px); background-size: 24px 24px; -webkit-mask-image: radial-gradient(ellipse 60% 62% at 45% 52%, #000 30%, transparent 100%); mask-image: radial-gradient(ellipse 60% 62% at 45% 52%, #000 30%, transparent 100%); }
 .h4-name .cotes { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; pointer-events: none; }
 .h4-name .cotes line { stroke: var(--accent); stroke-width: 1; }
 .h4-name .cotes text { font: 500 12px var(--mono, "IBM Plex Mono", ui-monospace, monospace); fill: var(--accent); }
@@ -980,7 +981,7 @@ a.tg-l[aria-current="page"] { color: #fff; background: #80276c; border-radius: 9
     groups().forEach(function (g) { (g.projets || []).forEach(function (p) { if (p.phare) feats.push(projCardHTML(g, p, true)); }); });
     var bref = (pr.enBref || []).map(function (b) { return '<div class="bref-item"><dt>' + esc(b.k) + "</dt><dd>" + esc(b.v) + "</dd></div>"; }).join("");
     app.innerHTML =
-      '<section class="hero4"><div class="h4-grid" aria-hidden="true"></div>' +
+      '<section class="hero4">' +
         '<div class="h4-media">' + (h.video ? '<video class="h4-vid" autoplay muted playsinline preload="auto" poster="' + esc(h.image) + '" aria-label="' + esc(h.alt) + '"><source src="' + esc(h.video) + '" type="video/mp4"></video>' : '<img class="h4-vid" src="' + esc(h.image) + '" alt="' + esc(h.alt) + '">') + "</div>" +
         '<div class="h4-text"><div class="h4-name"><h1 class="mega">' + pr.nom.split(" ").map(function (w) { return '<span class="cw">' + esc(w) + "</span>"; }).join(" ") + '<span class="dot">.</span></h1><svg class="cotes" aria-hidden="true"></svg></div>' +
           '<p class="lead-short">' + esc(pr.accroche) + (pr.accrocheSuite ? " <em>" + esc(pr.accrocheSuite) + "</em>" : "") + "</p>" +
