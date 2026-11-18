@@ -14,7 +14,7 @@
       },
       {
         "periode": "2023 – 2026",
-        "intitule": "BUT Génie Mécanique et Productique, en alternance chez SCORPE",
+        "intitule": "BUT Génie Mécanique et Productique, en alternance chez SCORPE Technologies",
         "detail": "Bureau d'études : matériel de secours pour les sapeurs-pompiers",
         "theme": "scorpe"
       }
@@ -89,7 +89,7 @@
       },
       {
         "k": "Avant",
-        "v": "BUT GMP en alternance au bureau d'études de SCORPE"
+        "v": "BUT GMP en alternance au bureau d'études de SCORPE Technologies"
       },
       {
         "k": "Objectif",
@@ -1593,14 +1593,14 @@
         "teinte": "#F5F9F2",
         "bord": "#BCDDAE"
       },
-      "nom": "SCORPE",
+      "nom": "SCORPE Technologies",
       "onglet": "SCORPE",
       "carte": "SCORPE",
       "titre": "Bureau d'études, matériel de secours",
       "role": "BUT GMP en alternance",
       "periode": "2024 – 2026",
-      "titreProjets": "Chez SCORPE, en alternance",
-      "intro": "Avant Arts et Métiers, j'ai fait mon alternance de BUT GMP chez SCORPE, qui conçoit et fabrique du matériel de secours pour les sapeurs-pompiers depuis 1994. Au bureau d'études du groupe, j'ai mené le projet SEB de la conception aux essais, et travaillé sur la plupart des autres produits.",
+      "titreProjets": "Chez SCORPE Technologies, en alternance",
+      "intro": "Avant Arts et Métiers, j'ai fait mon alternance de BUT GMP chez SCORPE Technologies, qui conçoit et fabrique du matériel de secours pour les sapeurs-pompiers depuis 1994. Au bureau d'études du groupe, j'ai mené le projet SEB de la conception aux essais, et travaillé sur la plupart des autres produits.",
       "faits": [
         {
           "k": "Secteur",
@@ -1608,7 +1608,7 @@
         },
         {
           "k": "Mon poste",
-          "v": "Apprenti au bureau d'études Innov-SaintGer, filiale de SCORPE"
+          "v": "Apprenti au bureau d'études Innov-SaintGer, filiale de SCORPE Technologies"
         },
         {
           "k": "Lieu",
@@ -1621,12 +1621,12 @@
           "titre": "SEB, système d'extinction de batterie",
           "titreCourt": "SEB",
           "sousTitre": "Un équipement pour aider les sapeurs-pompiers à éteindre un feu de batterie de véhicule électrique",
-          "equipe": "Bureau d'études Innov-SaintGer (SCORPE)",
-          "encadrant": "Claude Gilmer, directeur industriel de SCORPE",
+          "equipe": "Bureau d'études Innov-SaintGer (SCORPE Technologies)",
+          "encadrant": "Claude Gilmer, directeur industriel de SCORPE Technologies",
           "periode": "2024 – 2026",
           "phare": true,
           "recitSurPage": true,
-          "resume": "Une batterie de voiture électrique qui prend feu brûle à l'intérieur d'un carter fermé : l'eau projetée de l'extérieur ne l'atteint pas. Le SEB est l'équipement que SCORPE développe pour les sapeurs-pompiers afin d'amener l'eau au cœur du pack. Son inventeur est Claude Gilmer, directeur industriel de SCORPE et mon tuteur : j'ai mené le projet sous sa supervision, avec une autonomie de plus en plus large, et porté environ 80 % du travail, de la conception aux essais.",
+          "resume": "Une batterie de voiture électrique qui prend feu brûle à l'intérieur d'un carter fermé : l'eau projetée de l'extérieur ne l'atteint pas. Le SEB est l'équipement que SCORPE Technologies développe pour les sapeurs-pompiers afin d'amener l'eau au cœur du pack. Son inventeur est Claude Gilmer, directeur industriel de SCORPE Technologies et mon tuteur : j'ai mené le projet sous sa supervision, avec une autonomie de plus en plus large, et porté environ 80 % du travail, de la conception aux essais.",
           "hero": {
             "image": "media/ia/51fede33.webp",
             "alt": "Rendu studio du SEB, châssis noir et vert sur roues"
@@ -1723,7 +1723,7 @@
               "enBref": "Un feu de batterie de véhicule électrique se joue à l'intérieur du pack : il faut y amener l'eau, de façon sûre pour les pompiers.",
               "texte": [
                 "Le feu d'une batterie de voiture électrique ne ressemble à aucun autre. Les cellules s'emballent à l'intérieur d'un carter fermé, dégagent des gaz toxiques, et le feu peut reprendre jusqu'à 24 heures après. L'eau projetée de l'extérieur n'atteint pas le foyer. Les SDIS cherchaient un moyen d'intervenir au plus près de la batterie, sans exposer les sapeurs-pompiers.",
-                "Le SEB répond à ce besoin. Il est commandé par deux SDIS et suivi par la Sécurité civile, sur dix-huit mois de développement. L'idée et l'invention sont de Claude Gilmer, directeur industriel de SCORPE et mon tuteur ; j'ai développé le produit sous sa supervision. Le cahier des charges est clair : un équipement mobile, porté par deux pompiers, qui se range dans un véhicule d'intervention et qui travaille à distance du véhicule en feu.",
+                "Le SEB répond à ce besoin. Il est commandé par deux SDIS et suivi par la Sécurité civile, sur dix-huit mois de développement. L'idée et l'invention sont de Claude Gilmer, directeur industriel de SCORPE Technologies et mon tuteur ; j'ai développé le produit sous sa supervision. Le cahier des charges est clair : un équipement mobile, porté par deux pompiers, qui se range dans un véhicule d'intervention et qui travaille à distance du véhicule en feu.",
                 "Pour les essais, on a disposé d'une Fiat 500e électrique et de son pack batterie, sur lequel on a enchaîné les tests de perçage. Chaque essai raté a donné une piste d'amélioration. Le principe a été présenté aux SDIS en juin 2025, et validé."
               ],
               "banniere": {
@@ -1928,9 +1928,9 @@
               "titre": "Le brevet",
               "module": "Propriété industrielle",
               "date": "2025 – 2026",
-              "enBref": "SCORPE a choisi de breveter la solution. J'ai participé à la rédaction technique, aux schémas et à un premier jet du brevet.",
+              "enBref": "SCORPE Technologies a choisi de breveter la solution. J'ai participé à la rédaction technique, aux schémas et à un premier jet du brevet.",
               "texte": [
-                "SCORPE a choisi de breveter la solution, avec Claude Gilmer pour inventeur. J'ai participé à la rédaction technique et aux schémas explicatifs, ainsi qu'à un premier jet du brevet. Ce travail a ensuite été transmis à un cabinet de propriété industrielle, qui l'a apprécié."
+                "SCORPE Technologies a choisi de breveter la solution, avec Claude Gilmer pour inventeur. J'ai participé à la rédaction technique et aux schémas explicatifs, ainsi qu'à un premier jet du brevet. Ce travail a ensuite été transmis à un cabinet de propriété industrielle, qui l'a apprécié."
               ],
               "chiffres": [],
               "competences": [
@@ -1953,8 +1953,8 @@
           "titre": "Autres missions au bureau d'études",
           "titreCourt": "Autres missions",
           "sousTitre": "Étaiement de sauvetage, ventilateurs, pièces imprimées en 3D et production",
-          "equipe": "Bureau d'études SCORPE",
-          "encadrant": "Claude Gilmer, directeur industriel de SCORPE",
+          "equipe": "Bureau d'études SCORPE Technologies",
+          "encadrant": "Claude Gilmer, directeur industriel de SCORPE Technologies",
           "periode": "2024 – 2026",
           "resume": "À côté du SEB, j'ai participé à la plupart des produits du bureau d'études : des étais de sauvetage présentés à un grand fabricant européen, des ventilateurs pour lesquels j'ai réalisé des pièces imprimées en 3D, et le suivi de productions en série.",
           "hero": {
@@ -2074,7 +2074,8 @@
       ],
       "video": "media/ia/ac5e2a78.mp4",
       "poster": "media/ia/6eaa40e4.webp",
-      "videoAlt": "Travelling macro le long d'un foret en acier rapide"
+      "videoAlt": "Travelling macro le long d'un foret en acier rapide",
+      "_noms": "nom = nom complet (titres, textes) ; onglet et carte = forme courte « SCORPE » pour les petits affichages (onglet, cartes, fil d'Ariane, grand mot de la page)."
     }
   ]
 }

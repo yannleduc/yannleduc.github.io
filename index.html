@@ -1081,8 +1081,8 @@ a.tg-l[aria-current="page"] { color: #fff; background: #80276c; border-radius: 9
   }
 
   function viewEnt(e) {
-    var html = '<nav class="crumbs" aria-label="Fil d\'Ariane"><a href="#accueil">Accueil</a><span aria-hidden="true">/</span><span>' + esc(e.nom) + "</span></nav>" +
-      '<header class="ent-head"><p class="ent-word" aria-hidden="true">' + esc(e.nom) + '</p><div><p class="eyebrow">' + esc(e.periode) + ", " + esc(e.role) + "</p><h1>" + esc(e.titre) + '</h1><p class="lead">' + esc(e.intro) + "</p>" +
+    var html = '<nav class="crumbs" aria-label="Fil d\'Ariane"><a href="#accueil">Accueil</a><span aria-hidden="true">/</span><span>' + esc(e.onglet || e.nom) + "</span></nav>" +
+      '<header class="ent-head"><p class="ent-word" aria-hidden="true">' + esc(e.onglet || e.nom) + '</p><div><p class="eyebrow">' + esc(e.periode) + ", " + esc(e.role) + "</p><h1>" + esc(e.titre) + '</h1><p class="lead">' + esc(e.intro) + "</p>" +
       (e.faits ? '<dl class="facts ent-facts">' + e.faits.map(function (f) { return "<div><dt>" + esc(f.k) + "</dt><dd>" + esc(f.v) + "</dd></div>"; }).join("") + "</dl>" : "") + "</div></header>" +
       (e.video ? '<div class="ent-band"><video autoplay muted loop playsinline preload="metadata" poster="' + esc(e.poster) + '" aria-label="' + esc(e.videoAlt) + '"><source src="' + esc(e.video) + '" type="video/mp4"></video></div>' : "") +
       '<div class="pcards">' + (e.projets || []).map(function (p, i) { return projCardHTML(e, p, i === 0); }).join("") + "</div>";
@@ -1152,7 +1152,7 @@ a.tg-l[aria-current="page"] { color: #fff; background: #80276c; border-radius: 9
     var h = p.hero || {};
     app.innerHTML =
       (p._apercu ? '<p class="apercu-ban" role="note"><strong>Aperçu non publié.</strong> Cette page n\'est liée nulle part sur le site. Les parties en préparation y sont visibles.</p>' : "") +
-      '<nav class="crumbs" aria-label="Fil d\'Ariane"><a href="#accueil">Accueil</a><span aria-hidden="true">/</span>' + (s.type === "entreprise" ? "" : '<a href="#ensam">Arts et Métiers</a><span aria-hidden="true">/</span>') + '<a href="#' + s.id + '">' + esc(s.nom) + '</a><span aria-hidden="true">/</span><span>' + esc(p.titreCourt || p.titre) + "</span></nav>" +
+      '<nav class="crumbs" aria-label="Fil d\'Ariane"><a href="#accueil">Accueil</a><span aria-hidden="true">/</span>' + (s.type === "entreprise" ? "" : '<a href="#ensam">Arts et Métiers</a><span aria-hidden="true">/</span>') + '<a href="#' + s.id + '">' + esc(s.type === "entreprise" ? (s.onglet || s.nom) : s.nom) + '</a><span aria-hidden="true">/</span><span>' + esc(p.titreCourt || p.titre) + "</span></nav>" +
       '<section class="proj-hero">' + (h.image ? '<div class="ph-media">' + media(h) + aiTag(h.note) + "</div>" : "") +
         '<div class="ph-text"><p class="eyebrow">' + esc(s.carte || s.nom) + ", " + esc(lc(p.periode)) + "</p><h1>" + esc(p.titre) + "</h1><p>" + esc(p.sousTitre) + "</p></div></section>" +
       '<section class="proj-intro"><p class="lede">' + esc(p.resume) + '</p><dl class="facts">' +
