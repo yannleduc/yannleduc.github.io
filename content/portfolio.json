@@ -13,10 +13,14 @@
         "detail": "Admis via AMBition Ingénieur"
       },
       {
-        "periode": "2023 – 2026",
-        "intitule": "BUT Génie Mécanique et Productique, en alternance chez SCORPE Technologies",
+        "periode": "2024 – 2026",
+        "intitule": "BUT Génie Mécanique et Productique (2e et 3e années), en alternance chez SCORPE Technologies",
         "detail": "Bureau d'études : matériel de secours pour les sapeurs-pompiers",
         "theme": "scorpe"
+      },
+      {
+        "periode": "2023 – 2024",
+        "intitule": "Licence de mathématiques"
       }
     ],
     "liens": [],
@@ -106,9 +110,16 @@
           "barres": [
             {
               "de": "2023-09",
+              "a": "2024-08",
+              "titre": "Licence de mathématiques",
+              "court": "Licence de maths"
+            },
+            {
+              "de": "2024-09",
               "a": "2026-08",
-              "titre": "BUT Génie Mécanique et Productique",
-              "court": "BUT GMP"
+              "titre": "BUT Génie Mécanique et Productique, 2e et 3e années",
+              "court": "BUT GMP",
+              "detail": "2e et 3e années"
             },
             {
               "de": "2026-09",
