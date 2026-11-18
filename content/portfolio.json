@@ -939,22 +939,22 @@
         {
           "_aide": "EMPLACEMENT PRÊT, PAS ENCORE PUBLIÉ. Pour publier : compléter les champs, remplacer les images (dossier img/s2/), puis déplacer cet objet de 'aVenir' vers 'projets' et supprimer '_aide', 'titreCarte' et 'sousTitreCarte'. Les parties sont des modèles : en garder, en ajouter ou en retirer librement.",
           "id": "projet-s2",
-          "titreCarte": "Projet du semestre 2",
-          "sousTitreCarte": "Ajouté au fil du semestre, de févr. – juil. 2027.",
-          "titre": "Titre du projet du semestre 2",
-          "titreCourt": "Projet S2",
-          "sousTitre": "Une phrase qui dit ce que fait le produit et pour qui.",
+          "titreCarte": "Éolienne de 1,20 m",
+          "sousTitreCarte": "Projet du semestre 2, de févr. à juil. 2027.",
+          "titre": "Éolienne de 1,20 m",
+          "titreCourt": "Éolienne",
+          "sousTitre": "Concevoir, dimensionner et tester une éolienne de 1,20 m.",
           "equipe": "",
           "encadrant": "",
           "periode": "Févr. – juil. 2027",
-          "resume": "Trois ou quatre phrases : le problème de départ, ce qu'on a conçu, ce que ça a donné, ce qu'il reste à faire.",
+          "resume": "À compléter : le besoin, la puissance visée, ce qu'on a conçu (pales, moyeu, mât, génératrice), ce que les essais ont donné et ce qu'il reste à faire.",
           "hero": {
-            "image": "media/ia/7671b41f.webp",
-            "alt": "Image du projet du semestre 2"
+            "image": "img/modele/attente-am.svg",
+            "alt": "Image d'attente, projet éolienne"
           },
           "couverture": {
-            "image": "media/ia/7671b41f.webp",
-            "alt": "Image du projet du semestre 2"
+            "image": "img/modele/attente-am.svg",
+            "alt": "Image d'attente, projet éolienne"
           },
           "chiffres": [],
           "blocs": {},
@@ -962,16 +962,16 @@
             {
               "id": "contexte",
               "bloc": 1,
-              "titre": "Contexte et besoin",
+              "titre": "Besoin et cahier des charges",
               "module": "Projet",
               "date": "",
-              "enBref": "Le besoin en une phrase.",
+              "enBref": "À compléter : la puissance visée, le vent de référence et les contraintes du projet.",
               "texte": [
-                "D'où vient le projet, pour qui, et ce qu'on attend du produit."
+                "À compléter : pour qui, pour quel site, avec quelles contraintes de taille, de coût et de sécurité."
               ],
               "banniere": {
-                "image": "media/ia/ef360c62.webp",
-                "alt": "Croquis de recherche sur papier"
+                "image": "media/ia/28af9950.webp",
+                "alt": "Post-it d'analyse du besoin"
               },
               "chiffres": [],
               "competences": [],
@@ -986,25 +986,25 @@
               "images": []
             },
             {
-              "id": "conception",
+              "id": "pales",
               "bloc": 1,
-              "titre": "Conception",
-              "module": "Conception, CAO",
+              "titre": "Aérodynamique et dimensionnement des pales",
+              "module": "Mécanique des fluides",
               "date": "",
-              "enBref": "Les choix de conception en une phrase.",
+              "enBref": "À compléter : le profil choisi, le nombre de pales et le rendement visé.",
               "texte": [
-                "Les solutions envisagées, celle qu'on a retenue et pourquoi."
+                "À compléter : le choix du profil, la vitesse spécifique, la longueur des pales et le calcul des efforts."
               ],
               "banniere": {
-                "image": "media/ia/eff0ae5a.webp",
-                "alt": "Modèle 3D en cours de conception"
+                "image": "media/ia/0c05a475.webp",
+                "alt": "Simulation à l'écran"
               },
               "chiffres": [],
               "competences": [],
               "outils": [],
               "livrables": [
                 {
-                  "titre": "Maquette CAO et mise en plan",
+                  "titre": "Note de calcul des pales",
                   "statut": "a-venir",
                   "date": ""
                 }
@@ -1012,25 +1012,51 @@
               "images": []
             },
             {
-              "id": "calcul-essais",
+              "id": "conception",
               "bloc": 1,
-              "titre": "Calculs et essais",
-              "module": "Dimensionnement, essais",
+              "titre": "Conception et fabrication",
+              "module": "Conception, CAO",
               "date": "",
-              "enBref": "Ce que montrent les calculs et les essais.",
+              "enBref": "À compléter : le moyeu, le mât, la liaison avec la génératrice.",
               "texte": [
-                "Le dimensionnement, la simulation et les essais, avec les chiffres qui comptent."
+                "À compléter : les solutions retenues, les matériaux et la fabrication des pièces."
               ],
               "banniere": {
-                "image": "media/ia/0915c237.webp",
-                "alt": "Machine d'essai mécanique"
+                "image": "media/ia/c117b3e4.webp",
+                "alt": "Prototype en cours d'assemblage"
               },
               "chiffres": [],
               "competences": [],
               "outils": [],
               "livrables": [
                 {
-                  "titre": "Rapport de calcul ou d'essai",
+                  "titre": "Maquette CAO et plans",
+                  "statut": "a-venir",
+                  "date": ""
+                }
+              ],
+              "images": []
+            },
+            {
+              "id": "essais",
+              "bloc": 1,
+              "titre": "Essais",
+              "module": "Essais",
+              "date": "",
+              "enBref": "À compléter : la puissance mesurée comparée au calcul.",
+              "texte": [
+                "À compléter : le banc ou la soufflerie, les mesures et l'écart avec la théorie."
+              ],
+              "banniere": {
+                "image": "media/ia/fe8ea88a.webp",
+                "alt": "Mesure d'une pièce"
+              },
+              "chiffres": [],
+              "competences": [],
+              "outils": [],
+              "livrables": [
+                {
+                  "titre": "Rapport d'essai",
                   "statut": "a-venir",
                   "date": ""
                 }
@@ -1043,13 +1069,13 @@
               "titre": "Bilan et soutenance",
               "module": "Soutenance",
               "date": "",
-              "enBref": "Ce qui est atteint, ce qui reste à faire.",
+              "enBref": "À compléter : ce qui est atteint, ce qui reste à faire.",
               "texte": [
-                "Les objectifs atteints, les limites, et ce que j'en retiens."
+                "À compléter : les objectifs atteints, les limites et ce que j'en retiens."
               ],
               "banniere": {
-                "image": "media/ia/0d3b196f.webp",
-                "alt": "Plans et pièces posés sur une table"
+                "image": "media/ia/4eb18e03.webp",
+                "alt": "Salle de soutenance"
               },
               "chiffres": [],
               "competences": [],
@@ -1082,39 +1108,39 @@
         {
           "_aide": "EMPLACEMENT PRÊT, PAS ENCORE PUBLIÉ. Pour publier : compléter les champs, remplacer les images (dossier img/s3/), puis déplacer cet objet de 'aVenir' vers 'projets' et supprimer '_aide', 'titreCarte' et 'sousTitreCarte'. Les parties sont des modèles : en garder, en ajouter ou en retirer librement.",
           "id": "projet-s3",
-          "titreCarte": "Projet du semestre 3",
-          "sousTitreCarte": "Ajouté au fil du semestre, de sept. 2027 – janv. 2028.",
-          "titre": "Titre du projet du semestre 3",
-          "titreCourt": "Projet S3",
-          "sousTitre": "Une phrase qui dit ce que fait le produit et pour qui.",
+          "titreCarte": "Semelle pour athlète de haut niveau",
+          "sousTitreCarte": "Projet du semestre 3, de sept. 2027 à janv. 2028.",
+          "titre": "Semelle pour athlète de haut niveau",
+          "titreCourt": "Semelle",
+          "sousTitre": "Une semelle haute performance, en composite ou en plastique technique imprimé.",
           "equipe": "",
           "encadrant": "",
           "periode": "Sept. 2027 – janv. 2028",
-          "resume": "Trois ou quatre phrases : le problème de départ, ce qu'on a conçu, ce que ça a donné, ce qu'il reste à faire.",
+          "resume": "À compléter : l'athlète et son sport, ce que la semelle doit apporter (rigidité, retour d'énergie, légèreté), le matériau retenu entre composite et impression, et les résultats.",
           "hero": {
-            "image": "media/ia/fd04a75a.webp",
-            "alt": "Image du projet du semestre 3"
+            "image": "media/ia/bad9792e.webp",
+            "alt": "Pièce imprimée à structure lattice"
           },
           "couverture": {
-            "image": "media/ia/fd04a75a.webp",
-            "alt": "Image du projet du semestre 3"
+            "image": "media/ia/bad9792e.webp",
+            "alt": "Pièce imprimée à structure lattice"
           },
           "chiffres": [],
           "blocs": {},
           "parties": [
             {
-              "id": "contexte",
+              "id": "besoin",
               "bloc": 1,
-              "titre": "Contexte et besoin",
+              "titre": "Le besoin de l'athlète",
               "module": "Projet",
               "date": "",
-              "enBref": "Le besoin en une phrase.",
+              "enBref": "À compléter : le sport, les appuis et ce que l'athlète attend de la semelle.",
               "texte": [
-                "D'où vient le projet, pour qui, et ce qu'on attend du produit."
+                "À compléter : les mesures ou les échanges avec l'athlète, et le cahier des charges qui en sort."
               ],
               "banniere": {
-                "image": "media/ia/ef360c62.webp",
-                "alt": "Croquis de recherche sur papier"
+                "image": "media/ia/28af9950.webp",
+                "alt": "Post-it d'analyse du besoin"
               },
               "chiffres": [],
               "competences": [],
@@ -1129,25 +1155,25 @@
               "images": []
             },
             {
-              "id": "conception",
+              "id": "materiau",
               "bloc": 1,
-              "titre": "Conception",
-              "module": "Conception, CAO",
+              "titre": "Composite ou impression ?",
+              "module": "Matériaux",
               "date": "",
-              "enBref": "Les choix de conception en une phrase.",
+              "enBref": "À compléter : le matériau retenu et pourquoi.",
               "texte": [
-                "Les solutions envisagées, celle qu'on a retenue et pourquoi."
+                "À compléter : la comparaison entre un composite (fibre de carbone, fibre de verre) et un plastique technique imprimé, avec les indices de performance."
               ],
               "banniere": {
-                "image": "media/ia/eff0ae5a.webp",
-                "alt": "Modèle 3D en cours de conception"
+                "image": "media/ia/19d986d6.webp",
+                "alt": "Échantillons de matériaux"
               },
               "chiffres": [],
               "competences": [],
               "outils": [],
               "livrables": [
                 {
-                  "titre": "Maquette CAO et mise en plan",
+                  "titre": "Note de choix du matériau",
                   "statut": "a-venir",
                   "date": ""
                 }
@@ -1155,25 +1181,51 @@
               "images": []
             },
             {
-              "id": "calcul-essais",
+              "id": "conception",
               "bloc": 1,
-              "titre": "Calculs et essais",
-              "module": "Dimensionnement, essais",
+              "titre": "Conception de la semelle",
+              "module": "Conception, CAO",
               "date": "",
-              "enBref": "Ce que montrent les calculs et les essais.",
+              "enBref": "À compléter : la forme, les zones rigides et souples, la structure interne.",
               "texte": [
-                "Le dimensionnement, la simulation et les essais, avec les chiffres qui comptent."
+                "À compléter : la CAO, la simulation et l'éventuelle structure lattice."
               ],
               "banniere": {
-                "image": "media/ia/0915c237.webp",
-                "alt": "Machine d'essai mécanique"
+                "image": "media/ia/eff0ae5a.webp",
+                "alt": "Maquette CAO à l'écran"
               },
               "chiffres": [],
               "competences": [],
               "outils": [],
               "livrables": [
                 {
-                  "titre": "Rapport de calcul ou d'essai",
+                  "titre": "Maquette CAO",
+                  "statut": "a-venir",
+                  "date": ""
+                }
+              ],
+              "images": []
+            },
+            {
+              "id": "essais",
+              "bloc": 1,
+              "titre": "Fabrication et essais",
+              "module": "Fabrication, essais",
+              "date": "",
+              "enBref": "À compléter : ce que les essais mécaniques ont montré.",
+              "texte": [
+                "À compléter : la fabrication du prototype, les essais de flexion ou de fatigue, et les retours de l'athlète."
+              ],
+              "banniere": {
+                "image": "media/ia/0915c237.webp",
+                "alt": "Machine de traction"
+              },
+              "chiffres": [],
+              "competences": [],
+              "outils": [],
+              "livrables": [
+                {
+                  "titre": "Rapport d'essai",
                   "statut": "a-venir",
                   "date": ""
                 }
@@ -1186,13 +1238,13 @@
               "titre": "Bilan et soutenance",
               "module": "Soutenance",
               "date": "",
-              "enBref": "Ce qui est atteint, ce qui reste à faire.",
+              "enBref": "À compléter : ce qui est atteint, ce qui reste à faire.",
               "texte": [
-                "Les objectifs atteints, les limites, et ce que j'en retiens."
+                "À compléter : les objectifs atteints, les limites et ce que j'en retiens."
               ],
               "banniere": {
-                "image": "media/ia/0d3b196f.webp",
-                "alt": "Plans et pièces posés sur une table"
+                "image": "media/ia/4eb18e03.webp",
+                "alt": "Salle de soutenance"
               },
               "chiffres": [],
               "competences": [],

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Effet : nom imprimé en 3D (démo)</title>
+<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@700&display=swap" rel="stylesheet">
+<style>
+body { margin: 0; font-family: system-ui, sans-serif; background: #fff; color: #141216; padding: 60px 5vw; }
+.printbed { position: relative; }
+.printbed h1 { margin: 0; font: 700 clamp(60px, 13vw, 180px)/.9 "Zilla Slab", Georgia, serif; color: #80276c; letter-spacing: -.02em; }
+.printbed h1 span { color: #ffa300; }
+.printbed canvas { position: absolute; left: 0; top: 0; pointer-events: none; }
+.printbed.printing h1, .printbed.printing h1 span { color: transparent; }
+.plate { height: 6px; margin-top: 6px; border-radius: 3px; background: #e6e3ea; }
+p { font: 500 12px/1 ui-monospace, monospace; color: #6b6672; margin-top: 10px; }
+button { margin-top: 30px; }
+</style>
+</head>
+<body>
+<div class="printbed"><h1 id="nom">Yann Leduc<span>.</span></h1></div>
+<div class="plate"></div>
+<p id="cpt">couches : 0</p>
+<button type="button" onclick="nomImprime(document.getElementById('nom'), { compteur: document.getElementById('cpt') })">Relancer l'impression</button>
+<script src="nom-imprime.js"></script>
+<script>nomImprime(document.getElementById("nom"), { compteur: document.getElementById("cpt") });</script>
+</body>
+</html>
