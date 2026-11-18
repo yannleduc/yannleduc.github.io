@@ -34,7 +34,7 @@ Le site ne se modifie qu'à un endroit : `content/portfolio.json`. La page `inde
 Chaque projet en préparation, et chaque projet publié qui a des `partiesAVenir`, a une page d'aperçu liée nulle part :
 
 - `#apercu-s1-pied-prothetique` : le pied avec les 4 étapes du Bloc 2 en préparation (métrologie, essai du premier pied, talon et allègement, présentation finale).
-- `#apercu-s2-projet-s2` : éolienne de 1,20 m (S2). `#apercu-s3-projet-s3` : semelle pour athlète de haut niveau (S3). `#apercu-s4-projet-s4` … `#apercu-s6-projet-s6` : projets modèles génériques.
+- `#apercu-s2-projet-s2` : éolienne (S2). `#apercu-s3-projet-s3` : semelle pour athlète de haut niveau (S3). `#apercu-s4-projet-s4` … `#apercu-s6-projet-s6` : projets modèles génériques.
 
 Un bandeau jaune « Aperçu non publié » s'affiche en haut de ces pages.
 
