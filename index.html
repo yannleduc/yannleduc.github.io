@@ -1011,7 +1011,8 @@ a.tg-l[aria-current="page"] { color: #fff; background: #80276c; border-radius: 9
         if (firstTop === null) firstTop = r.top;
         var above = Math.abs(r.top - firstTop) < 4, d = .15 + i * .2;
         var cap = r.top - box.top + r.height * .16, base = r.bottom - box.top - r.height * .1;
-        var y = above ? r.top - box.top - 4 : r.bottom - box.top + 16;
+        var gapA = (cap - (r.top - box.top - 4)) * 2 / 3, gapB = ((r.bottom - box.top + 16) - base) * 2 / 3;
+        var y = above ? cap - gapA : base + gapB;
         var from = above ? cap - 2 : base + 2;
         out += L(a, from, a, y + (above ? -6 : 6), d) + L(b, from, b, y + (above ? -6 : 6), d);
         out += L(a, y, b, y, d + .2) + L(a, y - 5, a, y + 5, d + .2) + L(b, y - 5, b, y + 5, d + .2);
