@@ -85,7 +85,7 @@
     "enBref": [
       {
         "k": "Aujourd'hui",
-        "v": "Apprenti ingénieur à Arts et Métiers, à Paris"
+        "v": "Apprenti ingénieur à Arts et Métiers, en alternance à l'EPCIC"
       },
       {
         "k": "Avant",
@@ -95,7 +95,56 @@
         "k": "Objectif",
         "v": "Ingénieur en bureau d'études technique"
       }
-    ]
+    ],
+    "frise": {
+      "_aide": "Frise de l'accueil. Dates au format AAAA-MM (début et fin inclus). La piste 'Entreprise' sert à calculer l'expérience affichée. Ajouter une barre suffit pour un nouveau poste.",
+      "debut": "2023-09",
+      "fin": "2029-08",
+      "pistes": [
+        {
+          "nom": "Formation",
+          "barres": [
+            {
+              "de": "2023-09",
+              "a": "2026-08",
+              "titre": "BUT Génie Mécanique et Productique",
+              "court": "BUT GMP"
+            },
+            {
+              "de": "2026-09",
+              "a": "2029-08",
+              "titre": "Arts et Métiers, Programme Grande École",
+              "court": "Arts et Métiers",
+              "detail": "Admis via AMBition Ingénieur",
+              "lien": "#ensam",
+              "theme": "am",
+              "semestres": true
+            }
+          ]
+        },
+        {
+          "nom": "Entreprise",
+          "barres": [
+            {
+              "de": "2024-09",
+              "a": "2026-08",
+              "titre": "SCORPE Technologies",
+              "court": "SCORPE",
+              "detail": "bureau d'études",
+              "lien": "#scorpe",
+              "entreprise": "scorpe"
+            },
+            {
+              "de": "2026-09",
+              "a": "2029-08",
+              "titre": "EPCIC",
+              "court": "EPCIC",
+              "detail": "apprenti ingénieur"
+            }
+          ]
+        }
+      ]
+    }
   },
   "ecole": {
     "titre": "Ingénieur généraliste, en apprentissage",

@@ -656,6 +656,40 @@ a.tg-l[aria-current="page"] { color: #fff; background: #80276c; border-radius: 9
 
 .lead-short { font-family: var(--font-display); font-size: clamp(23px, 2.3vw, 31px); line-height: 1.22; letter-spacing: -.01em; font-weight: 600; color: var(--ink); max-width: 27ch; margin: 0; }
 .lead-short em { font-style: normal; color: var(--muted); font-weight: 500; }
+
+/* Frise de l'accueil */
+.fz-head { display: grid; grid-template-columns: 1fr auto; gap: 40px; align-items: end; }
+.fz-head .sec-head { margin-bottom: 0; }
+.fz-count { text-align: right; }
+.fz-big { font-family: var(--font-display); font-weight: 700; font-size: clamp(36px, 4.6vw, 58px); line-height: 1; color: var(--accent); letter-spacing: -.02em; margin: 0; white-space: nowrap; }
+.fz-lbl { margin: 8px 0 0; font-weight: 600; }
+.fz-end { margin: 2px 0 0; color: var(--muted); font-size: 15px; }
+.fz-scroll { overflow-x: auto; margin-top: 36px; padding-bottom: 6px; }
+.fz-chart { --lname: 110px; position: relative; min-width: 720px; padding-top: 30px; }
+.fz-years { position: absolute; top: 0; left: var(--lname); right: 0; height: 22px; border-bottom: 1px solid var(--rule); }
+.fz-years span { position: absolute; top: 0; transform: translateX(4px); font: 500 12.5px/1 var(--mono, "IBM Plex Mono", monospace); color: var(--muted); }
+.fz-years span::before { content: ""; position: absolute; left: -4px; top: 0; height: 26px; border-left: 1px solid var(--rule); }
+.fz-lane { display: grid; grid-template-columns: var(--lname) 1fr; align-items: center; padding: 14px 0 0; }
+.fz-lname { font-size: 14px; font-weight: 700; color: var(--muted); }
+.fz-track { position: relative; height: 64px; }
+.fz-bar { position: absolute; top: 0; bottom: 0; border-radius: 12px; overflow: hidden; text-decoration: none; color: var(--ink); border: 1px solid var(--rule); background: repeating-linear-gradient(135deg, #fff 0 6px, #f4f2f5 6px 12px); display: flex; align-items: center; transition: transform .2s ease, box-shadow .2s ease; }
+a.fz-bar:hover { transform: translateY(-2px); box-shadow: 0 6px 18px rgba(40, 20, 40, .12); }
+.fz-fill { position: absolute; left: 0; top: 0; bottom: 0; width: var(--done); background: #e9e6ea; }
+.fz-bar.am { border-color: #e2c9dc; background: repeating-linear-gradient(135deg, #fff 0 6px, #f7eef5 6px 12px); }
+.fz-bar.am .fz-fill { background: #ecd7e7; box-shadow: inset -2px 0 0 #80276c; }
+.fz-bar.t-ent { border-color: var(--e-bord); }
+.fz-bar.t-ent .fz-fill { background: var(--e-fond); }
+.fz-bar.neutral { border-color: #c9c6cc; }
+.fz-bar.neutral .fz-fill { background: #e3e1e6; box-shadow: inset -2px 0 0 #2b2730; }
+.fz-txt { position: relative; z-index: 1; padding: 0 16px; display: grid; gap: 2px; line-height: 1.2; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.fz-txt b { font-size: 15.5px; }
+.fz-txt span { font-size: 13px; opacity: .85; overflow: hidden; text-overflow: ellipsis; }
+.fz-sem { position: absolute; inset: 0; display: grid; grid-template-columns: repeat(6, 1fr); z-index: 1; pointer-events: none; }
+.fz-sem i { border-right: 1px dashed rgba(128, 39, 108, .28); }
+.fz-sem i:last-child { border-right: 0; }
+.fz-now { position: absolute; top: 18px; bottom: -6px; width: 2px; background: var(--gold); z-index: 3; }
+.fz-now span { position: absolute; top: -18px; left: 50%; transform: translateX(-50%); font: 600 11px/1 var(--mono, "IBM Plex Mono", monospace); background: var(--gold); color: #111; padding: 3px 6px; border-radius: 5px; white-space: nowrap; }
+@media (max-width: 760px) { .fz-head { grid-template-columns: 1fr; gap: 18px; } .fz-count { text-align: left; } .fz-chart { --lname: 92px; } }
 </style>
 </head>
 <body>
@@ -989,9 +1023,55 @@ a.tg-l[aria-current="page"] { color: #fff; background: #80276c; border-radius: 9
       "</section>" +
       (bref ? '<dl class="bref-grid">' + bref + "</dl>" : "") +
       '<section class="sec" aria-labelledby="h-feat"><div class="sec-head"><h2 id="h-feat">Projets phares</h2><p>Deux projets, deux contextes : l\'entreprise et l\'école.</p></div><div class="pcards">' + feats.join("") + '</div><p class="more"><a class="btn" href="#ensam">Arts et Métiers : les six semestres</a><a class="btn" href="#scorpe">SCORPE : l\'alternance de BUT</a></p></section>' +
-      '<section class="sec two" id="parcours"><div><div class="sec-head"><h2>Parcours</h2></div><ol class="path">' + cells + "</ol></div>" +
-        '<div><div class="sec-head"><h2>Compétences</h2><p>Reprises des projets, mises à jour automatiquement.</p></div>' + skillGroups(t) + "</div></section>";
+      (pr.frise ? friseHTML(pr.frise) : '<section class="sec" id="parcours"><div class="sec-head"><h2>Parcours</h2></div><ol class="path">' + cells + "</ol></section>") +
+      '<section class="sec"><div class="sec-head"><h2>Compétences</h2><p>Reprises des projets, mises à jour automatiquement.</p></div>' + skillGroups(t) + "</section>";
     drawCotes(true);
+    var sc = app.querySelector(".fz-scroll"), nw = sc && sc.querySelector(".fz-now");
+    if (sc && nw && sc.scrollWidth > sc.clientWidth) sc.scrollLeft = Math.max(0, nw.offsetLeft - sc.clientWidth * .55);
+  }
+
+  // Frise de l'accueil : formation et entreprise sur deux pistes, expérience calculée à la date du jour
+  function ymd(s, end) { var p = s.split("-"); return end ? new Date(+p[0], +p[1], 0, 23, 59) : new Date(+p[0], +p[1] - 1, 1); }
+  function moisEntre(a, b) { return Math.max(0, (b.getFullYear() - a.getFullYear()) * 12 + (b.getMonth() - a.getMonth()) + (b.getDate() >= a.getDate() ? 0 : -1) + 0); }
+  function dureeTxt(m) {
+    var a = Math.floor(m / 12), r = m % 12, t = [];
+    if (a) t.push(a + (a > 1 ? " ans" : " an"));
+    if (r) t.push(r + " mois");
+    return t.join(" et ") || "0 mois";
+  }
+  function friseHTML(fz) {
+    var A = ymd(fz.debut), B = ymd(fz.fin, true), now = new Date(), span = B - A;
+    var pos = function (d) { return Math.max(0, Math.min(100, (d - A) / span * 100)); };
+    var expNow = 0, expEnd = 0, ent = (fz.pistes || []).filter(function (p) { return p.nom === "Entreprise"; })[0];
+    (ent ? ent.barres : []).forEach(function (b) {
+      var a = ymd(b.de), z = ymd(b.a, true);
+      expEnd += moisEntre(a, new Date(z.getTime() + 864e5));
+      if (now > a) expNow += moisEntre(a, now < z ? now : new Date(z.getTime() + 864e5));
+    });
+    var years = [], y0 = A.getFullYear(), y1 = B.getFullYear();
+    for (var y = y0; y < y1; y++) years.push('<span style="left:' + pos(new Date(y, 8, 1)) + '%">' + y + "–" + String(y + 1).slice(2) + "</span>");
+    var tNow = pos(now);
+    var lanes = (fz.pistes || []).map(function (p) {
+      return '<div class="fz-lane"><span class="fz-lname">' + esc(p.nom) + '</span><div class="fz-track">' + p.barres.map(function (b) {
+        var a = ymd(b.de), z = ymd(b.a, true), l = pos(a), w = pos(z) - l;
+        var done = Math.max(0, Math.min(100, (now - a) / (z - a) * 100));
+        var e = b.entreprise ? (data.entreprises || []).filter(function (x) { return x.id === b.entreprise; })[0] : null;
+        var cls = "fz-bar" + (b.theme === "am" ? " am" : "") + (e ? " t-ent" : "") + (!b.theme && !e ? " neutral" : "");
+        var st = "left:" + l + "%;width:" + w + "%;--done:" + done.toFixed(1) + "%" + (e && entVars(e) ? ";" + entVars(e) : "");
+        var dur = dureeTxt(moisEntre(a, new Date(z.getTime() + 864e5)));
+        var sem = b.semestres ? '<span class="fz-sem" aria-hidden="true">' + [1, 2, 3, 4, 5, 6].map(function (i) { return "<i></i>"; }).join("") + "</span>" : "";
+        var inner = '<span class="fz-fill" aria-hidden="true"></span>' + sem + '<span class="fz-txt"><b>' + esc(b.court || b.titre) + '</b><span>' + esc(dur) + (b.detail ? ", " + esc(b.detail) : "") + "</span></span>";
+        var lab = esc(b.titre + ", " + dur + (b.detail ? ", " + b.detail : ""));
+        return b.lien ? '<a class="' + cls + '" style="' + st + '" href="' + esc(b.lien) + '" aria-label="' + lab + '" title="' + lab + '">' + inner + "</a>"
+                      : '<div class="' + cls + '" style="' + st + '" title="' + lab + '">' + inner + "</div>";
+      }).join("") + "</div></div>";
+    }).join("");
+    return '<section class="sec fz" id="parcours" aria-labelledby="h-fz">' +
+      '<div class="fz-head"><div class="sec-head"><h2 id="h-fz">Parcours et expérience</h2><p>Cinq ans d\'alternance au total : la formation et l\'entreprise avancent en même temps.</p></div>' +
+        '<div class="fz-count"><p class="fz-big">' + esc(dureeTxt(expNow)) + '</p><p class="fz-lbl">d\'expérience en entreprise, en alternance</p><p class="fz-end">' + esc(dureeTxt(expEnd)) + " au diplôme, en " + B.getFullYear() + "</p></div></div>" +
+      '<div class="fz-scroll"><div class="fz-chart"><div class="fz-years">' + years.join("") + "</div>" + lanes +
+        (tNow > 0 && tNow < 100 ? '<div class="fz-now" style="left:calc(var(--lname) + (100% - var(--lname)) * ' + (tNow / 100).toFixed(4) + ')"><span>aujourd\'hui</span></div>' : "") +
+      "</div></div></section>";
   }
 
   // Cotation du nom, comme sur un plan : largeur de chaque mot et hauteur du titre, en mm à l'écran.
