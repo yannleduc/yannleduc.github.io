@@ -1058,7 +1058,7 @@ a.fz-bar:hover { transform: translateY(-2px); box-shadow: 0 6px 18px rgba(40, 20
         var e = b.entreprise ? (data.entreprises || []).filter(function (x) { return x.id === b.entreprise; })[0] : null;
         var cls = "fz-bar" + (b.theme === "am" ? " am" : "") + (e ? " t-ent" : "") + (!b.theme && !e ? " neutral" : "");
         var st = "left:" + l + "%;width:" + w + "%;--done:" + done.toFixed(1) + "%" + (e && entVars(e) ? ";" + entVars(e) : "");
-        var dur = dureeTxt(moisEntre(a, new Date(z.getTime() + 864e5)));
+        var dur = b.duree || dureeTxt(moisEntre(a, new Date(z.getTime() + 864e5)));
         var sem = b.semestres ? '<span class="fz-sem" aria-hidden="true">' + [1, 2, 3, 4, 5, 6].map(function (i) { return "<i></i>"; }).join("") + "</span>" : "";
         var inner = '<span class="fz-fill" aria-hidden="true"></span>' + sem + '<span class="fz-txt"><b>' + esc(b.court || b.titre) + '</b><span>' + esc(dur) + (b.detail ? ", " + esc(b.detail) : "") + "</span></span>";
         var lab = esc(b.titre + ", " + dur + (b.detail ? ", " + b.detail : ""));

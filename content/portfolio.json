@@ -101,7 +101,7 @@
       }
     ],
     "frise": {
-      "_aide": "Frise de l'accueil. Dates au format AAAA-MM (début et fin inclus). La piste 'Entreprise' sert à calculer l'expérience affichée. Ajouter une barre suffit pour un nouveau poste.",
+      "_aide": "Frise de l'accueil. Dates au format AAAA-MM (début et fin inclus). La piste 'Entreprise' sert à calculer l'expérience affichée. Ajouter une barre suffit pour un nouveau poste. 'duree' remplace la durée calculée (ex. « 3e année »).",
       "debut": "2023-09",
       "fin": "2029-08",
       "pistes": [
@@ -111,8 +111,9 @@
             {
               "de": "2023-09",
               "a": "2024-08",
-              "titre": "Licence de mathématiques, 3e année (L3)",
-              "court": "L3 Maths"
+              "titre": "Licence de mathématiques",
+              "court": "L3 Maths",
+              "duree": "3e année"
             },
             {
               "de": "2024-09",
