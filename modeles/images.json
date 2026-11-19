@@ -643,6 +643,16 @@
       "utilise_dans": [
         "s2/projet-s2"
       ]
+    },
+    {
+      "id": "31b11a70",
+      "url": "media/ia/31b11a70.webp",
+      "description": "Semelle de sport en carbone avec structure lattice imprimée sous le talon, détails violets et jaunes, fond blanc",
+      "usage": "couverture de projet (16:9)",
+      "type": "image",
+      "utilise_dans": [
+        "s3/projet-s3"
+      ]
     }
   ]
 }
