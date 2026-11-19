@@ -633,6 +633,16 @@
       "usage": "bannière d'étape (21:9)",
       "type": "image",
       "utilise_dans": []
+    },
+    {
+      "id": "44a1c479",
+      "url": "media/ia/44a1c479.webp",
+      "description": "Petite éolienne à axe horizontal, trois pales violettes, moyeu jaune, fond blanc",
+      "usage": "couverture de projet (16:9)",
+      "type": "image",
+      "utilise_dans": [
+        "s2/projet-s2"
+      ]
     }
   ]
 }
